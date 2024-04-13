@@ -1,0 +1,39 @@
+.home-services{
+
+    overflow: hidden;
+}
+
+.home-services-img{
+    width: 100vw;
+    height: 22rem;
+    object-fit: cover;
+    text-align: center;
+    opacity: 0.4;
+    margin-left: 1rem;
+}
+
+.home-services-h2{
+    font-size: 1.875rem;
+    text-wrap: nowrap;
+    margin: 2.7rem 1rem 0;
+    color: white;
+    animation: home-services-h2-animation both 5s infinite;    
+}
+
+@keyframes home-services-h2-animation{
+    100%{
+        transform: translateX(-35%);
+    }
+}
+
+.home-services-h2 span{
+    color: #7874f4;
+}
+
+.home-services-p{
+    font-size: 1.25rem;
+    padding: 16px 0 0 1rem;
+    line-height: 1.625rem;
+    color: #3C3C3B;
+    text-wrap: balance;
+}

@@ -1,10 +1,11 @@
 import './Hero.css'
 import Button from './Button'
+import heroImg from '../assets/Imagen-esfera-hexagono.png'
 
 function Hero() {
   return (
     <section className='hero-section'>
-      <img className='hero-img' src="src\assets\Imagen-esfera-hexagono.png" alt="" />
+      <img className='hero-img' src={heroImg} alt="" />
       <p className='hero-p'>BUILDING TAILORED SOFTWARE SOLUTIONS</p>
       <h1 className='hero-h1'>Making technology <span>boost</span> your business.</h1>
       <Button name='ABOUT US' classStyle='hero-btn' />
