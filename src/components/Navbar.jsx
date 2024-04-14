@@ -1,6 +1,7 @@
 import './Navbar.css'
 import logoImg from '../assets/solutions.png'
 
+
 const Navbar = () => {
   return (
     <header className='header'>
