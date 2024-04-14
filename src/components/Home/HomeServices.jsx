@@ -1,6 +1,6 @@
-import homeServicesImg from '../assets/FormasServices.png'
+import homeServicesImg from '../../assets/FormasServices.png'
 import './HomeServices.css'
-import Button from './Button'
+import Button from '../../components/Button'
 
 function HomeServices() {
   return (

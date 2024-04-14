@@ -1,10 +1,6 @@
 import './AboutHero.css'
-import './Hero.css'
+import '../components/Home/Hero.css'
 import Button from './Button'
-import heroImg from '../assets/Imagen-esfera-hexagono.png'
-import BackGroudAboutHero from '../assets/BackGroud-About-Hero.svg'
-
-
 
 const AboutHero = () => {
   return (
