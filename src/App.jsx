@@ -19,6 +19,7 @@ function App() {
       <Navbar/>
       <AboutHero/>
       <Footer/>
+       
     </>
   )
 }
