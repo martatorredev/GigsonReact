@@ -1,27 +1,38 @@
-import './Navbar.css'
-import logoImg from '../assets/solutions.png'
-import { Link } from 'react-router-dom'
-
+import React, { useState } from 'react';
+import './Navbar.css';
+import logoImg from '../assets/Gigson-logo.svg';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className='header'>
-        <img className='logo-header' src={logoImg}/>
-        <nav className="nav-container">
-            <ul className="nav-links">
-                <li><Link to='/about'>ABOUT US</Link></li>
-                <li><Link to='/'>SERVICES</Link></li>
-                <li><Link to='/'>CASES</Link></li>
-                <li><Link to='/'>FAQs</Link></li>
-                <li><Link to='/'>CONTACT</Link></li>
-                <li><Link to='/'>EN / ES</Link></li>
-            </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" className='mobile-icon' viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
-        </nav>
+      <img className='logo-header' src={logoImg} alt="Logo"/>
+      <nav className={`hamburger-menu ${isMobileMenuOpen ? 'open' : ''}`}>
+        <input id="menu__toggle" type="checkbox" checked={isMobileMenuOpen} onChange={toggleMobileMenu} />
+        <label className="menu__btn" htmlFor="menu__toggle">
+          <span></span>
+        </label>
+        <ul className="menu__box">
+          <li><Link className="menu__item" to='/about' onClick={closeMobileMenu}>ABOUT US</Link></li>
+          <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>SERVICES</Link></li>
+          <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>CASES</Link></li>
+          <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>FAQs</Link></li>
+          <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>CONTACT</Link></li>
+          <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>EN / ES</Link></li>
+        </ul>
+      </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

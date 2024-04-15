@@ -1,5 +1,6 @@
 import './Footer.css'
-import logoImg from '../assets/solutions.png'
+import logoImg from '../assets/Gigson-logo.svg'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -7,12 +8,12 @@ const Footer = () => {
     <footer className='footer'>
         <nav className="footer-nav-container">
             <ul className="footer-nav-links">
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">CONTACT</a></li>
-                <li><a href="">CASES</a></li>   
-                <li><a href="">EN / ES</a></li>
+                <li><Link to='/about'>ABOUT US</Link></li>
+                <li><Link to='/'>SERVICES     </Link></li>
+                <li><Link to='/'>CASES        </Link></li>
+                <li><Link to='/'>FAQs         </Link></li>
+                <li><Link to='/'>CONTACT      </Link></li>
+                <li><Link to='/'>EN / ES      </Link></li>
             </ul>            
         </nav>
         <div className='footer-div'>
@@ -26,9 +27,9 @@ const Footer = () => {
             <li><a href="">Developed by gigson © 2024 </a></li>
         </div>
         <div className='footer-div-policy'>
-        <li><a href="">Legal Policy</a></li>
-        <li><a href="">Cookies Policy</a></li>
-        <li><a href="">Legal Notice</a></li>    
+        <li><Link to='/'>Legal Policy  </Link></li>
+        <li><Link to='/'>Cookies Policy</Link></li>
+        <li><Link to='/'>Legal Notice  </Link></li>    
         </div>        
     </footer>
   )
