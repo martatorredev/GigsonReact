@@ -6,6 +6,7 @@ import piraSvg from '../assets/Piramide-about.svg'
 import circSvg from '../assets/circulo-about.svg'
 import triaSvg from '../assets/Trianguloycirculo.svg'
 
+
 const AboutHero = () => {
   return (
     <main>

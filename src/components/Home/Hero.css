@@ -1,5 +1,5 @@
 .hero-section{
-    margin-bottom: 1rem;
+    margin: 6.5rem 0 1rem;
     overflow: hidden;
     width: 100%;
 }
@@ -41,4 +41,5 @@
     fill: none;
     height: .375rem;
     border: 1px;
+    stroke: #7874F4; 
 }
