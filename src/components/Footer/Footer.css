@@ -1,0 +1,34 @@
+.footer{
+    background: linear-gradient(to right, #7874f441 , #f4f3ef );
+    padding: .7rem 1rem;
+    margin: 3rem 0 0;
+}
+.footer-nav-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    color: #3C3C3B; 
+    padding: .7rem 0;
+}
+.footer-mid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem .5rem 1rem 0;
+    border-bottom: 1px solid #3c3c3bcc;
+}
+.mobile-icon {
+    width: 2.125rem;
+    padding-bottom: 1rem;
+}
+.logo-footer{
+    width: 7.875rem;
+    filter: brightness(0);
+    padding-bottom: 1rem;
+}
+.footer-policy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem .5rem 1rem 0;
+}

@@ -2,41 +2,36 @@
     margin: 4rem 1rem 0;
     color: #3C3C3B;
 }
-
 .form-h2{
     font-size: 2rem;
 }
-
 .form-section label{
     font-size: 1.3rem;
     margin-top: 1.5rem;
 }
-
-.form-section input[placeholder]{
+.form-section input {
     all: unset;
+}
+.form-section input{
     font-size: 1rem;
-    border-bottom: .0625rem solid ;
+    border-bottom: .0625rem solid;
     width: 100%;
     color: #868685;
-    padding: 0.3rem 0 .07rem ;
+    padding: 0.3rem 0 .07rem;
 }
-
 .form-section input[placeholder]::placeholder{
     color: #868685;
 }
-
-select:focus,select:active{
+select:focus, select:active{
     all: unset;
 }
-
 .form-section select{
     font-size: 1rem;
     border-bottom: .0625rem solid ;
     width: 100%;
     color: #868685;
-    padding: 0.3rem 0 .07rem ;
+    padding: 0.3rem 0 .07rem;
 }
-
 .form-budget{
     margin-top: 0.5rem;
     display: flex;
@@ -44,31 +39,78 @@ select:focus,select:active{
     row-gap: .4rem;
     column-gap: .7rem;
 }
-
 .form-check{
     margin: 1.5rem 0 0;
     display: flex;
     gap: .8rem;
     align-items: center;
 }
-
 .form-check label{
     font-size: .75rem;
     transform: translateY(-20%);
 }
-
-input[type="checkbox"] {
+.form-section input[type="checkbox"] {
     all: unset;
     padding: .5rem;
-    -webkit-appearance: none; 
-    -moz-appearance: none;    
     appearance: none;                    
     background-color: #EEEDF0;   
     border: 1px solid #000;   
     border-radius: 50%;       
     cursor: pointer;          
-  }
-
-  input[type="checkbox"]:checked {
+}
+.form-section input[type="checkbox"]:checked {
     background-color: #7874F4;
-  }
+}
+@media(min-width:40rem){
+    .form-section{
+        width: 90%;
+    }
+    .form-h2{
+        font-size: 2.5rem;
+    }
+    .form-section label{
+        font-size: 1.4rem;
+        margin-top: 1.7rem;
+    }
+    .form-section input[placeholder],
+    .form-section select {
+        font-size: 1.1rem;
+        padding: 0.5rem 0 .1rem;
+    }
+    .form-check label{
+        font-size: .9rem;
+    }
+}
+@media(min-width:56.25rem){
+    .form-section{
+        margin: 4rem 2rem;
+    }
+    .form-container{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        width: 100%;
+    }
+    .input-container{
+        margin: .7rem 0;
+        display: flex;
+        gap: 1rem;
+    }
+    .input-container > label {
+        text-wrap: nowrap;
+    }
+    .form-section label{
+        font-size: 1.3rem;
+        margin-top: .5rem;
+    }
+    .form-section input, .form-section select{
+        width: 22vw;
+    }
+    .form-budget button{
+        padding: .15rem 1rem;
+        margin: 0;
+    }
+    .label-budget {
+        padding-top: .15rem;
+    }
+}
