@@ -119,3 +119,44 @@ select:focus, select:active{
     }
 
 }
+
+@media(min-width:56.25rem){
+    .form-section{
+        margin: 0 5rem 0 5rem;
+    }
+    .form-container{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+        width: 100%;
+        
+    }
+    .input-container{
+        margin: .7rem 0;
+        display: flex;
+        gap: 1rem;
+    }
+    .input-container > label {
+        text-wrap: nowrap;
+    }
+    .form-section label{
+        font-size: 1.3rem;
+        margin-top: .5rem
+    }
+    .form-section input, .form-section select{
+        width: 31vw;
+    }
+    .form-budget button{
+        padding: .15rem 1rem;
+        margin: 0;
+    }
+    .label-budget {
+        padding-top: .15rem;
+    }
+    .form-h2{
+        margin-bottom: 1rem;
+    }
+    .form-section input, .form-section select{
+        width: 33vw;
+    }
+}

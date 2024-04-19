@@ -121,12 +121,20 @@
         height: 70%;
     }
     .hero-godown{
+        margin: 1rem 0 3.5rem 15em ;
         display: flex;
-        justify-content: flex-end;
+        justify-content: end;
         order: 2;
-        gap: 1rem;
         padding: 0 2rem .2rem 0;
-        margin-bottom: 11rem;
+    }
+    .hero-btn {
+        margin-left: 120px; /* Aplica un margen izquierdo al Link */
+      }
+
+    .hero-vtn-mas-gd{
+        display: flex;
+        text-align: right;
+
     }
     .hero-godown-a{
         order: 2;
@@ -154,7 +162,10 @@
         margin: 1rem 1.2rem;
     }
 }
-@media (min-width: 70rem) {
+@media (min-width: 90rem) {
+    .hero-section{
+        margin: 0 3rem 0 3rem;
+    }
     .hero-h1{
         max-width: 45rem;
         font-size: 5em;
@@ -164,14 +175,17 @@
     }
     .hero-img{
         max-height: unset;
-        width: 40%;
-        height: 70%;
+        width: 50%;
+        height: 90%;
         margin-top: 0;
     }
     .hero-text{
         bottom: 10%;
     }
     .hero-btn.button-main{
-        margin: 0 1rem 5rem;
+        margin: 0 1rem ;
+    }
+    .hero-btn-mas-gd{
+        display: flex;
     }
 }
