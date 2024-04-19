@@ -31,11 +31,13 @@ const Footer = () => {
             </svg>
         </div>
 
-        <span>Developed by gigson © 2024 </span>
+        <span></span>
         <ul className='footer-policy'>
+            <li><span href="">Developed by gigson © 2024 </span></li> 
             <li><a href="">Legal Policy</a></li>
             <li><a href="">Cookies Policy</a></li>
-            <li><a href="">Legal Notice</a></li>    
+            <li><a href="">Legal Notice</a></li>
+                
         </ul>        
     </footer>
   )

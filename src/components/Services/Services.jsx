@@ -89,13 +89,13 @@ const Services = () => {
       </section>
       <section className='services-container'>
         {servicesData.map(({title, description, cards}, i) => 
-          <div key={i} className="services-cards">
+          <div key={i} className={`services-card services-card-${i}`}>
             <header className='services-cards-top'>
               <h2>{title}</h2>
               <p>{description}</p>
             </header>
             
-            <footer>
+            <footer className='service-footer'>
               {cards.map(({title, description}, index) =>
                 <div key={index} className='services-card-bottom'>
                   <div>

@@ -45,6 +45,57 @@
     border-radius: 1.25rem;
     border: 1px solid #7874F4;
 }
+
+.services-card-0 {
+    position: sticky;
+    top: -22rem;
+    left: 0;
+    min-height: 40rem;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background-color: #E3E1EE;
+    border-radius: 1.25rem;
+
+  }
+  
+  .services-card-1 {
+    position: sticky;
+    top: -22rem;
+    left: 0;
+    min-height: 40rem;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background-color: hsla(47,18%,94%,1);
+    background-image: 
+      radial-gradient(at 13% 90%, hsla(46,16%,94%,1) 0px, transparent 80%),
+      radial-gradient(at 10% 8%, hsla(46,17%,94%,1) 0px, transparent 50%),
+      radial-gradient(at 61% 67%, hsla(240,45%,87%,1) 0px, transparent 50%),
+      radial-gradient(at 51% 22%, hsla(45,14%,94%,0.66) 0px, transparent 50%),
+      radial-gradient(at 34% 40%, hsla(241,85%,70%,1) 0px, transparent 50%),
+      radial-gradient(at 84% 81%, hsla(240,45%,87%,1) 0px, transparent 50%);
+    background-position: center top; /* Centrar el fondo verticalmente en la parte superior */
+    background-size: cover;
+    
+
+    border-radius: 1.25rem;
+
+  }
+  
+  .services-card-2 {
+    position: sticky;
+    top: -22rem;
+    left: 0;
+    min-height: 40rem;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background-color: hsla(47, 18%, 94%, 1);
+    background-image: linear-gradient(-43deg, hsla(47, 18%, 94%, 1),rgba(115, 113, 244, 0.137));
+    
+
+    border-radius: 1.25rem;
+    border: 1px solid #7874F4;
+  }
+
 .services-cards-top{
     max-width: 90%;
     display: flex;
@@ -94,6 +145,8 @@
     font-size: 1.25em;
     max-width: 32rem;
 }
+
+
 @media (min-width: 56.25rem){
     .hero-services{
         margin: 13rem 0 9rem;
@@ -120,20 +173,22 @@
     .services-cards-top{
         max-width: 100%;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
-        gap: 0;
+        gap: 13.5rem;
         padding-bottom: 2.5rem;
     }
     .services-cards-top h2{
-        font-size: 2.5em;
+        font-size: 2.5rem;
         width: 12rem;
+        margin: 0 1.5rem;
     } 
     .services-cards-top p{
         font-size: 1.15rem;
-        max-width: 34rem;
+        max-width: 50rem;
         text-wrap: balance;
+        line-height: 1.4;
     }
+
     .services-cards{
         top: 8rem;
         min-height: 20rem;
@@ -145,9 +200,15 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
     }
+    .service-footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .services-card-bottom{
-        justify-content: space-between;
-        gap: 2rem;
+         width: calc(33.33% - 20px); /* Ancho de cada tarjeta */
+        margin: 10px;
+        padding: 20px;
+        border-top: 1px solid #3C3C3Bcc;
     }
     .services-cards-span{
         font-size: 1.25em;

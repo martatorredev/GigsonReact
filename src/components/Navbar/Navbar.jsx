@@ -36,6 +36,13 @@ const Navbar = () => {
             <span></span>
           </label>
           <ul className="menu-box">
+              <Link to='/'>
+                <img 
+                className='logo-header-hamburger' 
+                src={logoImg} 
+                alt="Logo Gigson Solutions"
+                />
+                </Link>
             {menuLinks.map(({name,link}, index) =>
               <li key={index}>
                 <Link 
