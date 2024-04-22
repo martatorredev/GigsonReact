@@ -18,5 +18,5 @@ jobs:
       
     - name: Deploy to production
       run: |
-        lftp -c "open -u ${{ vars.FTP_USERNAME_TWO }},${{ vars.FTP_PASSWORD_TWO }} sftp://${{ vars.FTP_SERVER_TWO }}; mirror --reverse --verbose --exclude .deploy.yml ./ ./; bye"
+        lftp -c "open -u ${{ vars.FTP_USERNAME_TWO }},${{ vars.FTP_PASSWORD_TWO }} sftp://${{ vars.FTP_SERVER_TWO }}; mirror --reverse --verbose --exclude .deploy.yml ./ ./; bye;"
         
