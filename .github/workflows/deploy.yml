@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Install lftp
-      run: sudo apt-get install lftp -y
+      run: apt-get install lftp -y
       
     - name: Deploy to production
       run: |
