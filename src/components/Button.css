@@ -46,4 +46,7 @@
     .hero-btn, .home-services-btn, .form-btn-send{
         font-size: 1.1em;
     }
+    .form-btn-send{
+        margin: .5rem 0 1rem;
+    }
 }

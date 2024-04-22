@@ -86,7 +86,7 @@
 }
 @media(min-width: 90rem){
     .home-services{
-        margin: 0 3rem 0 3rem;
+        margin: 0 4rem;
     }
     .home-services-h2{
         font-size: 4.5em;

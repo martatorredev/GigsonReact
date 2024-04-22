@@ -4,46 +4,49 @@ import cubeSvg from '../../assets/cubo-about.svg'
 import piraSvg from '../../assets/Piramide-about.svg'
 import circSvg from '../../assets/circulo-about.svg'
 import triaSvg from '../../assets/Trianguloycirculo.svg'
+import backSvg from '../../assets/Background-about-hero2.svg'
 
 
 const AboutHero = () => {
   return (
-    <main>
+    <>
         <section className='div-about-hero'>
             <h1 className='about-hero-h1'>Our team is built by professionals with more than <span className='about-span-hero'>9 Years</span>  of experience.  </h1>
             <p className='about-hero-p'>We have the required profiles to face the end-to-end digital product development to offer an all-in-one service.</p>
             <Button name='LET’S TALK' classStyle='about-hero-btn' />    
         </section>
-        <h2 className='about-hero-h2'>What be believe</h2>
-        <section className='div-about-belive'>
-            <article>
-                <div className='div-svg-about'>
-                    <img src={cubeSvg} alt="Cube" />
-                </div>
-                <span className='about-span'>01</span>
-                
-                <h3 className='about-h3'>Quality</h3>
-                <p className='about-believe-p'>Regardless of whether we're crafting a proof of concept or a final product, we apply various product quality and project management standards to ensure that every product meets and exceeds expectations.</p>
-            </article>
-            <article>
-                <div className='div-svg-about'>
-                    <img src={piraSvg} alt="Pira" />
-                </div>
+        <div className="about-belive-max">
+            <h2 className='about-hero-h2'>What be believe</h2>
+            <section className='div-about-belive'>
+                <article>
+                    <div className='div-svg-about'>
+                        <img src={cubeSvg} alt="Cube" />
+                    </div>
+                    <span className='about-span'>01</span>
+                    
+                    <h3 className='about-h3'>Quality</h3>
+                    <p className='about-believe-p'>Regardless of whether we're crafting a proof of concept or a final product, we apply various product quality and project management standards to ensure that every product meets and exceeds expectations.</p>
+                </article>
+                <article>
+                    <div className='div-svg-about'>
+                        <img src={piraSvg} alt="Pira" />
+                    </div>
 
-                <span className='about-span'>02</span>
-                <h3 className='about-h3'>Commitment</h3>
-                <p className='about-believe-p'>You'll have the flexibility to choose the level of engagement you prefer with us. We'll always be by your side to support you at any stage, but if you decide not to continue, we'll handle the closure and necessary handover, complying with all current legal requirements.</p>
-            </article>
-            
-            <article>
-                <div className='div-svg-about'>
-                    <img src={circSvg} alt="Circ" /> {}
-                </div>
-                <span className='about-span'>03</span>
-                <h3 className='about-h3'>Security</h3>
-                <p className='about-believe-p'>Security is essential to us. We offer the ability to audit and certify our cloud solutions with CIS, CISA, FedRAMP, PCI-DSS, GDPR, FFIEC, and SOC2.</p>
-            </article>
-        </section>
+                    <span className='about-span'>02</span>
+                    <h3 className='about-h3'>Commitment</h3>
+                    <p className='about-believe-p'>You'll have the flexibility to choose the level of engagement you prefer with us. We'll always be by your side to support you at any stage, but if you decide not to continue, we'll handle the closure and necessary handover, complying with all current legal requirements.</p>
+                </article>
+                
+                <article>
+                    <div className='div-svg-about'>
+                        <img src={circSvg} alt="Circ" /> {}
+                    </div>
+                    <span className='about-span'>03</span>
+                    <h3 className='about-h3'>Security</h3>
+                    <p className='about-believe-p'>Security is essential to us. We offer the ability to audit and certify our cloud solutions with CIS, CISA, FedRAMP, PCI-DSS, GDPR, FFIEC, and SOC2.</p>
+                </article>
+            </section>
+        </div>
         <section className='about-section-need'>
             <img className='about-background-image-DgPrd' src={triaSvg} alt="tria" /> {}
             <h2 className='about-hero-need-h2'>What do I need to build a <span className='about-span-hero'>Digital product</span>?</h2>
@@ -86,7 +89,7 @@ const AboutHero = () => {
             <p className='about-believe-p'>*Not all of these roles are necessary in all products. Wisely selection is needed depending on needs and sectors.</p>
             <Button name='CONTACT US' classStyle='about-button-contact'/>
         </section>        
-    </main>
+    </>
   )
 }
 

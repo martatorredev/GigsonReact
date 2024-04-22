@@ -35,7 +35,7 @@ const Form = () => {
                     <label htmlFor="name">My email is</label>
                     <input type="email" required placeholder='name@example.com'/>
                 </div>
-                <div className='input-container'>
+                <div className='input-container input-container-text'>
                     <label htmlFor="text">A short project description (optional):</label>
                     <input type="text" placeholder='Project details'/>
                 </div>

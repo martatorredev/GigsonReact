@@ -83,14 +83,13 @@ select:focus, select:active{
 }
 @media(min-width:56.25rem){
     .form-section{
-        margin: 4rem 4rem 5rem;
+        margin: 4rem 2.5rem;
     }
     .form-container{
         display: flex;
         flex-wrap: wrap;
-        column-gap: 3rem;
+        column-gap: 1rem;
         width: 100%;
-        
     }
     .input-container{
         margin: .7rem 0;
@@ -102,10 +101,10 @@ select:focus, select:active{
     }
     .form-section label{
         font-size: 1.3rem;
-        margin-top: .5rem
+        margin-top: .5rem;
     }
     .form-section input, .form-section select{
-        width: 31vw;
+        width: 22vw;
     }
     .form-budget button{
         padding: .15rem 1rem;
@@ -114,49 +113,74 @@ select:focus, select:active{
     .label-budget {
         padding-top: .15rem;
     }
-    .form-h2{
-        margin-bottom: 1rem;
+    .form-check{
+        padding-top: 1.5rem;
     }
-
+    .form-check > label{
+        font-size: 1.2em;
+    }
 }
-
-@media(min-width:56.25rem){
+@media(min-width:90rem){
+    .form-h2{
+        font-size: 3.43rem;
+        margin-bottom: 2rem;
+    }
     .form-section{
-        margin: 0 5rem 0 5rem;
+        margin: 4rem;
     }
     .form-container{
         display: flex;
         flex-wrap: wrap;
-        column-gap: 3rem;
+        column-gap: 2rem;
         width: 100%;
-        
     }
     .input-container{
         margin: .7rem 0;
         display: flex;
-        gap: 1rem;
+        gap: 2.2rem;
     }
     .input-container > label {
         text-wrap: nowrap;
     }
     .form-section label{
-        font-size: 1.3rem;
-        margin-top: .5rem
+        font-size: 1.88rem;
+        margin-top: .5rem;
     }
     .form-section input, .form-section select{
-        width: 31vw;
+        width: 23vw;
     }
     .form-budget button{
         padding: .15rem 1rem;
         margin: 0;
     }
+    .form-budget {
+        margin-right: 9.5rem;
+    }
     .label-budget {
         padding-top: .15rem;
     }
-    .form-h2{
-        margin-bottom: 1rem;
+    .form-check > label{
+        font-size: 1.2em;
+    }
+    .input-container-text > input{
+        width: 43vw;
+    }
+    .form-check{
+        gap: 1rem;
+    }
+}
+@media(min-width:120rem){
+    .form-section{
+        margin: 4rem auto;
     }
     .form-section input, .form-section select{
-        width: 33vw;
+        width: 29vw;
+    }
+    .form-budget button{
+        padding: .35rem 1.3rem;
+        margin: 0;
+    }
+    .input-container-text > input{
+        width: 57vw;
     }
 }

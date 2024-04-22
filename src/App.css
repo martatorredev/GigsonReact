@@ -45,10 +45,9 @@ body {
     min-height: 100vh;
     font-size: 100%;
     background-color:#F4F3EF;
-    
+    margin: 0 auto;
 }
-#root {
-  max-width: 100vw;
-  margin: 0 auto;
+.main-content{
+    max-width: 125rem;
+    margin: 0 auto;
 }
-

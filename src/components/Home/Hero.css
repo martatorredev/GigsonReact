@@ -1,7 +1,7 @@
 .hero-section{
     overflow: hidden;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 .hero-img{
     position: relative;
@@ -24,7 +24,7 @@
 }
 .hero-p{
     font-size: 0.875rem;
-    text-align: center;    
+    text-align: center;
     color: #868685;
     line-height: 1.375rem;
 }
@@ -45,7 +45,6 @@
     text-align: center;
     left: 0;
     bottom: 1rem;
-    max-width: 90rem;
     font-size: .9em;
 }
 .hero-godown{
@@ -87,7 +86,7 @@
     }
     .hero-p{
         font-size: 1.05rem;
-        text-align: center;    
+        text-align: center;
         color: #868685;
         line-height: 1.375rem;
     }
@@ -108,33 +107,24 @@
     .hero-top-content{
         height: 90%;
         justify-content: flex-start;
-        padding: 1rem;
     }
     .hero-img{
         align-self: flex-end;
         order: 2;
-        right: 0;
+        right: -6rem;
         min-height: unset;
         max-width: 35rem;
         max-height: unset;
-        width: 55%;
-        height: 70%;
+        width: 62%;
+        height: 75%;
     }
     .hero-godown{
-        margin: 1rem 0 3.5rem 15em ;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         order: 2;
-        padding: 0 2rem .2rem 0;
-    }
-    .hero-btn {
-        margin-left: 120px; /* Aplica un margen izquierdo al Link */
-      }
-
-    .hero-vtn-mas-gd{
-        display: flex;
-        text-align: right;
-
+        gap: 1rem;
+        padding: 0 2rem 2.2rem 0; 
+        bottom: 5%;
     }
     .hero-godown-a{
         order: 2;
@@ -148,44 +138,66 @@
         text-align: left;
         position: absolute;
         top: unset;
-        bottom: 10%;
+        bottom: 7%;
+        padding: 1.5rem 2.5rem 0;
     }
     .hero-h1, .hero-p{
         width: 100%;
         text-align: left;
-        margin: 1rem 1.4rem;
     }
     .hero-h1{
         max-width: 40rem;
         font-size: 4.5em;
         line-height: 4.8rem;
-        margin: 1rem 1.2rem;
     }
 }
-@media (min-width: 90rem) {
-    .hero-section{
-        margin: 0 3rem 0 3rem;
-    }
+@media (min-width: 70rem) {
     .hero-h1{
         max-width: 45rem;
         font-size: 5em;
         line-height: 5.3rem;
-        margin-bottom: 0;
-        margin-top: 1.7rem;
+    }
+    .hero-img{
+        max-width: unset;
+        width: 57%;
+        height: 67%;
+        margin-top: 0;
+        right: -5rem;
+        top: 7.4rem;
+    }
+    .hero-text{
+        bottom: 10%;
+        padding: 1.5rem 4rem 0;
+    }
+    .hero-godown{
+        padding: 0 2rem 1.3rem 0; 
+        bottom: 10%;
+    }
+}
+@media (min-width: 115rem) {
+    .hero-h1{
+        max-width: 70rem;
+        font-size: 5.6em;
+        line-height:6rem;
     }
     .hero-img{
         max-height: unset;
         width: 50%;
-        height: 90%;
+        height: 70%;
         margin-top: 0;
     }
     .hero-text{
-        bottom: 10%;
+        bottom: 13%;
     }
-    .hero-btn.button-main{
-        margin: 0 1rem ;
+    .hero-godown{
+        padding: 0 2rem 1.3rem 0; 
+        bottom: 13%;
     }
-    .hero-btn-mas-gd{
-        display: flex;
+}
+
+@media(min-width:125rem){
+    .hero-godown{
+        padding-right: 0;
+        max-width: 120rem;
     }
 }
