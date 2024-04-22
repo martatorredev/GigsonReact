@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-      FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-      PRODUCTION_SERVER_IP: ${{ secrets.FTP_SERVER }}
+      FTP_USERNAME: portiz
+      FTP_PASSWORD: A1b2C3d4E5
+      PRODUCTION_SERVER_IP: 217.160.229.108
     
     steps:
     - name: Checkout repository
