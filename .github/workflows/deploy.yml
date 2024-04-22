@@ -1,0 +1,21 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Install lftp
+      run: sudo apt-get install lftp -y
+      
+    - name: Deploy to production
+      run: |
+        lftp -c "open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} sftp://${{ secrets.FTP_SERVER_TWO }}; mirror --reverse --verbose --exclude .gitlab-ci.yml ./ ./; bye"
