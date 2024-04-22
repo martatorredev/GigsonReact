@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Install lftp
-      run: apt-get install lftp -y
+      run: sudo apt-get install lftp -y
       
     - name: Deploy to production
       run: lftp -c "set ftp:ssl-allow no;open $FTP_SERVER; user $FTP_USERNAME $FTP_PASSWORD; mirror --ignore-time --parallel=10 --reverse --delete --verbose --exclude .deploy.yml ./ ./; bye"
