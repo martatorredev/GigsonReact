@@ -7,7 +7,12 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted  # Este flujo de trabajo se ejecutará en un runner autoservido
+    
+    env:
+      FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+      FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      PRODUCTION_SERVER_IP: ${{ secrets.FTP_SERVER }}
     
     steps:
     - name: Checkout repository
@@ -18,5 +23,4 @@ jobs:
       
     - name: Deploy to production
       run: |
-        lftp -c "open -u ${{ vars.FTP_USERNAME }},${{ vars.FTP_PASSWORD }} sftp://${{ vars.FTP_SERVER }}; mirror --reverse --verbose --exclude .deploy.yml ./ ./; bye;"
-        
+        lftp -c "set ftp:ssl-allow no;open -u $FTP_USERNAME,$FTP_PASSWORD sftp://$PRODUCTION_SERVER_IP; mirror --reverse --delete --verbose --exclude .deploy.yml ./ ./; bye"
