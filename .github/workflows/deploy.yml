@@ -22,5 +22,4 @@ jobs:
       run: apt-get install lftp -y
       
     - name: Deploy to production
-      run: |
-        lftp -c "set ftp:ssl-allow no;open -u $FTP_USERNAME,$FTP_PASSWORD sftp://$PRODUCTION_SERVER_IP; mirror --reverse --delete --verbose --exclude .deploy.yml ./ ./; bye"
+      run: lftp -c "set ftp:ssl-allow no;open $FTP_SERVER; user $FTP_USERNAME $FTP_PASSWORD; mirror --ignore-time --parallel=10 --reverse --delete --verbose --exclude .deploy.yml ./ ./; bye"
