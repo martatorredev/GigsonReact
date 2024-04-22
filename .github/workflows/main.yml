@@ -1,0 +1,11 @@
+image: ubuntu:18.04
+
+before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
+
+build:
+  script:
+    - lftp -c "set ftp:ssl-allow no; open $FTP_SERVER; user $FTP_USERNAME $FTP_PASSWORD; mirror --ignore-time --parallel=10 --exclude vendor/ --exclude .git/ --exclude .gitignore --exclude lista-cse.xml  --exclude sitemap.xml  --exclude sitemap-carteles.xml  --exclude sitemap-ciudades.xml  --exclude sitemap-corridas.xml  --exclude sitemap-es.xml  --exclude sitemap-ganaderias.xml  --exclude sitemap-index.xml  --exclude sitemap-noticias.xml  --exclude sitemap-plazas.xml  --exclude sitemap-toreros.xml  --exclude /eng/lista-cse.xml  --exclude /eng/sitemap.xml  --exclude /eng/sitemap-carteles.xml  --exclude /eng/sitemap-ciudades.xml  --exclude /eng/sitemap-corridas.xml  --exclude /eng/sitemap-es.xml  --exclude /eng/sitemap-ganaderias.xml  --exclude /eng/sitemap-index.xml  --exclude /eng/sitemap-noticias.xml  --exclude /eng/sitemap-plazas.xml  --exclude /eng/sitemap-toreros.xml --exclude .gitlab-ci.yml --reverse --verbose ./ ./public_html; bye"
+  only:
+    - main
