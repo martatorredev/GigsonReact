@@ -22,4 +22,4 @@ jobs:
       run: sudo apt-get install lftp -y
       
     - name: Deploy to production
-      run: lftp -u $FTP_USERNAME,$FTP_PASSWORD sftp://$FTP_SERVER -e "mirror --ignore-time --parallel=10 --exclude vendor/ --exclude .git/ --exclude .gitignore --exclude .gitlab-ci.yml --reverse --verbose /home/vsantana/ ./; bye"
+      run: lftp -u vsantana,A1b2C3d4E5 sftp://217.160.229.108 -e "mirror --ignore-time --parallel=10 --exclude vendor/ --exclude .git/ --exclude .gitignore --exclude .gitlab-ci.yml --reverse --verbose /home/vsantana/ ./; bye"
