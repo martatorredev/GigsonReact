@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      FTP_USERNAME: portiz
+      FTP_USERNAME: vsantana
       FTP_PASSWORD: A1b2C3d4E5
       PRODUCTION_SERVER_IP: 217.160.229.108
     
