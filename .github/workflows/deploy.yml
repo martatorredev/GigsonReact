@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-        FTP_SERVER: ${{ secrets.FTP_SERVER }}
-        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        FTP_SERVER: 217.160.229.108
+        FTP_USERNAME: vsantana
+        FTP_PASSWORD: A1b2C3d4E5
     
     steps:
     - name: Checkout repository
