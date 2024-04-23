@@ -6,8 +6,9 @@ on:
       - main
 
 jobs:
-  deploy:
+  deployment:
     runs-on: ubuntu-latest
+    environment: production
     
     env:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
