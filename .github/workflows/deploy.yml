@@ -20,14 +20,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Install Node.js dependencies
-      run: npm install
+    #- name: Install Node.js dependencies
+    #  run: npm install
 
-    - name: Build the application
-      run: npm run build
+    #- name: Build the application
+    #  run: npm run build
 
     - name: Install lftp
       run: sudo apt-get install lftp -y
 
     - name: Deploy to production
-      run: lftp -c "open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER; set ftp:ssl-force true; set ssl:verify-certificate no; mirror --ignore-time --parallel=10 --exclude vendor/ --exclude .git/ --exclude .gitflow/ --exclude .gitignore --exclude deploy.yml --reverse --verbose ./ $FTP_FOLDER; bye"
+      run: lftp -c "open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER; set ftp:ssl-force true; set ssl:verify-certificate no; mirror --ignore-time --parallel=10 --exclude vendor/ --exclude .git/ --exclude .github/ --exclude .gitignore --exclude deploy.yml --reverse --verbose ./ $FTP_FOLDER; bye"
