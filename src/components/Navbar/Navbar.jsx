@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import logoImg from '../../assets/Gigson-logo.svg';
-import { Link } from 'react-router-dom';
+import logoImg from '../../assets/Logo.svg';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -9,17 +9,16 @@ const Navbar = () => {
   const menuLinks = [
     {name: 'ABOUT ',  link:'about'},
     {name: 'SERVICES',  link:'services'},
-    {name: 'CASES',     link:''},
-    {name: 'FAQs',      link:''},
-    {name: 'CONTACT US',   link:''},
-    {name: 'EN / ES',   link:''}
+    {name: 'CASES',     link:'cases'},
+    {name: 'FAQs',      link:'faqs'},
+    {name: 'CONTACT US',   link:'contact'},
+    {name: 'EN / ES',   link:'/error'}
   ]
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
   
-
   return (
     <header className='header'>
       <div className='div-header'>
@@ -36,20 +35,22 @@ const Navbar = () => {
             <span></span>
           </label>
           <ul className="menu-box">
-              <Link to='/'>
-                <img 
+            <Link to='/' onClick={closeMobileMenu}>
+              <img 
                 className='logo-header-hamburger' 
                 src={logoImg} 
                 alt="Logo Gigson Solutions"
-                />
-                </Link>
-            {menuLinks.map(({name,link}, index) =>
+              />
+            </Link>
+            {menuLinks.map(({name,link}, index) =>  
               <li key={index}>
-                <Link 
+                <NavLink 
                   className="menu-item" 
                   to={link} 
                   onClick={closeMobileMenu}
-                >{name}</Link>
+                >
+                  {name}
+                </NavLink>
               </li>
             )}            
           </ul>

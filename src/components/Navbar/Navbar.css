@@ -2,8 +2,8 @@
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #F4F3EF;
-    z-index: 2;
+    background-color: #f4f3efcb;
+    z-index: 5;
 }
 .div-header{
     margin: 0 1rem;
@@ -11,21 +11,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: .0813rem solid #3c3c3bcc;
+    border-bottom: .0813rem solid #3c3c3bf2;
 }
 .logo-header-hamburger{
     margin: 0 0 1rem;
     padding: 1rem 0;
-    border-bottom: .0813rem solid #3c3c3bcc;    
+    border-bottom: .0813rem solid #3c3c3bcc;  
+    width: 12rem;
 }
-
 .nav-links{
     display: flex;
     gap: 1rem;
     color:#3c3c3bcc;  
 }
 .logo-header{
-    width: 11.7733rem;
+    width: 9rem;
 }
 #menuToggle {
     display: none;
@@ -92,7 +92,7 @@
     color: #333;
     transition: .3s linear;
 }
-.menu-item:hover {
+.menu-item:hover, .menu-item.active {
     color: #7874f4;
 }
 @media (min-width: 24.375rem) {
@@ -106,7 +106,6 @@
 }
 @media(min-width:40rem){
     .div-header{
-        margin: 0 2rem;
         padding: 1.5rem 0 .8rem;
     }
 }
@@ -118,6 +117,9 @@
     .div-header{
         margin: 0 2.5rem;
         padding-bottom: 1rem;
+    }
+    .logo-header{
+        width: 10rem;
     }
     .menu-btn{        
         display: none;
@@ -164,7 +166,7 @@
         gap: 4.5rem;
     }
 }
-@media(min-width:125rem){
+@media(min-width:121rem){
     .div-header{
         max-width: 115rem;
         margin: 0 auto;

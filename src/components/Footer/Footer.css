@@ -17,13 +17,13 @@
     margin: 3rem .5rem 1rem 0;
     border-bottom: 1px solid #3c3c3bcc;
 }
-.mobile-icon {
+.footer-icon {
     width: 2.125rem;
     padding-bottom: 1rem;
+    color: #3C3C3B;
 }
 .logo-footer{
     width: 7.875rem;
-    filter: brightness(0);
     padding-bottom: 1rem;
 }
 .footer-policy{
@@ -34,7 +34,6 @@
     display: flex;
     gap: 1.5rem;
 }
-
 @media(min-width:56.25rem){
     .footer{
         padding: .7rem 2rem;
@@ -60,7 +59,6 @@
     }
     .logo-footer{        
         width: 15%;
-        opacity: 80%;
     }
     .footer-policy{
         display: flex;
@@ -78,7 +76,6 @@
         overflow-x: hidden;
     }
 }
-
 @media (min-width: 90rem) {
     .footer{
         padding: .7rem 4rem;
@@ -86,14 +83,23 @@
     .footer-nav-links{
         gap: 6.6rem;
     }
+    .footer-icon {
+        width: 3.55rem;
+        padding-bottom: 0;
+    }
+    .footer-policy-links{
+        gap: 5rem;
+    }
 }
-
-@media (min-width: 125rem) {
+@media (min-width: 121rem) {
     .footer{
         padding: .7rem 0;
     }
     .footer-maxwidth{
         margin: 0 auto;
         max-width: 115rem;
+    }
+    .footer-policy-links{
+        gap: 6rem;
     }
 }

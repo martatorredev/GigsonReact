@@ -45,9 +45,19 @@ body {
     min-height: 100vh;
     font-size: 100%;
     background-color:#F4F3EF;
-    margin: 0 auto;
 }
-.main-content{
-    max-width: 125rem;
-    margin: 0 auto;
+.content-in-progress{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin: 50vh auto;
+}
+@media (min-width: 121rem) {
+    .home-content{
+        max-width: 115rem;
+        margin: 0 auto;
+    }
+    .hero-text{
+        padding-left: 0;
+    }
 }

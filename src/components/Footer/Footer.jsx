@@ -1,15 +1,15 @@
-import logoImg from '../../assets/Gigson-logo.svg'
+import logoFooter from '../../assets/LogoFooter.svg'
 import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer = () => {
     const menuLinks = [
         {name: 'ABOUT ',  link:'about'},
-        {name: 'SERVICES',  link:''},
-        {name: 'CASES',     link:''},
-        {name: 'FAQs',      link:'services'},
-        {name: 'CONTACT US',   link:''},
-        {name: 'EN / ES',   link:''}
+        {name: 'SERVICES',  link:'services'},
+        {name: 'CASES',     link:'cases'},
+        {name: 'FAQs',      link:'faqs'},
+        {name: 'CONTACT US',   link:'contact'},
+        {name: 'EN / ES',   link:'error'}
     ]
 
   return (
@@ -25,9 +25,9 @@ const Footer = () => {
                 </ul>            
             </nav>
             <div className='footer-mid'>
-                <img className='logo-footer' src={logoImg}/>
+                <img className='logo-footer' src={logoFooter}/>
 
-                <svg className='mobile-icon' viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                <svg className='footer-icon' viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
                     <path d="M30.6493 29.6887L26.9042 10.2882L3.0549 34L0 30.7662L23.8493 7.05488L4.43488 3.42941L7.68698 0L29.8609 4.01718L34 26.2593L30.6493 29.6887Z"/>
                 </svg>
             </div>

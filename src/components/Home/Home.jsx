@@ -5,11 +5,11 @@ import Form from '../Form'
 
 const Home = () => {
   return (
-    <>
+    <div className='home-content'>
         <Hero/>
         <HomeServices/>
         <Form/>
-    </>
+    </div>
   )
 }
 
