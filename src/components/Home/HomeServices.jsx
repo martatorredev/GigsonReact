@@ -7,15 +7,9 @@ function HomeServices() {
     <section className='home-services' id='homeServices'>
         <div className="home-services-bg"></div>
         <div className="home-text-container">
-          <div className="services-h2">
-            <h2 className='home-services-h2'>Tailored <span>solutions</span> for any business ·</h2>
-          </div>
-          <div className="services-h2">
-            <h2 className='home-services-h2'>Tailored <span>solutions</span> for any business ·</h2>
-          </div>
-          <div className="services-h2">
-            <h2 className='home-services-h2'>Tailored <span>solutions</span> for any business ·</h2>
-          </div>
+  <h2 className='home-services-h2'>Tailored <span>solutions</span> for any business ·</h2>
+  <h2 className='home-services-h2'>Tailored <span>solutions</span> for any business ·</h2>
+  
         </div>
         <div className="home-services-info">
           <img className='home-services-img' src={homeServicesImg} />
