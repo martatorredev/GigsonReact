@@ -19,7 +19,7 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_SERVER: ${{ secrets.SSH_SERVER }}
           #SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/webgigson.martatorreprojects.com/
-          SSH_FOLDER: test
+          SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/test/
         run: |
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
