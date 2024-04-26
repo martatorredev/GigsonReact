@@ -25,6 +25,12 @@
     border-radius: 2rem;
     cursor: pointer;
 }
+
+.form-btn-budget:hover{
+    transition: .2s linear;
+    background-color: #E3E1EE;
+    color: #7874F4;
+}
 .form-btn-send{
     margin: 1rem 0 1rem;
 }

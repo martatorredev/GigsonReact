@@ -187,7 +187,7 @@ input[type="radio"]:checked + label {
         font-size: 1.2em;
     }
     .input-container-text > input{
-        width: 43vw;
+        width: 44.5vw;
     }
     .input-container input[type="email"]{
         width: 25rem;
@@ -211,6 +211,9 @@ input[type="radio"]:checked + label {
     .input-container input[type="email"]{
         width: 25rem;
         margin-right: 30vw;
+    }
+    .input-container-text > input{
+        width: 49vw;
     }
 }
 @media(min-width: 121rem){

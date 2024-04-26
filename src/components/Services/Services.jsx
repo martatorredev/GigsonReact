@@ -1,6 +1,7 @@
-import './Services.css'
-import heroImg from '../../assets/HeroServices.png'
-import Button from '../Button'
+import React, { useEffect } from 'react';
+import './Services.css';
+import heroImg from '../../assets/HeroServices.png';
+import Button from '../Button';
 
 const Services = () => {
   const servicesData = [
@@ -14,7 +15,7 @@ const Services = () => {
         },
         {
           title: 'Containers & Orchestration',
-          description: 'Docker, K8s, WPAR & others.'
+          description: 'Docker, K8s, WPAR & others.                                  '
         },
         {
           title: 'CI/CD',
@@ -31,6 +32,24 @@ const Services = () => {
         {
           title: 'Monitoring',
           description: 'Prometheus, Datalog, Grafana,Azure monitor, Amazon CloudWatch, Zabbix & others.'
+        },
+      ]
+    },
+    {
+      title: 'Cybersecurity services',
+      description: 'Information Security is not longer in the roadmap. Cybersecurity is a MUST in every business and all companies should have the knowledge, tools and processes to avoid or minimize attacks.',
+      cards: [
+        {
+          title: 'Security Assessment',
+          description: 'Vulnerabilities analysis, Remediation report, Application Security Assessments'
+        },
+        {
+          title: 'Training',
+          description: 'Phising and information security training'
+        },
+        {
+          title: 'Security Transformations',
+          description: 'As Is/To Be assessments, IT transformation'
         },
       ]
     },
@@ -60,29 +79,43 @@ const Services = () => {
         },
       ]
     },
-    {
-      title: 'Cibersecurity services',
-      description: 'Information Security is not longer in the roadmap. Cybersecurity is a MUST in every business and all companies should have the knowledge, tools and processes to avoid or minimize attacks.',
-      cards: [
-        {
-          title: 'Security Assessment',
-          description: 'Vulnerabilities analysis, Remediation report, Application Security Assessments'
-        },
-        {
-          title: 'Training',
-          description: 'Phising and information security training'
-        },
-        {
-          title: 'Security Transformations',
-          description: 'As Is/To Be assessments, IT transformation'
-        },
-      ]
-    },
-  ]
+  ];
+
+  useEffect(() => {
+    // Define la longitud máxima deseada para las descripciones
+    const maxLength = 80;
+
+    // Ajusta la longitud de todas las descripciones
+    const allDescriptions = servicesData.flatMap(data => [
+      data.description,
+      ...data.cards.map(card => card.description)
+    ]);
+
+    const descriptionsWithSpaces = allDescriptions.map(description => {
+      const length = description.length;
+      if (length < maxLength) {
+        const spacesToAdd = maxLength - length;
+        return description + ' '.repeat(spacesToAdd);
+      } else if (length > maxLength) {
+        return description.slice(0, maxLength);
+      } else {
+        return description;
+      }
+    });
+
+    // Actualiza las descripciones en el estado
+    let dataIndex = 0;
+    servicesData.forEach(data => {
+      data.description = descriptionsWithSpaces[dataIndex++];
+      data.cards.forEach(card => {
+        card.description = descriptionsWithSpaces[dataIndex++];
+      });
+    });
+  }, []);
 
   return (
     <div className='services'>
-        <img src={heroImg} alt="" className='hero-services-img'/>
+      <img src={heroImg} alt="" className='hero-services-img'/>
       <section className='hero-services'>
         <p className='hero-services-p'>building tailored software solutions</p>
         <h1 className='hero-services-h1'>Discover all <span>our services</span></h1>
@@ -102,7 +135,7 @@ const Services = () => {
                     <span className='services-cards-span'>0{index + 1}</span>
                     <h3 className='services-cards-h3'>{title}</h3>
                   </div>
-                    <p className='services-cards-p'>{description}</p>
+                  <p className='services-cards-p'>{description}</p>
                 </div>
               )}
             </footer>
@@ -118,7 +151,7 @@ const Services = () => {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default Services
+export default Services;

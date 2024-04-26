@@ -9,7 +9,6 @@ const Footer = () => {
         {name: 'CASES',     link:'cases'},
         {name: 'FAQs',      link:'faqs'},
         {name: 'CONTACT US',   link:'contact'},
-        {name: 'EN / ES',   link:'error'}
     ]
 
   return (
@@ -18,10 +17,15 @@ const Footer = () => {
             <nav className="footer-nav-container">
                 <ul className="footer-nav-links">
                     {menuLinks.map(({name, link}, index) => 
-                        <li className={index === 5 ? 'language-link' : ''} key={index}>
+                        
+                        <li key={index} >
                             <Link to={link}>{name}</Link>
                         </li>
+
                     )}
+                        <li>
+                            <Link className='language-link' to='error'>EN / <span className='spam-lng'>ES</span></Link>
+                        </li>
                 </ul>            
             </nav>
             <div className='footer-mid'>

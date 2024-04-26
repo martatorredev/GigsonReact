@@ -12,7 +12,6 @@ const Navbar = () => {
     {name: 'CASES',     link:'cases'},
     {name: 'FAQs',      link:'faqs'},
     {name: 'CONTACT US',   link:'contact'},
-    {name: 'EN / ES',   link:'/error'}
   ]
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -42,17 +41,20 @@ const Navbar = () => {
                 alt="Logo Gigson Solutions"
               />
             </Link>
-            {menuLinks.map(({name,link}, index) =>  
-              <li key={index}>
-                <NavLink 
-                  className="menu-item" 
-                  to={link} 
-                  onClick={closeMobileMenu}
-                >
-                  {name}
-                </NavLink>
-              </li>
+            {menuLinks.map(({name,link}, index) => 
+
+                  <li key={index}>
+                      <NavLink 
+                        className="menu-item" 
+                        to={link} 
+                        onClick={closeMobileMenu}
+                      >{name}</NavLink>
+                  </li>
+
             )}            
+                  <li>
+                      <Link className="menu-item"  to='error' onClick={closeMobileMenu}>EN / <span className='spam-lng'>ES</span></Link>
+                  </li>
           </ul>
         </nav>
       </div>
