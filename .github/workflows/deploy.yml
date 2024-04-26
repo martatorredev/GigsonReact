@@ -6,28 +6,25 @@ on:
       - main
 
 jobs:
-  deployment:
+  deploy:
     runs-on: ubuntu-latest
-    environment: production
-    
-    env:
-        FTP_SERVER: ${{ secrets.FTP_SERVER }}
-        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        FTP_FOLDER: ${{ secrets.FTP_FOLDER }}
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    #- name: Install Node.js dependencies
-    #  run: npm install
+      - name: Configure SSH and deploy
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_SERVER: ${{ secrets.SSH_SERVER }}
+          #SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/webgigson.martatorreprojects.com/
+          SSH_FOLDER: test
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
 
-    #- name: Build the application
-    #  run: npm run build
+          rsync -avz --exclude='dist/' -e "ssh -o StrictHostKeyChecking=no -p 2220" ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
 
-    - name: Install lftp
-      run: sudo apt-get install lftp -y
-
-    - name: Deploy to production
-      run: lftp -c "open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER; set ftp:ssl-force true; set ssl:verify-certificate no; mirror --ignore-time --parallel=10 --exclude vendor/ --exclude .git/ --exclude .github/ --exclude .gitignore --exclude deploy.yml --reverse --verbose ./ $FTP_FOLDER; bye"
+          ssh $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && npm install && npm run build"
