@@ -15,9 +15,10 @@ jobs:
 
       - name: Configure SSH and deploy
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_USER: ${{ secrets.SSH_USER }}
-          SSH_SERVER: ${{ secrets.SSH_SERVER }}
+          #SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCyCCaaaLSlF9lLps0NBN5NQukzvDYT1tNcAgER2pnE26q1eo4BHQKujqhpl56PsXQ3qMHmm1gu+df8KCe+qvyEbkb+v67mx8OV7IkcXTbNzRl8ct58cqmJmrWatT4zS16utUF58VwSBqYfAjqv8MqnhqVCd3EnA7fPBMIEoAVSxf6faGwDhHur0O8sYxUr0RwlJxJxrsNsdj+tK9FQM1lbbD7NFlhUpREpa7o0YjIMGgnwm6ZhB03/6yyDzLvDh5qvZBKUkxJ8Gajq7BO1XOaWlqcLlbCxGBLodUagWYLybCz4YVofQlOAHJGgbGcaKqr2d7DjWnrHBHj9QSyT03hAwbPvjGQQexrd+A+ptOOEjk6hu0TbAlmu4BNoRn9M72SbaLeT2waM4VeazMD4l7ucO45VmtykocU7Bo1OBT7DUIWnYglWT/OqSaNuz96kl7CPntTty1YckRuxjF5Tx3gXb+85yMijvRXW/ve4Laos1q3DFbim/u8nk6+ro/QkKaurqag6J/jWhOWJ6YZBH5LEZu+OEDxwmFELQ71ziPEzgs1ze+ruoTuRfhxpzmbjYPrNmIj/EQMSMPLosztpfyronXV9taIrESRigQcR42PPr4ZZ8h58Kle1LAaKqEcH/tgE65EcKt2xIspQkpM6WbR46pSRS1/3yFm+Pe/0c2Xn4w==
+          SSH_USER: martatorreprojects.co_fwg0rscgqj
+          SSH_SERVER: 185.136.91.198
           #SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/webgigson.martatorreprojects.com/
           SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/test/
         run: |
