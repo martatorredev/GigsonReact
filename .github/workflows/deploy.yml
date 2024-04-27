@@ -4,30 +4,27 @@ on:
   push:
     branches:
       - main
-
+  workflow_dispatch:
+  #deployment:
 jobs:
-  deployment:
+  deploy:
     runs-on: ubuntu-latest
     environment: Production
-
+        
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Check if SSH_PRIVATE_KEY is masked
-        run: echo "$SSH_PRIVATE_KEY"
-
-      - name: Configure SSH and deploy
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_USER: martatorreprojects.co_fwg0rscgqj
-          SSH_SERVER: 185.136.91.198
-          SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/test/
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-
-          rsync -avz --exclude='dist/' -e "ssh -o StrictHostKeyChecking=no -p 2220" ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
-
-          ssh $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && npm install && npm run build"
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Rsync Deployer
+        uses: imajeetyadav/rsync-deployer@1.0.0
+        with:
+            HOST: 185.136.91.198
+            USERNAME: martatorreprojects.co_fwg0rscgqj
+            KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+            SOURCE_PATH: "."
+            TARGET_PATH: "/var/www/vhosts/martatorreprojects.com/test/"
+            PORT: 2220
+            RSYNC_PARAMETERS: ""
+            DELETE_OPTION: "false"
+            EXCLUDE_LIST: ".git, .github, "
+            DRY_RUN: "false"
