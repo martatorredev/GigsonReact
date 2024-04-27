@@ -15,7 +15,7 @@ jobs:
 
       - name: Configure SSH and deploy
         env:
-          #SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           #SSH_PRIVATE_KEY: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5/tO20kLe+e2BeqPy7CoeQgtZ785It0H0ZJYETnHnjMsPbiTahgILeeyd91TTy5I7WtwVghnj+tnpkU0XvI1yBnMpAcc1y1dyRJgo9905jEpm5gGKZxCjmDI11l/RgDKAmHKjspBThNLn2C8FCLySQBC1nRTKcnyPH2LJxaGUKqIK3ZiLUDNOSLvhAK1l7CdC1VvImMBiBIkOTk6uBxnxHOD0BkfpvFbvXLtlpMYjCJ/LNOg+cePxtvRh9JTZcGCztb0i9V6UM7VaIExYeMZQA7A5ttIBZgelq1zJvWENl57maI0EXSG/NOvpg/zML1KX7vHlYfSpMNYowb3KeGU5 victor@victorLinuxPc
           SSH_USER: martatorreprojects.co_fwg0rscgqj
           SSH_SERVER: 185.136.91.198
