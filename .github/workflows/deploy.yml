@@ -19,13 +19,15 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_USER: martatorreprojects.co_fwg0rscgqj
           SSH_SERVER: 185.136.91.198
-          #SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/webgigson.martatorreprojects.com/
           SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/test/
         run: |
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-
-          rsync -avz --exclude='dist/' -e "ssh -o StrictHostKeyChecking=no -p 2220" ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
-
+          
+          # Excluyendo archivos y carpetas específicas durante la sincronización con rsync
+          rsync -avz --exclude='.gitignore' --exclude='deploy.yml' --exclude='.git/' --exclude='.github/' --exclude='dist/' \
+            --timeout=600 -e "ssh -o StrictHostKeyChecking=no -p 2220 -o ConnectTimeout=300" \
+            ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
+          
           ssh $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && npm install && npm run build"
