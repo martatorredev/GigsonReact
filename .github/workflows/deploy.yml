@@ -1,5 +1,4 @@
 name: Deploy
-
 on:
   push:
     branches:
@@ -17,16 +16,27 @@ jobs:
       - name: Configure SSH and deploy
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          #SSH_PRIVATE_KEY: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5/tO20kLe+e2BeqPy7CoeQgtZ785It0H0ZJYETnHnjMsPbiTahgILeeyd91TTy5I7WtwVghnj+tnpkU0XvI1yBnMpAcc1y1dyRJgo9905jEpm5gGKZxCjmDI11l/RgDKAmHKjspBThNLn2C8FCLySQBC1nRTKcnyPH2LJxaGUKqIK3ZiLUDNOSLvhAK1l7CdC1VvImMBiBIkOTk6uBxnxHOD0BkfpvFbvXLtlpMYjCJ/LNOg+cePxtvRh9JTZcGCztb0i9V6UM7VaIExYeMZQA7A5ttIBZgelq1zJvWENl57maI0EXSG/NOvpg/zML1KX7vHlYfSpMNYowb3KeGU5 victor@victorLinuxPc
           SSH_USER: martatorreprojects.co_fwg0rscgqj
           SSH_SERVER: 185.136.91.198
-          #SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/webgigson.martatorreprojects.com/
           SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/test/
         run: |
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
 
-          rsync -avz --exclude='dist/' -e "ssh -o StrictHostKeyChecking=no -p 2220" ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
+          # Verificar si el archivo id_rsa se creó correctamente
+          ls -al ~/.ssh
 
-          ssh $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && npm install && npm run build"
+          # Verificar el contenido del archivo id_rsa (opcional)
+          cat ~/.ssh/id_rsa
+
+          # Verificar si el contenido de la clave es el esperado (opcional)
+          echo "$SSH_PRIVATE_KEY"
+
+          # Intentar conectar al servidor remoto utilizando la clave SSH
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p 2220 $SSH_USER@$SSH_SERVER "echo Conexión exitosa"
+
+          # Si la conexión fue exitosa, proceder con el despliegue
+          rsync -avz --exclude='dist/' -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p 2220" ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
+
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -p 2220 $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && npm install && npm run build"
