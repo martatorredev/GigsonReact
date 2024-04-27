@@ -6,19 +6,13 @@ on:
       - main
 
 jobs:
-  deploy:
+  deployment:
     runs-on: ubuntu-latest
-
-    environment:
-      name: Production
-      url: https://webgigson.martatorreprojects.com
+    environment: production
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Print SSH_PRIVATE_KEY
-        run: echo ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Configure SSH and deploy
         env:
