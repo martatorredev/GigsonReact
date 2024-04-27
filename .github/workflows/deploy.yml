@@ -33,5 +33,6 @@ jobs:
             --timeout=600 -e "ssh -o StrictHostKeyChecking=no -p 2220 -o ConnectTimeout=300 -o ServerAliveInterval=90" \
             ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
           
-      - name: Run remote commands after npm install
+          
+      - name: Run remote commands after SSH deploy
         run: ssh -p 2220 $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && ls rsync_finished.txt && npm run build"
