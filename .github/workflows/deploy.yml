@@ -1,4 +1,4 @@
-name: Deploy to Production
+name: Deploy
 
 on:
   push:
@@ -8,6 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    environment:
+      name: Production
+      url: https://webgigson.martatorreprojects.com
 
     steps:
       - name: Checkout code
