@@ -28,15 +28,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Create marker file
-        run: touch rsync_finished.txt
-
       - name: Configure SSH and deploy
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_USER: martatorreprojects.co_fwg0rscgqj
-          SSH_SERVER: 185.136.91.198
-          SSH_FOLDER: /var/www/vhosts/martatorreprojects.com/test/
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_SERVER: ${{ secrets.SSH_SERVER }}
+          SSH_FOLDER: ${{ secrets.SSH_FOLDER }}
         run: |
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
