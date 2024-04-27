@@ -34,4 +34,4 @@ jobs:
             ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
           
           # Verificar la presencia del indicador en el servidor remoto
-          ssh $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && ls rsync_finished.txt && npm install && npm run build"
+          ssh -p 2220 $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && ls rsync_finished.txt && npm install && npm run build"
