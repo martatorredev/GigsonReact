@@ -14,6 +14,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Create marker file
+        run: touch rsync_finished.txt
+
       - name: Configure SSH and deploy
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -27,7 +30,8 @@ jobs:
           
           # Excluyendo archivos y carpetas específicas durante la sincronización con rsync
           rsync -avz --exclude='.gitignore' --exclude='deploy.yml' --exclude='.git/' --exclude='.github/' --exclude='dist/' \
-            -e "ssh -o StrictHostKeyChecking=no -p 2220" \
+            --timeout=600 -e "ssh -o StrictHostKeyChecking=no -p 2220 -o ConnectTimeout=300 -o ServerAliveInterval=90" \
             ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
           
-          ssh $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && npm install && npm run build"
+          # Verificar la presencia del indicador en el servidor remoto
+          ssh $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && ls rsync_finished.txt && npm install && npm run build"
