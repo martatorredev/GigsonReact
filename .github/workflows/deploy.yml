@@ -24,7 +24,7 @@ jobs:
             SOURCE_PATH: "."
             TARGET_PATH: "/var/www/vhosts/martatorreprojects.com/test/"
             PORT: 2220
-            RSYNC_PARAMETERS: ""
+            RSYNC_PARAMETERS: "rvpz"
             DELETE_OPTION: "false"
             EXCLUDE_LIST: ".git, .github, "
             DRY_RUN: "false"
