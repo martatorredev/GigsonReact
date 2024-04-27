@@ -14,7 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Configure SSH and deploy
+      - name: Configure SSH deploy and npm build
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_USER: martatorreprojects.co_fwg0rscgqj
@@ -29,7 +29,5 @@ jobs:
           rsync -avz --exclude='.gitignore' --exclude='deploy.yml' --exclude='.git/' --exclude='.github/' --exclude='dist/' \
             --timeout=600 -e "ssh -o StrictHostKeyChecking=no -p 2220 -o ConnectTimeout=300 -o ServerAliveInterval=90" \
             ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
-          
-          
-      - name: Run remote commands after SSH deploy
-        run: ssh -p 2220 $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && npm run build"
+            
+          ssh -p 2220 $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && npm run build"
