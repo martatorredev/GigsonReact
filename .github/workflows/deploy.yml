@@ -33,5 +33,8 @@ jobs:
             --timeout=600 -e "ssh -o StrictHostKeyChecking=no -p 2220 -o ConnectTimeout=300 -o ServerAliveInterval=90" \
             ./ $SSH_USER@$SSH_SERVER:$SSH_FOLDER
           
-          # Verificar la presencia del indicador en el servidor remoto
-          ssh -p 2220 $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && ls rsync_finished.txt && npm install && npm run build"
+          # Ejecutar npm install en el servidor remoto
+          ssh -p 2220 $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && npm install"
+          
+      - name: Run remote commands after npm install
+        run: ssh -p 2220 $SSH_USER@$SSH_SERVER "cd $SSH_FOLDER && ls rsync_finished.txt && npm run build"
