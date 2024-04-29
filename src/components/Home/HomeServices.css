@@ -7,7 +7,7 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: -2rem;
     z-index: -1;
     background: url('../../assets/homeServicesBg.svg') no-repeat;
     background-position: 0 100%;
@@ -51,7 +51,7 @@
     }
   }
 .home-services-h2 span{
-    color: #7874f4;
+    color: #B6B4F6;
 }
 .home-services-p{
     font-size: 1.25em;

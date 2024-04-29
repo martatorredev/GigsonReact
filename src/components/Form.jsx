@@ -1,5 +1,6 @@
 import './Form.css'
 import Button from './Button.jsx'
+import { Link } from 'react-router-dom'
 
 
 const Form = () => {
@@ -78,7 +79,7 @@ const Form = () => {
                 </div>
                 <div className='input-container form-check'>
                     <input type="checkbox" required className='input-radio'/>
-                    <label htmlFor="checkbox">I have read the legal desclaimer and agree to the processing of my personal data.</label>
+                    <label htmlFor="checkbox">I have read the <Link className='legal-policity-form' to="politics">legal desclaimer</Link> and agree to the processing of my personal data.</label>
                 </div>
                 <input type="hidden" name="_captcha" value="false"></input>
                 <input type="hidden" name="_template" value="box"></input>
