@@ -1,9 +1,9 @@
-import Button from '../Button'
 import './AboutHero.css'
 import cubeSvg from '../../assets/cubo-about.svg'
 import piraSvg from '../../assets/Piramide-about.svg'
 import circSvg from '../../assets/circulo-about.svg'
 import triaSvg from '../../assets/Trianguloycirculo.svg'
+import {Link} from 'react-router-dom'
 
 
 const AboutHero = () => {
@@ -13,7 +13,7 @@ const AboutHero = () => {
             <div className="about-bg"></div>
             <h1 className='about-hero-h1'>Our team is built by professionals with more than <span className='about-span-hero'>9 years</span> of experience.</h1>
             <p className='about-hero-p'>We have the required profiles to face the end-to-end digital product development to offer an all-in-one service.</p>
-            <Button name='LET’S TALK' classStyle='about-hero-btn' />    
+            <Link to='/contact' className='about-hero-btn button-main'>LET'S TALK</Link>    
         </section>
         <div className="about-belive-max">
             <h2 className='about-hero-h2'>What be believe</h2>
@@ -87,7 +87,9 @@ const AboutHero = () => {
                 </div>
             </div>
             <p className='about-believe-p'>*Not all of these roles are necessary in all products. Wisely selection is needed depending on needs and sectors.</p>
-            <Button name='CONTACT US' classStyle='about-button-contact'/>
+            <div className="about-button-container">
+                <Link to='/contact' className='about-button-contact button-main'>CONTACT US</Link> 
+            </div>
         </section>        
     </>
   )

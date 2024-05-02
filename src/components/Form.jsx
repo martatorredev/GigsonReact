@@ -74,12 +74,12 @@ const Form = () => {
                     <input type="email" name='email' required placeholder='name@example.com'/>
                 </div>
                 <div className='input-container input-container-text'>
-                    <label htmlFor="text" className='input-container-label'>A short project description (optional):</label>
+                    <label htmlFor="text" className='input-container-label'>A short project description</label>
                     <input type="text" name='description' placeholder='Project details'/>
                 </div>
                 <div className='input-container form-check'>
                     <input type="checkbox" required className='input-radio'/>
-                    <label htmlFor="checkbox">I have read the <Link className='legal-policity-form' to="politics">legal desclaimer</Link> and agree to the processing of my personal data.</label>
+                    <label htmlFor="checkbox">I have read the <Link className='legal-policity-form' to="politics">legal disclaimer</Link> and agree to the processing of my personal data.</label>
                 </div>
                 <input type="hidden" name="_captcha" value="false"></input>
                 <input type="hidden" name="_template" value="box"></input>

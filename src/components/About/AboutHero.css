@@ -116,6 +116,10 @@
     font-size: .875rem;
     text-transform: uppercase;
 }
+.about-button-container{
+    display: flex;
+    align-items: center; 
+}
 .about-button-contact{
     font-size: .875rem;
     color: #7874F4;
@@ -191,7 +195,7 @@
         max-width: 25rem;
     }
     .about-hero-btn{
-        margin-top: 3.5rem;
+        margin: 3.5rem auto 0;
     }
     .about-bg{
         top: 2rem;

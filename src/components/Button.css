@@ -25,7 +25,6 @@
     border-radius: 2rem;
     cursor: pointer;
 }
-
 .form-btn-budget:hover{
     transition: .2s linear;
     background-color: #E3E1EE;
@@ -52,7 +51,6 @@
 @media(min-width: 56.25rem){
     .button-main{
         padding: .7rem 2.2rem;
-        margin: 1.5rem 0;
     }
     /* .form-btn-budget{
         font-size: 1.25rem;

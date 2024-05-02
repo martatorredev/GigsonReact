@@ -81,6 +81,9 @@
     .home-services-bg{
         background-position: 0 50%;
     }
+    .home-services-btn {
+        margin-top: 3rem;
+    }
 }
 @media(min-width:56.25rem){
     .home-services-info{
@@ -135,6 +138,9 @@
         font-size: 1.875rem;
         line-height: 2rem;
         max-width: 40rem;
+    }
+    .home-services-btn {
+        margin-top: 4rem;
     }
 }
 @media(min-width: 110rem){

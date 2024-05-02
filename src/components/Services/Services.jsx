@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import './Services.css';
+import React from 'react';
 import heroImg from '../../assets/HeroServices.png';
-import Button from '../Button';
+import {Link} from 'react-router-dom'
+import './Services.css';
 
 const Services = () => {
   const servicesData = [
@@ -81,37 +81,38 @@ const Services = () => {
     },
   ];
 
-  useEffect(() => {
-    // Define la longitud máxima deseada para las descripciones
-    const maxLength = 80;
+  
+  // useEffect(() => {
+  //   // Define la longitud máxima deseada para las descripciones
+  //   const maxLength = 10;
 
-    // Ajusta la longitud de todas las descripciones
-    const allDescriptions = servicesData.flatMap(data => [
-      data.description,
-      ...data.cards.map(card => card.description)
-    ]);
+  //   // Ajusta la longitud de todas las descripciones
+  //   const allDescriptions = servicesData.flatMap(data => [
+  //     data.description,
+  //     ...data.cards.map(card => card.description)
+  //   ]);
 
-    const descriptionsWithSpaces = allDescriptions.map(description => {
-      const length = description.length;
-      if (length < maxLength) {
-        const spacesToAdd = maxLength - length;
-        return description + ' '.repeat(spacesToAdd);
-      } else if (length > maxLength) {
-        return description.slice(0, maxLength);
-      } else {
-        return description;
-      }
-    });
+  //   const descriptionsWithSpaces = allDescriptions.map(description => {
+  //     const length = description.length;
+  //     if (length < maxLength) {
+  //       const spacesToAdd = maxLength - length;
+  //       return description + ' '.repeat(spacesToAdd);
+  //     } else if (length > maxLength) {
+  //       return description.slice(0, maxLength);
+  //     } else {
+  //       return description;
+  //     }
+  //   });
 
-    // Actualiza las descripciones en el estado
-    let dataIndex = 0;
-    servicesData.forEach(data => {
-      data.description = descriptionsWithSpaces[dataIndex++];
-      data.cards.forEach(card => {
-        card.description = descriptionsWithSpaces[dataIndex++];
-      });
-    });
-  }, []);
+  //   // Actualiza las descripciones en el estado
+  //   let dataIndex = 0;
+  //   servicesData.forEach(data => {
+  //     data.description = descriptionsWithSpaces[dataIndex++];
+  //     data.cards.forEach(card => {
+  //       card.description = descriptionsWithSpaces[dataIndex++];
+  //     });
+  //   });
+  // }, []);
 
   return (
     <div className='services'>
@@ -145,9 +146,9 @@ const Services = () => {
 
       <section className='why-gigson'>
         <h2>Why choosing Gigson Solutions</h2>
-        <div className="">
+        <div>
           <p>We don't develop just an App or a Web. We build complex and and unique solutions for your business.</p>
-          <Button name="LET'S TALK" classStyle='why-gigson-btn'/>
+          <Link to='/contact' className='button-main why-gigson-btn'>LET'S TALK</Link>
         </div>
       </section>
     </div>
