@@ -1,6 +1,6 @@
 import './Hero.css'
 import '../Button.css'
-import heroImg from '../../assets/Imagen-esfera-hexagono.png'
+import heroImg from '../../assets/Imagen-esfera-hexagono.webp'
 import {Link} from 'react-router-dom'
 
 function Hero() {
