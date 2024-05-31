@@ -1,14 +1,20 @@
 import logoFooter from '../../assets/LogoFooter.svg'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import './Footer.css'
+import LanguageSelector from '../LanguageSelector/LanguageSelector'
 
 const Footer = () => {
+    const {t} = useTranslation()
+
+    const {about, services, cases, faqs, contact, legal, cookies, notice } = t("menu")
+    
     const menuLinks = [
-        {name: 'ABOUT ',  link:'about'},
-        {name: 'SERVICES',  link:'services'},
-        {name: 'CASES',     link:'cases'},
-        {name: 'FAQs',      link:'faqs'},
-        {name: 'CONTACT US',   link:'contact'},
+      {name: about,     link:'about'},
+      {name: services,  link:'services'},
+      {name: cases,     link:'cases'},
+      {name: faqs,      link:'faqs'},
+      {name: contact,   link:'contact'},
     ]
 
   return (
@@ -16,15 +22,13 @@ const Footer = () => {
         <div className="footer-maxwidth">
             <nav className="footer-nav-container">
                 <ul className="footer-nav-links">
-                    {menuLinks.map(({name, link}, index) => 
-                        
+                    {menuLinks.map(({name, link}, index) =>      
                         <li key={index} >
                             <Link to={link}>{name}</Link>
                         </li>
-
                     )}
                         <li>
-                            <Link className='language-link' to='error'>EN / <span className='spam-lng'>ES</span></Link>
+                            <LanguageSelector/>
                         </li>
                 </ul>            
             </nav>
@@ -39,10 +43,9 @@ const Footer = () => {
             <div className="footer-policy">
                 <span href="">Developed by gigson © 2024 </span>
                 <ul className='footer-policy-links'>
-                    <li><a href="">Legal Policy</a></li>
-                    <li><a href="">Cookies Policy</a></li>
-                    <li><a href="">Legal Notice</a></li>
-                        
+                    <li><Link to='/'>{legal}</Link></li>
+                    <li><Link to='/'>{cookies}</Link></li>
+                    <li><Link to='/'>{notice}</Link></li>    
                 </ul>
             </div>
         </div>

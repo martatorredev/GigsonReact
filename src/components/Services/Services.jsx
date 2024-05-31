@@ -81,39 +81,6 @@ const Services = () => {
     },
   ];
 
-  
-  // useEffect(() => {
-  //   // Define la longitud máxima deseada para las descripciones
-  //   const maxLength = 10;
-
-  //   // Ajusta la longitud de todas las descripciones
-  //   const allDescriptions = servicesData.flatMap(data => [
-  //     data.description,
-  //     ...data.cards.map(card => card.description)
-  //   ]);
-
-  //   const descriptionsWithSpaces = allDescriptions.map(description => {
-  //     const length = description.length;
-  //     if (length < maxLength) {
-  //       const spacesToAdd = maxLength - length;
-  //       return description + ' '.repeat(spacesToAdd);
-  //     } else if (length > maxLength) {
-  //       return description.slice(0, maxLength);
-  //     } else {
-  //       return description;
-  //     }
-  //   });
-
-  //   // Actualiza las descripciones en el estado
-  //   let dataIndex = 0;
-  //   servicesData.forEach(data => {
-  //     data.description = descriptionsWithSpaces[dataIndex++];
-  //     data.cards.forEach(card => {
-  //       card.description = descriptionsWithSpaces[dataIndex++];
-  //     });
-  //   });
-  // }, []);
-
   return (
     <div className='services'>
       <img src={heroImg} alt="" className='hero-services-img'/>

@@ -1,32 +1,70 @@
+import { Trans, useTranslation } from 'react-i18next'
 import homeServicesImg from '../../assets/FormasServices.png'
-import './HomeServices.css'
 import {Link} from 'react-router-dom'
+import './HomeServices.css'
 
 function HomeServices() {
+  const {t} = useTranslation()
+  const {servicesTitle, servicesP, servicesBtn,whygigsonh2,whygigsonp,cta} = t("home")
   return (
     <section className='home-services' id='homeServices'>
         <div className="home-services-bg"></div>
         <div className="home-text-container">
           <div className="services-h2-animation">
-            <h2 className='home-services-h2'>Tailored <span>solutions</span> for any business ·</h2>
+            <h2 className='home-services-h2'>
+              <Trans 
+                i18nKey={servicesTitle}
+                components={{span: <span />}}
+              />
+            </h2>
           </div>
           <div className="services-h2-animation">
-            <h2 className='home-services-h2'>Tailored <span>solutions</span> for any business ·</h2>
+            <h2 className='home-services-h2'>
+              <Trans 
+                i18nKey={servicesTitle}
+                components={{span: <span />}}
+              />
+            </h2>
           </div>
           <div className="services-h2-animation">
-            <h2 className='home-services-h2'>Tailored <span>solutions</span> for any business ·</h2>
+            <h2 className='home-services-h2'>
+              <Trans 
+                i18nKey={servicesTitle}
+                components={{span: <span />}}
+              />
+            </h2>
           </div>
           <div className="services-h2-animation">
-            <h2 className='home-services-h2'>Tailored <span>solutions</span> for any business ·</h2>
+            <h2 className='home-services-h2'>
+              <Trans 
+                i18nKey={servicesTitle}
+                components={{span: <span />}}
+              />
+            </h2>
           </div>  
         </div>
         <div className="home-services-info">
           <img className='home-services-img' src={homeServicesImg} />
           <div className="home-services-text">
-            <p className='home-services-p'>We are focused to leverage the technology to  your business, connecting and making it secure to align needs and business goals.</p>
-            <p className='home-services-p'>And if your solution does not exist yet, let's build it together.</p>
+            <p className='home-services-p'>{servicesP.p1}</p>
+            <p className='home-services-p'>{servicesP.p2}</p>
 
-            <Link to='/services' className='home-services-btn  button-main'>DISCOVER OUR SERVICES</Link>
+            <Link to='/about' className='home-services-btn  button-main'>{servicesBtn}</Link>
+          </div>
+        </div>
+        <div className='why-gigson'>
+        <h2>
+              <Trans 
+                i18nKey={whygigsonh2}
+                components={{span: <span />}}
+              />
+            </h2>
+          <div>
+            <p><Trans 
+                i18nKey={whygigsonp}
+                components={{span: <span />}}
+              /></p>
+            <Link to='/contact' className='button-main why-gigson-btn'>{cta}</Link>
           </div>
         </div>
     </section>

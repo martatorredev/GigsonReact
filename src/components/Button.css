@@ -4,11 +4,6 @@
     border-radius: 2rem;
     cursor: pointer;
 }
-.button-main:hover{
-    transition: .2s linear;
-    background-color: #E3E1EE;
-    color: #7874F4;
-}
 .hero-btn, .home-services-btn, .form-btn-send, .why-gigson-btn{
     font-size: .875rem;
     color: #7874F4;
@@ -30,6 +25,17 @@
     background-color: #E3E1EE;
     color: #7874F4;
 }
+.filters-btn{
+    font-size: .9rem;
+    padding: .3rem .8rem;
+    color: #3C3C3B;
+    border: .0625rem solid #3c3c3bbd;
+}
+.filter-btn-active{
+    transition: .2s linear;
+    background-color: #E3E1EE;
+    color: #7874F4;
+}
 .form-btn-send{
     margin: 1rem 0 1rem;
 }
@@ -37,29 +43,34 @@
     .button-main{
         padding: .65rem 2rem;
     }
-    /* .form-btn-budget{
-        font-size: 1.25rem;
-        padding: .4rem .9rem;
-    } */
     .hero-btn, .home-services-btn, .form-btn-send{
         font-size: 1.1em;
     }
     .home-services-btn{
         max-width: 20rem;
     }
+    .button-main:hover{
+        transition: .2s linear;
+        background-color: #E3E1EE;
+        color: #7874F4;
+    }
+    .filters-btn{
+        font-size: 1em;
+        padding: .4rem 1.2rem;
+    }
 }
 @media(min-width: 56.25rem){
     .button-main{
         padding: .7rem 2.2rem;
     }
-    /* .form-btn-budget{
-        font-size: 1.25rem;
-        padding: .4rem .9rem;
-    } */
     .hero-btn, .home-services-btn, .form-btn-send{
         font-size: 1.1em;
     }
     .form-btn-send{
         margin: .5rem 0 1rem;
+    }
+    .filters-btn{
+        font-size: 1em;
+        padding: .45rem 1.5rem;
     }
 }

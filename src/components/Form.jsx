@@ -1,32 +1,34 @@
 import './Form.css'
 import Button from './Button.jsx'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 
 const Form = () => {
-      
+    const {t} = useTranslation()
+    const {title, name, service, budget, email, details, send, checkbox} = t("form")
 
   return (
     <section className='form-section'>
-        <h2 className='form-h2'>Ready to help you</h2>
+        <h2 className='form-h2'>{title}</h2>
 
         <form className='form' action="https://formsubmit.co/hola@martatorre.dev" method="POST">
             <div className="form-container">
                 <div className='input-container'>
-                    <label className='input-container-label'>My name is</label>
-                    <input type="text" name='name' required placeholder='Name and lastname'/>
+                    <label className='input-container-label'>{name.label}</label>
+                    <input type="text" name='name' required placeholder={name.placeholder}/>
                 </div>
                 <div className='input-container'>
-                <label className='input-container-label'>and I'm interested in</label>
-                    <select type="text" name='service' required placeholder='Service'>
-                        <option value="">Service</option>
-                        <option value="1">Software engineering services</option>
-                        <option value="2">Cibersecurity services</option>
-                        <option value="3">Consulting services</option>
+                <label className='input-container-label'>{service.label}</label>
+                    <select type="text" name='service' required placeholder={service.placeholder}>
+                        <option value="">{service.placeholder}</option>
+                        <option value="1">{service.services[0]}</option>
+                        <option value="2">{service.services[1]}</option>
+                        <option value="3">{service.services[2]}</option>
                     </select>
                 </div>
                 <div className='input-container'>
-                    <label className='label-budget'>The budget for my idea is</label>
+                    <label className='label-budget'>{budget.label}</label>
                     <div className="form-budget">
                         <input
                             type="radio"
@@ -65,26 +67,35 @@ const Form = () => {
                             value="noIdea"
                         />
                         <label htmlFor="noIdea" className='form-btn-budget'>
-                            no idea
+                            {budget.placeholder}
                         </label>
                     </div>
                 </div>
                 <div className='input-container'>
-                    <label className='input-container-label'>My email is</label>
-                    <input type="email" name='email' required placeholder='name@example.com'/>
+                    <label className='input-container-label'>{email.label}</label>
+                    <input type="email" name='email' required placeholder={email.placeholder}/>
                 </div>
                 <div className='input-container input-container-text'>
-                    <label htmlFor="text" className='input-container-label'>A short project description</label>
-                    <input type="text" name='description' placeholder='Project details'/>
+                    <label htmlFor="text" className='input-container-label'>{details.label}</label>
+                    <input type="text" name='description' placeholder={details.placeholder}/>
                 </div>
                 <div className='input-container form-check'>
                     <input type="checkbox" required className='input-radio'/>
-                    <label htmlFor="checkbox">I have read the <Link className='legal-policity-form' to="politics">legal disclaimer</Link> and agree to the processing of my personal data.</label>
+                    <label htmlFor="checkbox">
+                        {checkbox.first} 
+                        <Link 
+                            className='legal-policity-form' 
+                            to="/politics"
+                        >
+                            {checkbox.second}
+                        </Link> 
+                        {checkbox.third}
+                    </label>
                 </div>
                 <input type="hidden" name="_captcha" value="false"></input>
                 <input type="hidden" name="_template" value="box"></input>
             </div>  
-            <Button type="submit" name='SEND' classStyle='form-btn-send'/>
+            <Button type="submit" name={send} classStyle='form-btn-send'/>
         </form>
     </section>
   )

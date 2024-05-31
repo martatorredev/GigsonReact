@@ -64,7 +64,39 @@
 .home-services-info{
     padding: 0 1rem;
 }
+
+.home-services > .why-gigson{
+    margin-bottom: 0;
+}
 @media (min-width: 40rem) {
+    .ctaHomeServicesContainer{
+        margin: 3rem 1.7rem 0;
+        padding: 0 1.3rem;
+    }
+    .ctaHomeServices{
+        display: flex;
+        padding: 1.8rem 1rem;
+        background-color: #E3E1EE;
+        border-radius: 1.5rem;
+        gap: 6rem;
+    }
+    
+    .cta-h2{
+        margin: .5rem .3rem;
+        font-size: 2em;
+        text-wrap: balance;
+        max-width: 16rem;
+    }
+    
+    .cta-p{
+        font-size: 1.25em;
+        margin: 1rem .3rem;
+    }
+    
+    .cta-hero-btn{
+        color: #7874F4;
+        margin: 1rem .3rem;
+    }
     .home-services-info{
         display: flex;
         flex-direction: column;

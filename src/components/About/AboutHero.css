@@ -52,7 +52,7 @@
     line-height: 2.375rem;
     padding: 0 1.5rem;    
 }
-.about-span-hero, .about-span{
+.about-hero-h1 > span, .about-hero-need-h2 > span{
     color: #7874F4;
 }
 .about-span{
@@ -71,7 +71,7 @@
 }
 .about-hero-p{
     margin: 0 auto;
-    max-width: 35rem;
+    max-width: 39rem;
     text-align: center;    
     font-size: 1rem;
     color: #868685;
@@ -93,7 +93,6 @@
 .about-hero-need-h2{
     margin: 5.5rem 0 1rem;
     font-size: 2rem;
-    display: -webkit-box;
 }
 .about-need-p{
     color: #3C3C3B;
@@ -176,7 +175,7 @@
     }
     .about-hero-need-h2{
         font-size: 2.8em;
-        max-width: 30rem;
+        max-width: 35rem;
     }
     .about-need-p{
         font-size: 1.6rem;
@@ -234,7 +233,7 @@
     .about-hero-need-h2{
         font-size: 3.44rem;
         line-height: 3.75rem;
-        max-width: 34rem;
+        max-width: 40rem;
     }
     .about-need-p{
         font-size: 1.88rem;

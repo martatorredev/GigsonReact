@@ -1,116 +1,132 @@
-.hero-services{
-    position: relative;
+.cta-why-gigson{
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+.internal-cta-container{
+  z-index: 1;
+  margin: 5rem 1rem 7rem;
+  padding: 5rem 1rem 4rem;
+  color: #3C3C3B;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: linear-gradient(to bottom right, #7874f4b9, #7874f40e);
+}
+
+.cta-button-container > h2{
+    font-size: 2.8125rem;
     text-align: center;
-    margin: 10rem 0 7rem;
-    padding: 0 1rem;
-}
-.services-container{
-    padding: 0 1rem;
-}
-.hero-services-img {
-    height: 20rem;
-    width: 100%;
-    max-width: 50rem;
-    object-fit: cover;
-    opacity: .14;
-    position: absolute;
-    top: 2.5rem;
-    left: 0;
-    z-index: -1;
-}
-.hero-services-h1{
-    max-width: 13rem;
-    margin: auto;
-    font-size: 2em;
-    line-height: 2.4rem;
-    padding-top: .3rem;
-    color: #3C3C3B;
-}
-.hero-services-p{
-    font-size: .9rem;
-    color: #868685;
-    text-transform: uppercase;
-}
-.hero-services-h1 > span {
-    color: #7874F4;
-}
-.services-cards{
-    position: sticky;
-    top: -22rem;
-    left: 0;
-    min-height: 40rem;
-    width: 100%;
-    padding: 1.8rem 1rem;
-    background-color: #E3E1EE;
-    border-radius: 2rem;
-    border: 1px solid #7874F4;
-}
-.services-card-1 {
-    background-color: hsla(47,18%,94%,1);
-    background-image: 
-      radial-gradient(at 13% 90%, hsla(46,16%,94%,1) 0px, transparent 80%),
-      radial-gradient(at 10% 8%, hsla(46,17%,94%,1) 0px, transparent 50%),
-      radial-gradient(at 61% 67%, hsla(240,45%,87%,1) 0px, transparent 50%),
-      radial-gradient(at 51% 22%, hsla(45,14%,94%,0.66) 0px, transparent 50%),
-      radial-gradient(at 34% 40%, hsla(241,85%,70%,1) 0px, transparent 50%),
-      radial-gradient(at 84% 81%, hsla(240,45%,87%,1) 0px, transparent 50%);
-    background-position: center top;
-    background-size: cover;
-}
-.services-card-2 {
-    background-color: #eeedf0;
-    }
-.services-cards-top{
-    max-width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    color: #3C3C3B;
-    padding-bottom: 1.5rem;
-}
-.services-cards-top h2{
-    font-size: 1.5em;
-} 
-.services-card-bottom{
-    display: flex;
-    flex-direction: column;
-    gap: .1rem;
-    border-top: 1px solid #3c3c3b92;;
-    padding: .5rem 0 2rem;
-}
-.services-cards-span{
-    color: #7874F4;
-}
-.services-cards-h3{
-    max-width: 10rem;
-    font-size: 1.25em;
-    color: #3c3c3b;
-    padding-bottom: 1rem;
-}
-.services-cards-p{
-    font-size: .95em;
-    color: #868685;
-}
-.why-gigson{
-    margin: 5rem 1rem 7rem;
-    padding: 3rem 1rem;
-    background-color: #E3E1EE;
-    color: #3C3C3B;
-    border-radius: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.why-gigson > h2{
+    color: #F4F3EF;
     font-size: 2em;
     text-wrap: balance;
-    max-width: 15rem;
+    margin-bottom: 1rem;
 }
-.why-gigson p {
+.internal-cta-container p {
     font-size: 1.25em;
     max-width: 32rem;
 }
+
+.cta-button-container{
+    text-align: center;
+}
+
+.cta-why-gigson-btn{
+    font-size: 1.375rem;
+    color: #7874f4;
+}
+
+.cta-img-container-cube{
+    position: relative;
+    right: -35px;
+    margin-bottom: -140px;
+    z-index: 0;
+}
+
+.cta-services-img-cube{
+    width: 33%;
+}
+
+.cta-img-container-tria{
+    text-align: right;
+    margin-top: -195px;
+    z-index: 0;
+}
+
+.cta-services-img{
+  max-width: 8rem;
+  height: auto;
+  filter: contrast(50)
+}
+
+@media (min-width: 37.5rem){
+
+    .cta-services-img{
+        max-width: 10rem;
+        height: auto;
+        filter: contrast(50)
+    }
+
+    .cta-why-gigson{
+        overflow: hidden;
+        margin-top: 10rem;
+    }
+
+    .cta-services-img-cube{
+        width: 20%;
+    }
+}
+
 @media (min-width: 56.25rem){
+    .cta-why-gigson{
+        overflow: hidden;
+        margin-top: 5rem;
+        margin: 2rem;
+    }
+    .internal-cta-container{
+        z-index: 1;
+        margin: 5rem 1rem 7rem;
+        padding: 5rem 1rem 4rem;
+        color: #3C3C3B;
+        border-radius: 2.55rem;
+        background: linear-gradient(to bottom right, #7874f4b9, #7874f40e);
+    }
+    .cta-button-container{
+        display: block;
+        position: relative;
+        margin-top: 1rem;
+        max-width: 35rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cta-button-container > h2{
+        color: #F4F3EF;
+        font-size: 3.5em;
+        margin-bottom: 1rem;
+    }
+    .cta-why-gigson{
+        overflow: hidden;
+        margin-top: 10rem;
+    }
+    .cta-img-container-cube{
+        max-width: 90rem;
+        position: relative;
+        right: -95px;
+        margin-bottom: -260px;
+        z-index: 0;
+    }
+    .cta-services-img{
+        max-width: 20rem;
+        height: auto;
+        filter: contrast(50)
+    }
+    .cta-img-container-tria{
+        text-align: right;
+        margin-top: -270px;
+        z-index: 0;
+        margin-right: 80px;
+    }
     .hero-services{
         margin: 14rem 0 9rem;
     }
@@ -142,7 +158,7 @@
         padding-bottom: 2.5rem;
     }
     .services-cards-top h2{
-        font-size: 2.5em;
+
         width: 12rem;
     } 
     .services-cards-top p{
@@ -181,19 +197,19 @@
         color: #868685;
         height: 5rem;
     }
-    .why-gigson{
+    .internal-cta-container{
         margin: 7rem 2rem;
         padding: 3rem 2rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
     }
-    .why-gigson > h2{
+    .internal-cta-container > h2{
         font-size: 3em;
         text-wrap: balance;
         max-width: 25rem;
     }
-    .why-gigson p {
+    .internal-cta-container p {
         font-size: 1.7em;
     }
 }
@@ -259,19 +275,19 @@
         font-size: 1.25rem;
         color: #868685;
     }
-    .why-gigson{
+    .internal-cta-container{
         margin: 7rem 4rem;
         padding: 3rem 2rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
     }
-    .why-gigson > h2{
+    .internal-cta-container > h2{
         font-size: 3em;
         text-wrap: balance;
         max-width: 25rem;
     }
-    .why-gigson p {
+    .internal-cta-container p {
         font-size: 1.7em;
     }
 }
@@ -293,16 +309,16 @@
     .services-card-bottom > div{
         padding-top: .3rem;
     }
-    .why-gigson{
+    .internal-cta-container{
         padding: 5rem 3rem;
         justify-content: flex-start;
         gap: 30%;
     }
-    .why-gigson > h2{
+    .internal-cta-container > h2{
         font-size: 3.5em;
         max-width: 27rem;
     }
-    .why-gigson p {
+    .internal-cta-container p {
         font-size: 1.9em;
     }
 }
@@ -314,7 +330,7 @@
     .services-container, .hero-services{
         padding: 0;
     }
-    .why-gigson{
+    .internal-cta-container{
         margin: 7rem 0;
     }
 }

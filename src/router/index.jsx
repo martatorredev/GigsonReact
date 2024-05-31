@@ -1,5 +1,5 @@
 import AboutHero from "../components/About/AboutHero"
-import Cases from "../components/Pages/Cases"
+import Cases from "../components/Pages/Cases/Cases"
 import { createBrowserRouter } from "react-router-dom"
 import Contact from "../components/Pages/Contact"
 import Faqs from "../components/Pages/Faqs"
