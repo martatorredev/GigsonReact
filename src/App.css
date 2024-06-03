@@ -12,25 +12,21 @@ img, video, iframe, picture, figure{
     max-width: 100%;
 }
 a {
-    display: block;
+    display: inline-block;
 }
 li {
-    list-style-type: none;
+    list-style: none;
 }
 html {
     scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5, h6, p, a, span, strong, i {
-    color: #3C3C3B;
     font-size: 1em;
     font-weight: inherit;
     font-style: inherit;
     text-decoration: none;
     color: inherit;
 }
-
-
-
 form, input , textarea, select, button, label {
     font-family: inherit;
     font-size: inherit;
@@ -49,11 +45,19 @@ body {
     min-height: 100vh;
     font-size: 100%;
     background-color:#F4F3EF;
-    
 }
-
-#root {
-  max-width: 90rem;
-  margin: 0 auto;
+.content-in-progress{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin: 50vh auto;
 }
-
+@media (min-width: 121rem) {
+    .home-content{
+        max-width: 115rem;
+        margin: 0 auto;
+    }
+    .hero-text{
+        padding-left: 0;
+    }
+}

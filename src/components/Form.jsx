@@ -1,49 +1,101 @@
 import './Form.css'
 import Button from './Button.jsx'
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 
 const Form = () => {
+    const {t} = useTranslation()
+    const {title, name, service, budget, email, details, send, checkbox} = t("form")
+
   return (
     <section className='form-section'>
-        <h2 className='form-h2'>Ready to help you</h2>
+        <h2 className='form-h2'>{title}</h2>
 
-        <form className='form'>
-            <div className='input-name'>
-                <label htmlFor="name">Mi name is</label>
-                <input type="text" required placeholder='Name and lastname'/>
-            </div>
-            <div>
-            <label htmlFor="name">And I’m interested in</label>
-                <select type="text" required placeholder='Service'>
-                    <option value="">Service</option>
-                    <option value="1">Servicio1</option>
-                    <option value="2">Servicio2</option>
-                    <option value="3">Servicio3</option>
-                </select>
-            </div>
-            <div>
-                <label htmlFor="name">The budget for my idea is</label>
-                <ul className='form-budget'>
-                    <li><Button name='< 10k€' classStyle='form-btn-budget'/></li>
-                    <li><Button name='< 25k€' classStyle='form-btn-budget'/></li>
-                    <li><Button name='< 50k€' classStyle='form-btn-budget'/></li>
-                    <li><Button name='no idea' classStyle='form-btn-budget'/></li>
-                </ul>
-            </div>
-            <div>
-                <label htmlFor="name">My email is</label>
-                <input type="email" required placeholder='name@example.com'/>
-            </div>
-            <div>
-                <label htmlFor="text">A short project description (optional):</label>
-                <input type="text" placeholder='Project details'/>
-            </div>
-            <div className='form-check'>
-                <input type="checkbox" required className='input-radio'/>
-                <label htmlFor="checkbox">I have read the legal desclaimer and agree to the processing of my personal data.</label>
-                
-            </div>
-            <Button name='SEND' classStyle='form-btn-send'/>
+        <form className='form' action="https://formsubmit.co/hola@martatorre.dev" method="POST">
+            <div className="form-container">
+                <div className='input-container'>
+                    <label className='input-container-label'>{name.label}</label>
+                    <input type="text" name='name' required placeholder={name.placeholder}/>
+                </div>
+                <div className='input-container'>
+                <label className='input-container-label'>{service.label}</label>
+                    <select type="text" name='service' required placeholder={service.placeholder}>
+                        <option value="">{service.placeholder}</option>
+                        <option value="1">{service.services[0]}</option>
+                        <option value="2">{service.services[1]}</option>
+                        <option value="3">{service.services[2]}</option>
+                    </select>
+                </div>
+                <div className='input-container'>
+                    <label className='label-budget'>{budget.label}</label>
+                    <div className="form-budget">
+                        <input
+                            type="radio"
+                            id="budgetLess10K"
+                            name="budget"
+                            value="<10K"
+                        />
+                        <label htmlFor="budgetLess10K" className='form-btn-budget'>
+                            &lt;10k€
+                        </label>
+
+                        <input
+                            type="radio"
+                            id="budgetLess25K"
+                            name="budget"
+                            value="<25K"
+                        />
+                        <label htmlFor="budgetLess25K" className='form-btn-budget'>
+                            &lt;25k€
+                        </label>
+
+                        <input
+                            type="radio"
+                            id="budgetLess50K"
+                            name="budget"
+                            value="<50K"
+                        />
+                        <label htmlFor="budgetLess50K" className='form-btn-budget'>
+                            &lt;50k€
+                        </label>
+
+                        <input
+                            type="radio"
+                            id="noIdea"
+                            name="budget"
+                            value="noIdea"
+                        />
+                        <label htmlFor="noIdea" className='form-btn-budget'>
+                            {budget.placeholder}
+                        </label>
+                    </div>
+                </div>
+                <div className='input-container'>
+                    <label className='input-container-label'>{email.label}</label>
+                    <input type="email" name='email' required placeholder={email.placeholder}/>
+                </div>
+                <div className='input-container input-container-text'>
+                    <label htmlFor="text" className='input-container-label'>{details.label}</label>
+                    <input type="text" name='description' placeholder={details.placeholder}/>
+                </div>
+                <div className='input-container form-check'>
+                    <input type="checkbox" required className='input-radio'/>
+                    <label htmlFor="checkbox">
+                        {checkbox.first} 
+                        <Link 
+                            className='legal-policity-form' 
+                            to="/politics"
+                        >
+                            {checkbox.second}
+                        </Link> 
+                        {checkbox.third}
+                    </label>
+                </div>
+                <input type="hidden" name="_captcha" value="false"></input>
+                <input type="hidden" name="_template" value="box"></input>
+            </div>  
+            <Button type="submit" name={send} classStyle='form-btn-send'/>
         </form>
     </section>
   )
