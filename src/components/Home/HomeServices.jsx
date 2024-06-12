@@ -5,7 +5,7 @@ import './HomeServices.css'
 
 function HomeServices() {
   const {t} = useTranslation()
-  const {servicesTitle, servicesP, servicesBtn,whygigsonh2,whygigsonp,cta} = t("home")
+  const {servicesTitle, servicesP, servicesBtn} = t("home")
   return (
     <section className='home-services' id='homeServices'>
         <div className="home-services-bg"></div>
@@ -50,21 +50,6 @@ function HomeServices() {
             <p className='home-services-p'>{servicesP.p2}</p>
 
             <Link to='/about' className='home-services-btn  button-main'>{servicesBtn}</Link>
-          </div>
-        </div>
-        <div className='why-gigson'>
-        <h2>
-              <Trans 
-                i18nKey={whygigsonh2}
-                components={{span: <span />}}
-              />
-            </h2>
-          <div>
-            <p><Trans 
-                i18nKey={whygigsonp}
-                components={{span: <span />}}
-              /></p>
-            <Link to='/contact' className='button-main why-gigson-btn'>{cta}</Link>
           </div>
         </div>
     </section>

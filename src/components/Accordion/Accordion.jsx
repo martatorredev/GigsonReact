@@ -1,4 +1,3 @@
-import React from 'react'
 import {useState} from 'react'
 import { AccordionAnimation } from './AccordionAnimation'
 import './Accordion.css'
@@ -23,23 +22,27 @@ export const Accordion = ({
         }`}>
             <div className="accordion-content-text">
                 {subTitle && <h3 className='cases-dropdown-subtitle'>{subTitle}</h3>}
-                <p className={`cases-dropdown-challenge ${subTitle && 'without-border'}`}>{challenge}</p>
-                <div className="cases-dropdown-features">
-                    <h4>{featuresTitle}</h4>
-                    <ul>
-                        {features.map((feature, i) =>
-                            <div key={i}>
-                                <span></span>
-                                <li>
-                                    {feature}
-                                </li>
-                            </div>
-                        )}
-                    </ul>
+                <div className={!subTitle ? 'oadljkgvbadojgbaed' : 'without-border'}>
+                    <p className='cases-dropdown-challenge'>{challenge}</p>
+                    <div className="cases-dropdown-features">
+                        <h4>{featuresTitle}</h4>
+                        <ul>
+                            {features.map((feature, i) =>
+                                <div key={i}>
+                                    <span></span>
+                                    <li>
+                                        {feature}
+                                    </li>
+                                </div>
+                            )}
+                        </ul>
+                    </div>
                 </div>
                 <div className="cases-dropdown-solution">
-                    <h4>{solutionTitle}</h4>
-                    <p>{solution}</p>
+                    <div>
+                        <h4>{solutionTitle}</h4>
+                        <p>{solution}</p>
+                    </div>
                     <ul className='cases-dropdown-tools'>
                         {tools.map((tool, i) =>
                             <div key={i}>

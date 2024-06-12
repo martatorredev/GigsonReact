@@ -32,10 +32,7 @@ i18n
                             p1: "We are focused to leverage the technology to  your business, connecting and making it secure to align needs and business goals.",
                             p2: "And if your solution does not exist yet, let’s build it together."
                         },
-                        servicesBtn: "DISCOVER OUR SERVICES",
-                        whygigsonh2: "Why choosing Gigson Solutions",
-                        whygigsonp:"We don't develop just an App or a Web. We build complex and and unique solutions for your business.",
-                        cta: "LET’S TALK",
+                        servicesBtn: "DISCOVER OUR SERVICES"
                     },
                     ctas: {
                         contact: "CONTACT US"
@@ -79,7 +76,8 @@ i18n
                         solutionTitle: "Solution",
                         toolsTitle: "specifications"
                     },
-                    dropdown: [
+                    faqsH1: "Questions? <span>Let’s go!</span>",
+                    casesDropdown: [
                         {
                             title: "CRM & ERP Integration", 
                             subTitle: "CRM and ERP Integration for Architecture and Interior Design", 
@@ -171,8 +169,87 @@ i18n
                             need: ["Customer Management", "Project and Task Management", "Centralize information"]
                         },
                     ],
+                    faqsDropdown: [
+                        {title: "Digital product"},
+                        {   
+                            question: "What is a custom digital product?", 
+                            answer: "A digital product meets the needs of users, business objectives, and market opportunities to provide the best solution to the customer. It differs from standard solutions in that it adapts to the specific processes and tools of the client, offering greater flexibility and efficiency."
+                        },
+                        {
+                            question: "How do you ensure you understand what I need?", 
+                            answer: "Our process begins with discovery and analysis meetings where we delve into use cases to ensure we understand all the needs before starting development."
+                        },
+                        {
+                            question: "Why choose a custom software solution instead of a standard one?", 
+                            answer: 'Standard solutions are often generic for any type of business, usually include unnecessary functions that complicate their use, and are not easily "integrated" with other solutions that may already be integrated. A custom solution is designed to integrate perfectly with your way of working, improving productivity and efficiency.'
+                        },
+                        {
+                            question: "Will I have support and maintenance when development is finished?",
+                            answer: "Of course! If you want us to take care of maintenance and support, we will do so as we have a dedicated team for it where we will be delighted to solve any problems that may arise."
+                        },
+                        {title: "Ownership"},
+                        {
+                            question: "Who will develop my solution?",
+                            answer: "At Gigson Solutions, we have different collaborators specialized in each part of the process to provide a complete service adapted to the needs of the client such as software development, usability, marketing, and graphic, legal, etc."
+                        },
+                        {
+                            question: "Will I own my solution?",
+                            answer: "If you want, you can be the sole owner of the product we develop to gain a competitive advantage."
+                        },
+                        {title: "Product Development"},
+                        {
+                            question: "What is the difference between Gigson Solutions and hiring a developer?", 
+                            answer: "The main difference is that a developer will implement what you think, define, and prioritize. It is rare for them to ask aspects like whether it is really what the business needs, the pricing model, or the security of the information."
+                        },
+                        {
+                            question: "How is security and privacy handled in new products?", 
+                            answer: "Security and privacy are a priority in all our solutions. We adopt secure coding practices and can certify the products we develop following standards like GDPR, SOC2, or HIPAA."
+                        },
+                        {
+                            question: "Can I coordinate the product development myself?", 
+                            answer: "Yes, however, we do not recommend it as a lack of experience in managing technical teams can lead to communication misunderstandings, poor risk management, and resource management."
+                        },
+                        {
+                            question: "Have we left anything unanswered?", 
+                            answer: "CTA: Write to us"
+                        },
+                    ],
                     form: {
                         title: "Ready to help you",
+                        name: {
+                            label: "My name is",
+                            placeholder: "Name and lastname"
+                        },
+                        service: {
+                            label: "and I'm interested in",
+                            placeholder: "Service",
+                            services: ["Software engineering services", "Cibersecurity services", "Consulting services"]
+                        },
+                        budget: {
+                            label: "The budget for my idea is",
+                            placeholder: "no idea"
+                        },
+                        email: {
+                            label: "My email is",
+                            placeholder: "name@example.com"
+                        },
+                        details: {
+                            label: "A short project description",
+                            placeholder: "Project details (optional)"
+                        },
+                        checkbox: {
+                            first: "I have read the ",
+                            second: "legal disclaimer",
+                            third: " and agree to the processing of my personal data."
+                        },
+                        send: 'SEND'
+                    },
+                    notFound: {
+                        title: "<span>Oops... </span>",
+                        title2:"It looks like we've gotten lost.",
+                        cta:"GO BACK TO HOME.",
+                        description:"The page you are looking for seems to no longer be available.",
+                        banner404:".error404.",
                         name: {
                             label: "My name is",
                             placeholder: "Name and lastname"
@@ -225,10 +302,7 @@ i18n
                             p1: "Nos dedicamos a aprovechar al máximo las herramientas de software que ya utilizas, conectándolas entre sí, optimizándolas para que rindan más y alineándolas con las necesidades reales de tu negocio.",
                             p2: "Y si lo que necesitas aún no existe... lo creamos para ti."
                         },
-                        servicesBtn: "NUESTROS SERVICIOS",
-                        whygigsonh2: "Porque elegir soluciones Gigson",
-                        whygigsonp:"No desarrollamos solo una aplicación o una web. Construimos soluciones complejas y únicas para tu negocio.",
-                        cta:"CONTÁCTANOS"
+                        servicesBtn: "NUESTROS SERVICIOS"
                     },
                     ctas: {
                         contact: "CONTÁCTANOS"
@@ -272,7 +346,8 @@ i18n
                         solutionTitle: "Solución",
                         toolsTitle: "Especificaciones"
                     },
-                    dropdown: [
+                    faqsH1: "¿Preguntas? <span>Las resolvemos</span>",
+                    casesDropdown: [
                         {
                             title: "Integración CRM & ERP", 
                             subTitle: "Integración CRM y ERP para Arquitectura e Interiorismo", 
@@ -364,6 +439,81 @@ i18n
                             need: ["Gestión de clientes", "Gestión de proyectos y tareas", "Centralizar información"]
                         },
                     ],
+                    faqsDropdown: [
+                        {title: "Producto digital"},
+                        {   
+                            question: "¿Qué es un producto digital a medida?", 
+                            answer: "Un producto digital cumple las necesidades de los usuarios, los objetivos de negocio y las oportunidades del mercado, para ofrecer la mejor solución al cliente. Se diferencia de las soluciones estándar en que se adapta a los procesos y herramientas específicas del cliente, ofreciendo una mayor flexibilidad y eficiencia."
+                        },
+                        {
+                            question: "¿Cómo os aseguráis de entender lo que necesito?", 
+                            answer: "Nuestro proceso comienza con reuniones de descubrimiento y análisis en las que profundizamos en los casos de uso para asegurarnos que comprendemos todas las necesidades antes de empezar el desarrollo."
+                        },
+                        {
+                            question: "¿Por qué elegir una solución de software a medida en lugar de una estándar?", 
+                            answer: "Las soluciones estándar suelen ser genéricas para cualquier tipo de negocio, suelen incluir funciones innecesarias que complican su uso y no se suelen “integrar” fácilmente con otras soluciones que ya se tengan integradas. Una solución a medida se diseña para integrarse perfectamente con su manera de trabajar, mejorando la productividad y la eficiencia."
+                        },
+                        {
+                            question: "¿Tendré soporte y mantenimiento cuando acabe el desarrollo?",
+                            answer: "¡Por supuesto! Si quieres que nosotros nos encarguemos del mantenimiento y soporte, lo haremos ya que tenemos un equipo dedicado a ello donde estaremos encantados de solucionar todos los problemas que puedan surgir."
+                        },
+                        {title: "Propiedad"},
+                        {
+                            question: "¿Quién desarrollará mi solución?",
+                            answer: "En gigson solutions contamos con diferentes colaboradres especializados en cada parte del proceso para dar un servicio completo y adaptado a las necesidades del cliente como: desarrollo software, usabilidad, marketing y gráfico, legal etc."
+                        },
+                        {
+                            question: "¿Seré propietario de mi solución?",
+                            answer: "Si quieres, podrás ser el único propietario del producto que desarrollemos para obtener una ventaja competitiva."
+                        },
+                        {title: "Desarrollo del producto"},
+                        {
+                            question: "¿Qué diferencia hay entre Gigson Solutions y contratar a un desarrollador?", 
+                            answer: "La principal diferencia es que un desarrollador implementará lo que tu pienses, definas y priorices. En raras ocasiones se preguntará aspectos como si es lo que realmente necesita el negocio, el modelo de pricing o en la seguridad de la información."
+                        },
+                        {
+                            question: "¿Cómo se maneja la seguridad y la privacidad en los nuevos productos?", 
+                            answer: "La seguridad y la privacidad son una prioridad en todas nuestras soluciones. Adoptamos prácticas de codificación segura y podemos certificar los productos que desarrollamos siguiendo estándares como GDPR, SOC2 o HIPAA."
+                        },
+                        {
+                            question: "¿Puedo coordinar yo mismo el desarrollo del producto?", 
+                            answer: "Sí, no obstante no lo recomendamos ya que la falta de experiencia en la gestión de equipos técnicos puede conducir a malentendidos en la comunicación, una mala gestión de riesgos y de recursos."
+                        },
+                        {
+                            question: "¿Nos hemos dejado algo por contestar?", 
+                            answer: "CTA: Escríbenos"
+                        },
+                    ],
+                    form: {
+                        title: "Estamos listos para ayudarte",
+                        name: {
+                            label: "Mi nombre es",
+                            placeholder: "Nombre y apellido"
+                        },
+                        service: {
+                            label: "y estoy interesado en",
+                            placeholder: "Servicio",
+                            services: ["Software engineering services", "Cibersecurity services", "Consulting services"]
+                        },
+                        budget: {
+                            label: "El presupuesto para mi proyecto es",
+                            placeholder: "No sé"
+                        },
+                        email: {
+                            label: "Me puedes contactar en este email",
+                            placeholder: "nombre@ejemplo.com"
+                        },
+                        details: {
+                            label: "Te cuento más sobre mi proyecto",
+                            placeholder: "Detalles del proyecto (opcional)"
+                        },
+                        checkbox: {
+                            first: "He leido la ",
+                            second: "politica legal",
+                            third: " y acepto el procesamiento de mi información personal."
+                        },
+                        send: 'ENVIAR SOLICITUD'
+                    },
                     form: {
                         title: "Estamos listos para ayudarte",
                         name: {
@@ -394,7 +544,6 @@ i18n
                         },
                         send: 'ENVIAR SOLICITUD'
                     }
-
                 }
             },
         }

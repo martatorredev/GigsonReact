@@ -11,8 +11,9 @@ const Cases = () => {
 
   const {t} = useTranslation()
   const {heroH1, heroP, featuresTitle,
-    tagTitle, needTitle, resetFilters,solutionTitle, toolsTitle} = t("cases")
-  const cases = t("dropdown")
+         tagTitle, needTitle, resetFilters, 
+         solutionTitle, toolsTitle} = t("cases")
+  const cases = t("casesDropdown")
   const {contact} = t("ctas")
 
   const uniqueTags = [...new Set(cases.map(({tags}) => tags).flat())];
@@ -104,8 +105,7 @@ const Cases = () => {
         </div>
       )}
 
-      <Link className='about-button-contact button-main'>{contact}</Link>
-    
+      <Link className='about-button-contact button-main' to='/contact'>{contact}</Link>
     </>
   )
 }

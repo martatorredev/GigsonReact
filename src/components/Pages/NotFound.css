@@ -1,77 +1,47 @@
-.home-services{
+.not-home-services{
+
+    margin: 6rem auto 3rem;
     overflow: hidden;
-    /* padding: 0 1rem; */
+    position: relative;
+    
+}
+
+.not-home-services-bg{
+    opacity: 0%;
+    z-index: -1;
+}
+
+.not-div-about-hero{
+    height: calc(100vh - 30rem);
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
     position: relative;
 }
-.home-services-bg{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: -2rem;
-    z-index: -1;
-    background: url('../../assets/homeServicesBg.svg') no-repeat;
-    background-position: 0 100%;
-    background-size: cover;
-}
-.home-services-bg:before{
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    background: linear-gradient(0deg, #F4F3EF 0%, #ffffff00 100%);
-}
-.home-services-img{
-    width: 100vw;
-    height: 22rem;
-    max-width: 37.5rem;
-    min-height: 20rem;
-    object-fit: cover;
-    text-align: center;
-    opacity: 0.4;
-}
-.home-text-container {
-    display: flex;
-  }
 
-.services-h2-animation{
-    white-space: nowrap;
-    padding: 1rem;
-    animation: scrollLeft 4s linear infinite;
+.not-home-services-h2{
+    font-size: 48px; /* Tamaño del texto */
+    color: transparent; /* Hace el relleno del texto transparente */
+    -webkit-text-stroke: 0.1px #7874F4; /* Borde del texto con grosor y color */
+ /* Borde del texto para navegadores compatibles */
+    font-weight: bold;
 }
 
-.home-services-h2 {
-    font-size: clamp(1.875em,7vw,4.4em);
-    color: #fff;
-    text-wrap: nowrap;
-}
-@keyframes scrollLeft {
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-.home-services-h2 span{
-    color: #B6B4F6;
-}
-.home-services-p{
-    font-size: 1.25em;
-    padding-top: 1rem;
-    line-height: 1.625rem;
-    color: #3C3C3B;
-    text-wrap: balance;
-    max-width: 30rem;
-}
-.home-services-info{
-    padding: 0 1rem;
-}
+
+
 @media (min-width: 40rem) {
     .home-services-info{
         display: flex;
         flex-direction: column;
     }
-    .home-services-img{
+    .not-home-services-bg{
         align-self: center;
         margin-left: 4rem;
+        opacity: 0%;
+        z-index: -1;
     }
     .home-services-p{
         font-size: 1.35em;
@@ -85,6 +55,7 @@
         margin-top: 3rem;
     }
 }
+
 @media(min-width:56.25rem){
     .home-services-info{
         padding: 0 2.5rem;
@@ -97,7 +68,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    .home-services-img{
+    .not-home-services-bg{
         max-width: 40rem;
         width: 70vw;
         height: 90%;
@@ -110,6 +81,7 @@
         background-position: 0 10%;
     }
 }
+
 @media(min-width: 90rem){
     .home-services-info{
         padding: 0 4rem;
@@ -125,7 +97,7 @@
     .home-services-text > button{
        margin-top: 4rem;
     }
-    .home-services-img{
+    .not-home-services-bg{
         max-width: 45rem;
         width: 70vw;
         height: 70%;
@@ -143,6 +115,7 @@
         margin-top: 4rem;
     }
 }
+
 @media(min-width: 110rem){
     .home-services-p{
         position: relative;
@@ -157,7 +130,7 @@
         left: -2rem;
         z-index: 1;
     }
-    .home-services-img{
+    .not-home-services-bg{
         max-width: 55rem;
         width: 90vw;
         height: 60%;
