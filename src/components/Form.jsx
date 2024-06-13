@@ -85,7 +85,7 @@ const Form = () => {
                         {checkbox.first} 
                         <Link 
                             className='legal-policity-form' 
-                            to="/politics"
+                            to="/policity"
                         >
                             {checkbox.second}
                         </Link> 

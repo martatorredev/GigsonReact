@@ -35,6 +35,8 @@ const HomeCases = () => {
         {title: "UX/UI Designer", desc: specialist8},
         {title: "Security Engineer", desc: specialist9},
     ]
+    
+    const {wth2,wp1,wp2,wlink}=t("caseswhygigson")
 
     const [selectedTags, setSelectedTags] = useState([]);
     const [selectedNeeds, setSelectedNeeds] = useState([]);
@@ -78,11 +80,31 @@ const HomeCases = () => {
   return (
 <>
     <section className='cases-why-gigson'>
-        <h2>What can Gigson Solutions do for your business?</h2>
+        <h2> 
+          <Trans 
+            i18nKey={wth2}
+
+          />
+        </h2>
         <div>
-          <p>At Gigson Solutions, we believe that technology should drive your business forward, not limit it.</p>
-          <p>Here are some examples of what we can do for you.</p>
-          <Link to='/contact' className='button-main why-gigson-btn'>VIEW CASES</Link>
+          <p>
+          <Trans 
+            i18nKey={wp1}
+
+          />
+          </p>
+          <p>
+            <Trans 
+              i18nKey={wp2}
+
+            />
+          </p>
+          <Link to='/contact' className='button-main why-gigson-btn'>
+          <Trans 
+            i18nKey={wlink}
+
+          />
+          </Link>
         </div>
       </section>
     <section>

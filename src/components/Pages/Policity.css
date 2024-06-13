@@ -1,0 +1,48 @@
+.policity-main{
+    margin: 8.5rem 1rem 3.5rem;
+}
+
+.policity-h2{
+    font-size: 1.4825rem;
+    margin: 1rem 0;
+}
+
+.policity-h3{
+    font-size: 1rem;
+    margin: 1rem 0 .5rem;
+}
+
+
+.p-comun{
+    font-size: .875rem;
+    margin: .5rem 0;
+}
+
+.p-sub{
+    font-size: .855rem;
+    margin: .2rem .3rem;
+}
+
+@media(min-width: 56.25rem){
+    .policity-main{
+        max-width: 1440px;
+        margin: 8.5rem 2.5rem 3.5rem;
+
+    }
+}
+
+@media(min-width: 90rem){
+    .policity-main{
+        max-width: 120rem;
+        margin: 8.5rem 4rem 3.5rem;
+
+    }
+}
+
+@media(min-width: 120rem){
+    .policity-main{
+        max-width: 115rem;
+        margin: 8.5rem auto 3.5rem;
+
+    }
+}

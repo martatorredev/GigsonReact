@@ -6,6 +6,7 @@ import Cases from "../components/Pages/Cases/Cases";
 import Faqs from "../components/Pages/Faqs/Faqs";
 import Contact from "../components/Pages/Contact";
 import NotFound from "../components/Pages/NotFound";
+import Policity from "../components/Pages/Policity";
 import { createBrowserRouter } from "react-router-dom";
 import '../App.css';
 
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
         {
             path: 'contact',
             element: <Contact />,
+        },
+        {
+            path: 'policity',
+            element: <Policity />,
         },
     ]}
 ])
