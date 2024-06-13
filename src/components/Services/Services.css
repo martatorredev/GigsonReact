@@ -19,7 +19,8 @@
     z-index: -1;
 }
 .hero-services-h1{
-    max-width: 13rem;
+    text-wrap: balance;
+    max-width: 17rem;
     margin: auto;
     font-size: 2em;
     line-height: 2.4rem;
@@ -118,7 +119,7 @@
         padding: 0 2rem;
     }
     .hero-services-h1{
-        max-width: 20rem;
+        max-width: 26rem;
         font-size: 3.43em;
         line-height: 3.8rem;
         padding-top: .7rem;
@@ -143,7 +144,7 @@
     }
     .services-cards-top h2{
         font-size: 2.5em;
-        width: 12rem;
+        width: 14rem;
     } 
     .services-cards-top p{
         font-size: 1.15rem;
@@ -202,7 +203,6 @@
         margin: 15rem 0 12rem;
     }
     .hero-services-h1{
-        max-width: 20rem;
         font-size: 3.43em;
         line-height: 3.8rem;
         padding-top: .7rem;
@@ -224,10 +224,6 @@
         gap: calc(31.5% - 10rem);
         padding-bottom: 2.5rem;
     }
-    .services-cards-top h2{
-        font-size: 2.5em;
-        width: 12rem;
-    } 
     .services-cards-top p{
         font-size: 1.15rem;
         max-width: 54rem;

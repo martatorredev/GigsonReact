@@ -35,7 +35,8 @@ i18n
                         servicesBtn: "DISCOVER OUR SERVICES"
                     },
                     ctas: {
-                        contact: "CONTACT US"
+                        contact: "CONTACT US",
+                        talk: "LET’S TALK"
                     },
                     caseswhygigson:{
                         wth2: "What can Gigson Solutions do for your business?",
@@ -44,14 +45,9 @@ i18n
                         wlink: "VIEW CASES"
                     },
                     whyservices: {
-                        sth2: "Simplificando un mundo innecesariamente complejo.",
-                        slink: "VER SERVICIOS"
-                    },
-                    whyservices: {
                         sth2:"Simplifying a needless complex world.",
                         slink:"SEE SERVICES"
                     },
-                    
                     about: {
                         title: "Our team is built by professionals with more than <span>9 years</span> of experience.",
                         description: "We have the required profiles to face the end-to-end digital product development to offer an all-in-one service.",
@@ -80,6 +76,90 @@ i18n
                             label: "*Not all of these roles are necessary in all products. Wisely selection is needed depending on needs and sectors.",
                             cta2: "CONTACT US"
                         },
+                    },
+                    service: {
+                        serviceH1: "Discover all <span>our services</span>",
+                        serviceP: "BUILDING TAILORED SOFTWARE SOLUTIONS"
+                    },
+                    serviceCard: [
+                        {
+                            title: 'Software engineering services',
+                            description: 'From integrating different tools, developing new features and products until monitoring and maintaining a product, our team is ready for it. Our software engineering team is composed by developers, architects and testers to build any need with the best cutting-edge technologies.',
+                            cards: [
+                                {
+                                    title: 'Cloud Provider',
+                                    description: 'Amazon AWS, Microsoft Azure, GCP.'
+                                },
+                                {
+                                    title: 'Containers & Orchestration',
+                                    description: 'Docker, K8s, WPAR & others.                                  '
+                                },
+                                {
+                                    title: 'CI/CD',
+                                    description: 'Jenkins, GitLab, GitHub, Git.'
+                                },
+                                {
+                                    title: 'Database',
+                                    description: 'Oracle, MySQL, Mango DB, PostgresSQl, MS SQL & others.'
+                                },
+                                {
+                                    title: 'Services',
+                                    description: 'RabbitMQ, Apache Kafka, Apache, Redis, ELK stack & others.'
+                                },
+                                {
+                                    title: 'Monitoring',
+                                    description: 'Prometheus, Datalog, Grafana,Azure monitor, Amazon CloudWatch, Zabbix & others.'
+                                },
+                            ]
+                        },
+                        {
+                            title: 'Cybersecurity services',
+                            description: 'Information Security is not longer in the roadmap. Cybersecurity is a MUST in every business and all companies should have the knowledge, tools and processes to avoid or minimize attacks.',
+                            cards: [
+                                {
+                                    title: 'Security Assessment',
+                                    description: 'Vulnerabilities analysis, Remediation report, Application Security Assessments'
+                                },
+                                {
+                                    title: 'Training',
+                                    description: 'Phising and information security training'
+                                },
+                                {
+                                    title: 'Security Transformations',
+                                    description: 'As Is/To Be assessments, IT transformation'
+                                },
+                            ]
+                        },
+                        {
+                            title: 'Consulting services',
+                            description: 'The provided graphic outlines consulting services offered by a team with technical expertise in software engineering, including roles like interim CTO, project and product management, and specialized consulting in technology, UX, and UI to enhance business and project outcomes.',
+                            cards: [
+                                {
+                                    title: 'CTO As A Service',
+                                    description: 'Vulnerabilities analysis, Remediation report, Application Security Assessments'
+                                },
+                                {
+                                    title: 'Project Management',
+                                    description: 'Project execution, Risk Analysis, Providers management.'
+                                },
+                                {
+                                    title: 'Product Management',
+                                    description: 'E2E overview, SLAs management'
+                                },
+                                {
+                                    title: 'Technology Consulting',
+                                    description: 'Technical questions about languages, architectures and solutions.'
+                                },
+                                {
+                                    title: 'UX/UI Consulting',
+                                    description: 'User Experience and User Interface consulting.'
+                                },
+                            ]
+                        },
+                    ],
+                    whyChooseService: {
+                        whyTitle: "Why choosing Gigson Solutions?",
+                        whyDescription: "We don't develop just an App or a Web. We build complex and and unique solutions for your business."
                     },
                     cases: {
                         heroH1: "Some cases we can do for <span>your business</span>",
@@ -310,8 +390,7 @@ i18n
                         ps_4_4: "4. Economic and transaction data",
                         pc_4_5: "In no case do we process specially protected data:",
                         pc_4_6: "All the data mentioned above has been obtained either directly from you through the submission of a commercial offer, contractual proposal, etc., or from your company by providing us with the identification data and other information necessary to carry out the object of the contractual relationship between the parties. It will be your or your company’s obligation to provide us with updated data in case of modification."
-                      }
-                      
+                    }        
                 }
             },
             es : {
@@ -339,9 +418,10 @@ i18n
                         servicesBtn: "NUESTROS SERVICIOS"
                     },
                     ctas: {
-                        contact: "CONTÁCTANOS"
+                        contact: "CONTÁCTANOS",
+                        talk: "¿HABLAMOS?"
                     },
-                        caseswhygigson: {
+                    caseswhygigson: {
                         wth2: "¿Qué puede hacer Gigson Solutions por tu negocio?",
                         wp1: "En Gigson Solutions, creemos que la tecnología debería impulsar tu negocio hacia adelante, no limitarlo.",
                         wp2: "Aquí hay algunos ejemplos de lo que podemos hacer por ti.",
@@ -379,6 +459,90 @@ i18n
                             label: "*No todos estos roles son necesarios en todos los productos. Dependiendo de tus necesidades, puede que los roles sean diferente.",
                             cta2: "CONTÁCTANOS"
                         }
+                    },
+                    service: {
+                        serviceH1: "Descubre todos <span>nuestros servicios</span>",
+                        serviceP: "SOLUCIONES A MEDIDA PARA NEGOCIOS COMPLEJOS"
+                    },
+                    serviceCard: [
+                        {
+                            title: 'Servicios de ingeniería de software',
+                            description: 'Desde integrar diferentes herramientas, desarrollar nuevas características y productos hasta monitorear y mantener un producto, nuestro equipo está listo para ello. Nuestro equipo de ingeniería de software está compuesto por desarrolladores, arquitectos y testers para construir cualquier necesidad con las mejores tecnologías de vanguardia.',
+                            cards: [
+                              {
+                                title: 'Proveedor de Nube',
+                                description: 'Amazon AWS, Microsoft Azure, GCP.'
+                              },
+                              {
+                                title: 'Contenedores y Orquestación',
+                                description: 'Docker, K8s, WPAR y otros.'
+                              },
+                              {
+                                title: 'CI/CD',
+                                description: 'Jenkins, GitLab, GitHub, Git.'
+                              },
+                              {
+                                title: 'Base de Datos',
+                                description: 'Oracle, MySQL, Mango DB, PostgresSQl, MS SQL y otros.'
+                              },
+                              {
+                                title: 'Servicios',
+                                description: 'RabbitMQ, Apache Kafka, Apache, Redis, ELK stack y otros.'
+                              },
+                              {
+                                title: 'Monitoreo',
+                                description: 'Prometheus, Datalog, Grafana, Azure monitor, Amazon CloudWatch, Zabbix y otros.'
+                              },
+                            ]
+                          },
+                          {
+                            title: 'Servicios de ciberseguridad',
+                            description: 'La seguridad de la información ya no está en la hoja de ruta. La ciberseguridad es una NECESIDAD en todos los negocios y todas las empresas deben tener el conocimiento, las herramientas y los procesos para evitar o minimizar los ataques.',
+                            cards: [
+                              {
+                                title: 'Evaluación de Seguridad',
+                                description: 'Análisis de vulnerabilidades, Informe de remediación, Evaluaciones de seguridad de aplicaciones.'
+                              },
+                              {
+                                title: 'Capacitación',
+                                description: 'Capacitación sobre phishing y seguridad de la información.'
+                              },
+                              {
+                                title: 'Transformaciones de Seguridad',
+                                description: 'Evaluaciones del estado actual y futuro, transformación de TI.'
+                              },
+                            ]
+                          },
+                          {
+                            title: 'Servicios de consultoría',
+                            description: 'Nuestro equipo de ingenieros de software, arquitectos y desarrolladores experimentados utiliza las mejores tecnologías adaptadas a tu industria. Gigson solutions es tu socio de confianza en el desarrollo de software. Entendemos que detrás de cada línea de código hay una oportunidad para obtener una ventaja competitiva.',
+                            cards: [
+                              {
+                                title: 'CTO como Servicio',
+                                description: 'Análisis de vulnerabilidades, Informe de remediación, Evaluaciones de seguridad de aplicaciones.'
+                              },
+                              {
+                                title: 'Gestión de Proyectos',
+                                description: 'Ejecución de proyectos, Análisis de riesgos, Gestión de proveedores.'
+                              },
+                              {
+                                title: 'Gestión de Productos',
+                                description: 'Visión general de E2E, Gestión de SLAs.'
+                              },
+                              {
+                                title: 'Consultoría Tecnológica',
+                                description: 'Consultas técnicas sobre lenguajes, arquitecturas y soluciones.'
+                              },
+                              {
+                                title: 'Consultoría UX/UI',
+                                description: 'Consultoría de experiencia de usuario e interfaz de usuario.'
+                              },
+                            ]
+                          },
+                    ],
+                    whyChooseService: {
+                        whyTitle: "¿Por qué elegir gigson solutions?",
+                        whyDescription: "En gigson solutions pensamos que la tecnología debería impulsar tu negocio, no limitarlo."
                     },
                     cases: {
                         heroH1: "Algunas de las cosas que podemos <span>hacer por ti</span>",
@@ -483,7 +647,6 @@ i18n
                             need: ["Gestión de clientes", "Gestión de proyectos y tareas", "Centralizar información"]
                         },
                     ],
-                    
                     faqsDropdown: [
                         {title: "Producto digital"},
                         {   
@@ -610,11 +773,7 @@ i18n
                         ps_4_4 : "4. Datos económicos y de transacciones",
                         pc_4_5 : "En ningún caso tratamos datos especialmente protegidos:",
                         pc_4_6 : "Todos los datos arriba mencionados los hemos obtenido o directamente de Usted mediante la presentación de una oferta comercial, propuesta contractual, etc. o mediante su empresa al facilitarnos los datos de identificación y demás información necesaria para llevar al cabo el objeto de la relación contractual entre las partes. Será una obligación suya o de su empresa facilitarnos los datos actualizados en caso de modificación."
-                    },
-                    pageservices:[
-                        
-                    ]
-                    
+                    },          
                 }
             },
         }
