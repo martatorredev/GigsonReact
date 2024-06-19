@@ -23,9 +23,9 @@ const Navbar = () => {
           <span></span>
         </label>
         <ul className="menu__box">
-          <li><Link className="menu__item" to='/about' onClick={closeMobileMenu}>ABOUT US</Link></li>
           <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>SERVICES</Link></li>
           <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>CASES</Link></li>
+          <li><Link className="menu__item" to='/about' onClick={closeMobileMenu}>ABOUT US</Link></li>          
           <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>FAQs</Link></li>
           <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>CONTACT</Link></li>
           <li><Link className="menu__item" to='/' onClick={closeMobileMenu}>EN / ES</Link></li>

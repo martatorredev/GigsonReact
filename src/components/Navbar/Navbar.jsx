@@ -12,9 +12,9 @@ const Navbar = () => {
   const {about, services, cases, faqs, contact} = t("menu")
   
   const menuLinks = [
-    {name: about,     link:'about'},
     {name: services,  link:'services'},
     {name: cases,     link:'cases'},
+    {name: about,     link:'about'},
     {name: faqs,      link:'faqs'},
     {name: contact,   link:'contact'},
   ]

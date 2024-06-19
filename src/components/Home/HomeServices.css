@@ -7,9 +7,9 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    top: -2rem;
+    top: -3rem;
     z-index: -1;
-    background: url('../../assets/homeServicesBg.svg') no-repeat;
+    background: url('../../assets/Bg-home-services.png') no-repeat;
     background-position: 0 100%;
     background-size: cover;
 }

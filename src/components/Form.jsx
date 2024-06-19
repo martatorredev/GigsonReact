@@ -86,9 +86,13 @@ const Form = () => {
                         <Link 
                             className='legal-policity-form' 
                             to="/policity"
+                            onClick={(e) => {
+                                e.preventDefault(); // Previene la navegación normal del <Link>
+                                window.open("/policity", "_blank");
+                            }}
                         >
                             {checkbox.second}
-                        </Link> 
+                        </Link>
                         {checkbox.third}
                     </label>
                 </div>

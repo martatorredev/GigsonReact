@@ -8,9 +8,9 @@ const Footer = () => {
     <footer className='footer'>
         <nav className="footer-nav-container">
             <ul className="footer-nav-links">
-                <li><Link to='/about'>ABOUT US</Link></li>
                 <li><Link to='/'>SERVICES     </Link></li>
                 <li><Link to='/'>CASES        </Link></li>
+                <li><Link to='/about'>ABOUT US</Link></li>
                 <li><Link to='/'>FAQs         </Link></li>
                 <li><Link to='/'>CONTACT      </Link></li>
                 <li><Link to='/'>EN / ES      </Link></li>

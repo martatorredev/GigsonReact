@@ -99,7 +99,7 @@ const HomeCases = () => {
 
             />
           </p>
-          <Link to='/contact' className='button-main why-gigson-btn'>
+          <Link to='/cases' className='button-main why-gigson-btn'>
           <Trans 
             i18nKey={wlink}
 

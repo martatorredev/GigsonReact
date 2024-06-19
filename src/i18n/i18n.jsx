@@ -13,9 +13,9 @@ i18n
             en: {
                 translation:{
                     menu: {
-                        about: "ABOUT",
                         services: "SERVICES",
                         cases: "CASES",
+                        about: "ABOUT",
                         faqs: "FAQs",
                         contact: "CONTACT US",
                         legal: "Legal Policy",
@@ -30,7 +30,7 @@ i18n
                         servicesTitle: "Tailored <span>solutions</span> for any business ·",
                         servicesP: {
                             p1: "We are focused to leverage the technology to  your business, connecting and making it secure to align needs and business goals.",
-                            p2: "And if your solution does not exist yet, lets build it together."
+                            p2: "And if your solution does not exist yet, let's build it together."
                         },
                         servicesBtn: "DISCOVER OUR SERVICES"
                     },
@@ -306,8 +306,10 @@ i18n
                         },
                         {
                             question: "Have we left anything unanswered?", 
-                            answer: "CTA: Write to us"
+                            answer: "We'll be happy to address any other questions you may have. You can reach out to us at info@gigsonsolutions.com or through our contact form.",
+                            cta:"Shall we talk?"
                         },
+                        
                     ],
                     form: {
                         title: "Ready to help you",
@@ -689,7 +691,8 @@ i18n
                         },
                         {
                             question: "¿Nos hemos dejado algo por contestar?", 
-                            answer: "CTA: Escríbenos"
+                            answer: "Estaremos encantados de resolverte cualquier otra cuestión. Puedes contactarnos en info@gigsonsolutions.com o a través de nuestro formulario.",
+                            cta:"¿Hablamos?"
                         },
                     ],
                     form: {
@@ -716,8 +719,8 @@ i18n
                             placeholder: "Detalles del proyecto (opcional)"
                         },
                         checkbox: {
-                            first: "He leido la ",
-                            second: "politica legal",
+                            first: "He leído la ",
+                            second: "politíca legal",
                             third: " y acepto el procesamiento de mi información personal."
                         },
                         send: 'ENVIAR SOLICITUD'

@@ -1,6 +1,6 @@
 .accordion-container{
     max-width: 105rem;
-    margin: 0 1rem;
+    margin: -1px 1rem;
     padding-bottom: 1rem;
     border: 1px solid #7874F4;
     border-radius: 1.25rem;
@@ -98,7 +98,7 @@
 }
 @media (min-width: 64rem) {
     .accordion-container{
-        margin: 0 4rem;
+        margin: -1px 4rem;
     }
     .oadljkgvbadojgbaed, .cases-dropdown-solution, .without-border{
         max-width: none;
@@ -137,6 +137,6 @@
 }
 @media (min-width: 121rem) {
     .accordion-container{
-        margin: 0 auto;
+        margin: -1px auto;
     }
 }

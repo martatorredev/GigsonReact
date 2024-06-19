@@ -10,9 +10,9 @@ const Footer = () => {
     const {about, services, cases, faqs, contact, legal, cookies, notice } = t("menu")
     
     const menuLinks = [
-      {name: about,     link:'about'},
       {name: services,  link:'services'},
       {name: cases,     link:'cases'},
+      {name: about,     link:'about'},
       {name: faqs,      link:'faqs'},
       {name: contact,   link:'contact'},
     ]
@@ -43,9 +43,9 @@ const Footer = () => {
             <div className="footer-policy">
                 <span href="">Developed by gigson © 2024 </span>
                 <ul className='footer-policy-links'>
-                    <li><Link to='/'>{legal}</Link></li>
-                    <li><Link to='/'>{cookies}</Link></li>
-                    <li><Link to='/'>{notice}</Link></li>    
+                    <li><Link to='/policity'>{legal}</Link></li>
+                    <li><Link to='/policity'>{cookies}</Link></li>
+                    <li><Link to='/policity'>{notice}</Link></li>    
                 </ul>
             </div>
         </div>

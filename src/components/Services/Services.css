@@ -184,12 +184,13 @@
     }
     .why-gigson{
         margin: 7rem 2rem;
-        padding: 3rem 2rem;
+        padding: 4rem 2rem 3rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
     }
     .why-gigson > h2{
+        margin-top: -15px;
         font-size: 3em;
         text-wrap: balance;
         max-width: 25rem;
@@ -257,12 +258,13 @@
     }
     .why-gigson{
         margin: 7rem 4rem;
-        padding: 3rem 2rem;
+        padding: 4rem 2rem 3rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
     }
     .why-gigson > h2{
+        margin-top: -15px;
         font-size: 3em;
         text-wrap: balance;
         max-width: 25rem;
@@ -290,11 +292,12 @@
         padding-top: .3rem;
     }
     .why-gigson{
-        padding: 5rem 3rem;
+        padding: 6rem 3rem 5rem;
         justify-content: flex-start;
         gap: 30%;
     }
     .why-gigson > h2{
+        margin-top: -15px;
         font-size: 3.5em;
         max-width: 27rem;
     }
