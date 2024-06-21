@@ -4,10 +4,11 @@
     position: relative;
 }
 .home-services-bg{
+    margin-top: 5rem;
     height: 100%;
     width: 100%;
     position: absolute;
-    top: -3rem;
+    top: -9rem;
     z-index: -1;
     background: url('../../assets/Bg-home-services.png') no-repeat;
     background-position: 0 100%;
@@ -90,6 +91,7 @@
         padding: 0 2.5rem;
     }
     .home-services-h2{
+        margin-top: 2rem;
         font-size: 4em;
     }
     .home-services-info{

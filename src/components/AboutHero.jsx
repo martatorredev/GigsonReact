@@ -87,6 +87,7 @@ const AboutHero = () => {
             </div>
             <p className='about-believe-p'>*Not all of these roles are necessary in all products. Wisely selection is needed depending on needs and sectors.</p>
             <Button name='CONTACT US' classStyle='about-button-contact'/>
+            
         </section>        
     </main>
   )

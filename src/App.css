@@ -37,7 +37,7 @@ form, input , textarea, select, button, label {
 }
 svg {
     width: 100%;
-    display: block;
+
     fill: currentColor;
     padding: 0;
 }

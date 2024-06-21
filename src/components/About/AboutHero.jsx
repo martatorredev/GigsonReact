@@ -36,15 +36,33 @@ const AboutHero = () => {
     <>
         <section className='div-about-hero'>
             <div className="about-bg"></div>
-            <h1 className='about-hero-h1'>
+            <div className="div-content-hero-h1-p-l-svg">
+                <h1 className='about-hero-h1'>
                 <Trans 
                     i18nKey={title}
                     components={{span: <span />}}
                 />
-            </h1>
-            <p className='about-hero-p'>{description}</p>
-            <Link to='/contact' className='about-hero-btn button-main'>{cta}</Link>
+                </h1>
+                <p className='about-hero-p'>{description}</p>
+                
+                <div className="div-button-about">
+                    <Link to='/contact' className='about-hero-btn button-main'>{cta}</Link>
+
+                </div>
+
+                    
+                
+                
+                
+            </div>
+            
         </section>
+        <div className="div-button-about-svg">
+            <svg className='icon-godown' viewBox="0 0 19 8" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0.999999L8.92332 6.59293C9.26904 6.83697 9.73096 6.83697 10.0767 6.59293L18 1" stroke='#7874f4'/>
+            </svg>
+        </div>
+
         <div className="about-belive-max">
             <h2 className='about-hero-h2'>{titleH2}</h2>
             <section className='div-about-belive'>
@@ -80,8 +98,10 @@ const AboutHero = () => {
             </div>
             <p className='about-believe-p'>{label}</p>
             <div className="about-button-container">
-                <Link to='/contact' className='about-button-contact button-main'>{cta2}</Link> 
+                <Link to='/contact' className='about-button-contact button-main'>{cta2}</Link>
+                 
             </div>
+            
         </section>        
     </>
   )
