@@ -1,6 +1,6 @@
 .contactd-content{
     overflow: hidden;
-    
+    min-height: 100vh;    
 }
 .contact-img{
     text-align: right;
@@ -25,8 +25,9 @@
 
     }
     .contact-content{
+        min-height: 100vh;
         max-width: 120rem;
-        max-height: 120rem;
+
     }
 }
 
@@ -42,7 +43,7 @@
     .contact-content{
         margin: 0 0 0 -2.5rem;
         max-width: 110rem;
-        max-height: 110rem;
+
     }
 }
 

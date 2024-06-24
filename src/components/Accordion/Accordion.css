@@ -19,7 +19,7 @@
     cursor: pointer;
 }
 .accordion-title{
-    font-size: 1.875rem;
+    font-size: 2.1875rem;
     max-width: 90%;
 }
 .accordion-content{
@@ -30,7 +30,6 @@
     overflow: hidden;
     opacity: 0;
     transition: 350ms ease-in-out;
-    
 }
 .accordion-show-content{
     margin-top: 1rem;
@@ -58,7 +57,8 @@
     border-top: none;
 }
 .oadljkgvbadojgbaed {
-    padding: 1rem 0;
+    margin-bottom: 1rem;
+    padding: 1rem 0 2rem;
     border-bottom: 1px solid #868685;
     border-top: 1px solid #868685;
 }
@@ -96,11 +96,47 @@
     width: 1.5rem;
     height: 1.5rem;
 }
+.cases-why-gigson-btn{
+    margin-top: 2rem;
+    color: #7874F4;
+}
+
+.div-cta > p{
+    font-weight: bold;
+}
+
+.cases-cta-acordion{
+    font-size: 1rem;
+    margin: 1rem 0 0;
+    padding: 1.5rem 1rem 1.5rem;
+    background-color: #EEEDF0;
+    color: #3c3b3b;
+    border-radius: 1.25rem;
+    border: 1px solid #7874F4;
+    gap: 2rem;
+}
 @media (min-width: 64rem) {
+    .cases-dropdown-features > h4{
+        margin: 1.1rem 0 0;
+    }
+    .cases-why-gigson-btn{
+        margin-top: 0;
+        color: #7874F4;
+    }
+    .div-cta{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 5rem 0 2rem;
+    }
+    .div-cta > p{
+        max-width: 50rem;
+        font-weight: bold;
+    }
     .accordion-container{
         margin: -1px 4rem;
     }
-    .oadljkgvbadojgbaed, .cases-dropdown-solution, .without-border{
+    .oadljkgvbadojgbaed,  .without-border{
         max-width: none;
         display: grid;
         grid-template-columns: calc(70% - 1rem) 30%;
@@ -109,13 +145,20 @@
     .cases-dropdown-solution p, .cases-dropdown-challenge {
         font-size: 1.1em;
     }
+    .cases-dropdown-solution{
+        overflow: hidden;
+        max-width: none;
+        display: grid;
+        grid-template-columns: calc(60% - 1rem) 40%;
+        gap: 1rem;
+    }
 }
 @media (min-width: 90rem){
     .accordion-container{
         padding: .5rem 2rem 1.5rem;
     }
     .accordion-title{
-        font-size: 1.7em;
+        font-size: 2.1875rem;
     }
     .cases-dropdown-solution h4, .cases-dropdown-features h4 {
         font-size: 1.3rem;

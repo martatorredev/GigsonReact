@@ -55,7 +55,7 @@ const Navbar = () => {
                   >{name}</NavLink>
               </li>
             )}
-            <LanguageSelector closeMobileMenu={closeMobileMenu}/>
+
           </ul>
         </nav>
       </div>

@@ -20,7 +20,7 @@ function Hero() {
               components={{span: <span />}}
             />
           </h1>
-          <Link to='/about' className='hero-btn button-main'>{heroBtn}</Link>
+          <Link to='/contact' className='hero-btn button-main'>{heroBtn}</Link>
       </div>
       </header>
       <footer className="hero-godown">

@@ -25,7 +25,7 @@ i18n
                     home:{
                         heroH1: "Making technology <span>boost</span> your business<span>.</span>",
                         heroP: "BUILDING TAILORED SOFTWARE SOLUTIONS",
-                        heroBtn: "ABOUT US",
+                        heroBtn: "CONTACT US",
                         heroScroll: "GO DOWN TO EXPORE",
                         servicesTitle: "Tailored <span>solutions</span> for any business ·",
                         servicesP: {
@@ -169,7 +169,10 @@ i18n
                         resetFilters: "RESET FILTERS",
                         featuresTitle: "Features",
                         solutionTitle: "Solution",
-                        toolsTitle: "specifications"
+                        toolsTitle: "specifications"},
+                    casesctaacordion:{
+                        pcasesctaacordion: "This outline provides you with a solid foundation for developing a detailed case study that you can adapt and expand according to your specific needs.",
+                        talk:"Shall we talk?"
                     },
                     faqsH1: "Questions? <span>Let’s go!</span>",
                     casesDropdown: [
@@ -410,7 +413,7 @@ i18n
                     home: {
                         heroH1: "Tecnología para <span>impulsar</span> tu negocio<span>.</span>",
                         heroP: "SOLUCIONES A MEDIDA PARA NEGOCIOS COMPLEJOS",
-                        heroBtn: "SOBRE NOSOTROS",
+                        heroBtn: "CONTACTANOS",
                         heroScroll: "SEGUIR EXPLORANDO",
                         servicesTitle: "Productos <span>a medida</span> para cualquier negocio ·",
                         servicesP: {
@@ -554,7 +557,10 @@ i18n
                         resetFilters: "BORRAR FILTROS",
                         featuresTitle: "Funcionalidades",
                         solutionTitle: "Solución",
-                        toolsTitle: "Especificaciones"
+                        toolsTitle: "Especificaciones"},
+                    casesctaacordion:{    
+                        pcasesctaacordion: "Este esquema te proporciona una base sólida para desarrollar un caso de estudio detallado que puedes adaptar y expandir según tus necesidades específicas.",
+                        talk:"¿HABLAMOS?"
                     },
                     faqsH1: "¿Preguntas? <span>Las resolvemos</span>",
                     casesDropdown: [
