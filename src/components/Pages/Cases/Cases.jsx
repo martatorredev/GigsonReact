@@ -2,22 +2,27 @@ import { useState } from 'react'
 import CasesBg from '../../../assets/CasesBg.png'
 import { Trans, useTranslation } from 'react-i18next'
 import { Accordion } from '../../Accordion/Accordion'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Cases.css'
 
 const Cases = () => {
+  const [activeIndex, setActiveIndex] = useState(null)
+
+  const handleItemClick = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index))
+  }
   const [selectedTags, setSelectedTags] = useState([]);
   const [selectedNeeds, setSelectedNeeds] = useState([]);
 
-  const {t} = useTranslation()
-  const {heroH1, heroP, featuresTitle,
-         tagTitle, needTitle, resetFilters, 
-         solutionTitle, toolsTitle} = t("cases")
+  const { t } = useTranslation()
+  const { heroH1, heroP, featuresTitle,
+    tagTitle, needTitle, resetFilters,
+    solutionTitle, toolsTitle } = t("cases")
   const cases = t("casesDropdown")
-  const {contact} = t("ctas")
+  const { contact } = t("ctas")
 
-  const uniqueTags = [...new Set(cases.map(({tags}) => tags).flat())];
-  const uniqueNeeds = [...new Set(cases.map(({need}) => need).flat())];
+  const uniqueTags = [...new Set(cases.map(({ tags }) => tags).flat())];
+  const uniqueNeeds = [...new Set(cases.map(({ need }) => need).flat())];
 
   const handleTagFilter = (tag) => {
     if (selectedTags.includes(tag)) {
@@ -26,7 +31,7 @@ const Cases = () => {
       setSelectedTags([...selectedTags, tag]);
     }
   };
-  
+
   const handleNeedFilter = (need) => {
     if (selectedNeeds.includes(need)) {
       setSelectedNeeds(selectedNeeds.filter((n) => n !== need));
@@ -48,18 +53,18 @@ const Cases = () => {
 
   return (
     <>
-    <div className='hero-cases'>
-      <img src={CasesBg} alt="" className='cases-img'/>
-      <section className='hero-cases'>
-        <h1 className='hero-cases-h1'>
-          <Trans 
-            i18nKey={heroH1}
-            components={{span: <span />}}
-          />      
-        </h1>
-        <p className='hero-cases-p'>{heroP}</p>
-      </section>
-    </div>
+      <div className='hero-cases'>
+        <img src={CasesBg} alt="" className='cases-img' />
+        <section className='hero-cases'>
+          <h1 className='hero-cases-h1'>
+            <Trans
+              i18nKey={heroH1}
+              components={{ span: <span /> }}
+            />
+          </h1>
+          <p className='hero-cases-p'>{heroP}</p>
+        </section>
+      </div>
 
       <h3 className='cases-filters-title'>{tagTitle}</h3>
       <div className="cases-container-filters">
@@ -89,9 +94,9 @@ const Cases = () => {
 
       <button className='cases-reset-filters' onClick={handleResetFilters}>{resetFilters}</button>
 
-      {filteredCases.map(({title, subTitle, challenge, features, solution, tools}, i) => 
+      {filteredCases.map(({ title, subTitle, challenge, features, solution, tools }, i) =>
         <div key={i}>
-          <Accordion 
+          <Accordion
             title={title}
             subTitle={subTitle}
             challenge={challenge}
@@ -101,6 +106,8 @@ const Cases = () => {
             featuresTitle={featuresTitle}
             solutionTitle={solutionTitle}
             toolsTitle={toolsTitle}
+            isOpen={activeIndex === i}
+            onClick={() => handleItemClick(i)}
           />
         </div>
       )}

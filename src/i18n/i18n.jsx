@@ -27,7 +27,7 @@ i18n
                         heroP: "BUILDING TAILORED SOFTWARE SOLUTIONS",
                         heroBtn: "CONTACT US",
                         heroScroll: "GO DOWN TO EXPORE",
-                        servicesTitle: "Tailored <span>solutions</span> for any business ·",
+                        servicesTitle: "Tailored <span>solutions</span> for any business · Tailored <span>solutions</span> for any business · Tailored <span>solutions</span> for any business · Tailored <span>solutions</span> for any business · Tailored <span>solutions</span> for any business · Tailored <span>solutions</span> for any business · Tailored <span>solutions</span> for any business · Tailored <span>solutions</span> for any business · Tailored <span>solutions</span> for any business · Tailored <span>solutions</span> for any business ·",
                         servicesP: {
                             p1: "We are focused to leverage the technology to  your business, connecting and making it secure to align needs and business goals.",
                             p2: "And if your solution does not exist yet, let's build it together."
@@ -415,7 +415,7 @@ i18n
                         heroP: "SOLUCIONES A MEDIDA PARA NEGOCIOS COMPLEJOS",
                         heroBtn: "CONTACTANOS",
                         heroScroll: "SEGUIR EXPLORANDO",
-                        servicesTitle: "Productos <span>a medida</span> para cualquier negocio ·",
+                        servicesTitle: "Productos <span>a medida</span> para cualquier negocio · Productos <span>a medida</span> para cualquier negocio ·Productos <span>a medida</span> para cualquier negocio · Productos <span>a medida</span> para cualquier negocio ·Productos <span>a medida</span> para cualquier negocio · Productos <span>a medida</span> para cualquier negocio ·Productos <span>a medida</span> para cualquier negocio · Productos <span>a medida</span> para cualquier negocio ·",
                         servicesP: {
                             p1: "Nos dedicamos a aprovechar al máximo las herramientas de software que ya utilizas, conectándolas entre sí, optimizándolas para que rindan más y alineándolas con las necesidades reales de tu negocio.",
                             p2: "Y si lo que necesitas aún no existe... lo creamos para ti."

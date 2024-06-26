@@ -8,21 +8,22 @@ export const Accordion = ({
     title, challenge,
     features, solution, tools, 
     featuresTitle, solutionTitle,
+    isOpen, onClick
 }) => {
-    const [accordionOpen, setAccordionOpen] = useState(false)
+
     const {t} = useTranslation()
     const {pcasesctaacordion,talk } = t("casesctaacordion")
 
   return (
-    <div className='accordion-container' onClick={() => setAccordionOpen(!accordionOpen)}>
+    <div className='accordion-container' onClick={onClick}>
         <button 
             className='accordion-btn'
         >
             <span className='accordion-title'>{title}</span>
-            <AccordionAnimation accordionOpen={accordionOpen}/>
+            <AccordionAnimation accordionOpen={isOpen}/>
         </button>
         <div className={`accordion-content ${
-            accordionOpen && 'accordion-show-content' 
+            isOpen && 'accordion-show-content' 
         }`}>
             <div className="accordion-content-text">
                

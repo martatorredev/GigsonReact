@@ -11,8 +11,8 @@ function Hero() {
   return (
     <section className='hero-section'>
       <header className="hero-top-content">
-        <img className='hero-img' src={heroImg} alt="" />
-        <div className="hero-text">
+      <img className='hero-img' src={heroImg} alt="" />
+      <div className="hero-text">
           <p className='hero-p'>{heroP}</p>
           <h1 className='hero-h1'>
             <Trans 
@@ -22,6 +22,8 @@ function Hero() {
           </h1>
           <Link to='/contact' className='hero-btn button-main'>{heroBtn}</Link>
       </div>
+      
+        
       </header>
       <footer className="hero-godown">
         <a href='#homeServices' className='hero-godown-a'>{heroScroll}</a>

@@ -1,28 +1,31 @@
-import {useState} from 'react'
-import { AccordionAnimation } from '../../../Accordion/AccordionAnimation'
+import { Link } from 'react-router-dom';
+import { AccordionAnimation } from '../../../Accordion/AccordionAnimation';
 
-export const FaqsAccordion = ({question, answer}) => {
-    const [accordionOpen, setAccordionOpen] = useState(false)
 
-  return (
-    <>
-        {question &&
-            <div className='accordion-container faqs-container' onClick={() => setAccordionOpen(!accordionOpen)}>
-                <button 
-                    className='accordion-btn'
-                >
-                    <span className='accordion-title'>{question}</span>
-                    <AccordionAnimation accordionOpen={accordionOpen} faqs="faqs" />
-                </button>
-                <div className={`accordion-content ${
-                    accordionOpen && 'accordion-show-content' 
-                }`}>
-                    <div className="accordion-content-text">
-                        {answer}
+
+
+export const FaqsAccordion = ({ question, answer, isOpen, onClick, cta, isLast }) => {
+    return (
+        <>
+            {question && (
+                <div className='accordion-container faqs-container'>
+                    <button className='accordion-btn' onClick={onClick}>
+                        <span className='accordion-title'>{question}</span>
+                        <AccordionAnimation accordionOpen={isOpen} faqs="faqs" />
+                    </button>
+                    <div className={`accordion-content ${isOpen && 'accordion-show-content'}`}>
+                        <div className="accordion-content-text">
+                            {answer}
+                            {isLast && (
+                                <div className='faq-button-wrapper'>
+                                    <Link to='/contact' className='about-hero-btn button-main'>{cta}</Link>
+                                </div>
+                            )}
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        }
-    </>
-  )
-}
+            )}
+        </>
+    );
+};

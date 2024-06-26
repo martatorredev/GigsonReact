@@ -32,6 +32,8 @@
 
 
 
+
+
 @media (min-width: 40rem) {
     .home-services-info{
         display: flex;
@@ -61,8 +63,9 @@
         padding: 0 2.5rem;
     }
     .home-services-h2{
-        font-size: 4em;
+        font-size: 4.5em;
     }
+
     .home-services-info{
         flex-direction: row;
         justify-content: space-between;

@@ -38,14 +38,20 @@
 .services-h2-animation{
     white-space: nowrap;
     padding: 1rem;
-    animation: scrollLeft 4s linear infinite;
+    animation: scrollLeft 38s linear infinite;
 }
 
 .home-services-h2 {
-    font-size: clamp(1.875em,7vw,4.4em);
+    font-size: clamp(2.875em,7vw,4.4em);
     color: #fff;
     text-wrap: nowrap;
 }
+
+.services-h2-animation:hover{
+    animation: scrollLeft 60s linear infinite;
+}
+
+
 @keyframes scrollLeft {
     100% {
       transform: translateX(-100%);
@@ -116,9 +122,6 @@
     .home-services-info{
         padding: 0 4rem;
     }
-    /* .home-services-h2{
-        font-size: 4.5em;
-    } */
     .home-services-p{
         font-size: 1.875em;
         line-height: 2.23rem;
