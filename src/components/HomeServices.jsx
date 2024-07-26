@@ -2,6 +2,9 @@ import homeServicesImg from '../assets/FormasServices.png'
 import './HomeServices.css'
 import Button from './Button'
 
+//  TODO: Aumentar o tamanho do botão
+//  TODO: Remover o efeito de remoção da animação ao passar o mouse
+
 function HomeServices() {
   return (
     <section className='home-services'>
