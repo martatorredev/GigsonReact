@@ -1,10 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import homeServicesImg from "../../assets/FormasServices.png";
 import { Link } from "react-router-dom";
 import "./HomeServices.css";
-
-//  TODO: Remover o efeito de remoção da animação ao passar o mouse
 
 function HomeServices() {
    const { t } = useTranslation();

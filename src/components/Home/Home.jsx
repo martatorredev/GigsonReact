@@ -11,7 +11,6 @@ import { CtaServices } from "./CtaServices";
 //  TODO: Aumentar o tamanho dos ícones, verificar em todos os lugares
 //  TODO: Separar mais as formas
 //  TODO: Corrigir o tamanho da fonte para que fique igual ao figma
-//  TODO: Alinhar o toggle de ES/EN para a direita
 //  TODO: Remover o efeito de remoção da animação ao passar o mouse
 
 const Home = () => {
