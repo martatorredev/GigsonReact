@@ -39,6 +39,12 @@
    white-space: nowrap;
    padding: 1rem;
    animation: scrollLeft 80s linear infinite;
+   /* Single animation */
+   animation-play-state: running;
+}
+
+.services-h2-animation:hover {
+   animation-play-state: paused;
 }
 
 .home-services-h2 {
