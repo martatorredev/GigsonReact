@@ -66,7 +66,14 @@
    width: fit-content;
    margin: 3rem auto;
 }
-@media (min-width: 56.25rem) {
+
+@media (min-width: 57rem) {
+   .case-selector-flex {
+      padding-inline: 5rem;
+   }
+}
+
+@media (min-width: 70.25rem) {
    .hero-cases {
       margin: 7rem 2rem 2rem;
    }
@@ -123,10 +130,9 @@
 }
 
 @media screen and (max-width: 800px) {
-    .accordion-title {
-        font-size: 1.5rem;
-    }
-  
+   .accordion-title {
+      font-size: 1.5rem;
+   }
 }
 
 @media screen and (max-width: 600px) {
@@ -135,6 +141,6 @@
    }
 
    .accordion-title {
-    font-size: 1.2rem;
-}
+      font-size: 1.2rem;
+   }
 }
