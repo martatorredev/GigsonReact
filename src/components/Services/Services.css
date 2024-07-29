@@ -104,7 +104,7 @@
 .why-gigson > h2 {
    font-size: 2em;
    text-wrap: balance;
-   max-width: 15rem;
+   max-width: 100%;
 }
 .why-gigson p {
    font-size: 1.25em;
@@ -205,7 +205,7 @@
       max-width: 25rem;
    }
    .why-gigson p {
-      font-size: 1.7em;
+      font-size: 1.5em;
    }
 }
 @media (min-width: 76.4375rem) {
@@ -215,6 +215,9 @@
    .services-cards-top h2 {
       font-size: 2rem;
    }
+   .why-gigson p {
+    font-size: 1.7em;
+ }
 }
 @media (min-width: 90rem) {
    .services-cards-top h2 {
@@ -299,6 +302,8 @@
    .services {
       padding-inline: 9rem;
    }
+   .why-gigson {
+   }
 }
 
 @media (min-width: 110rem) {
@@ -329,9 +334,9 @@
       padding-top: 0.3rem;
    }
    .why-gigson {
-      padding: 6rem 3rem 5rem;
-      justify-content: flex-start;
-      gap: 30%;
+      padding: 6rem 5rem 5rem;
+      justify-content: space-between;
+      gap: initial;
    }
    .why-gigson > h2 {
       margin-top: -15px;
