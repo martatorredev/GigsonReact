@@ -1,110 +1,142 @@
-
-.faqs-section{
-    max-width: 120rem;
-    margin: 0 1.5rem;
+.faqs-section {
+   max-width: 120rem;
+   margin: 0 1.5rem;
+   padding-bottom: 3rem;
 }
-.hero-faqs{
-    text-align: center;
-    margin: 10rem 1rem 4rem;
-    padding: 6rem 0;
-    overflow: hidden;
+.hero-faqs {
+   text-align: center;
+   margin: 2rem 1rem 0;
+   padding-top: 6rem;
+   padding-bottom: 4rem;
+   overflow: hidden;
 }
-.faqs-imgs{
-    display: flex;
-    max-width: 33rem;
-    margin: 0 auto;
-    position: relative;
+.faqs-imgs {
+   display: flex;
+   max-width: 33rem;
+   margin: 0 auto;
+   position: relative;
 }
 .faqs-imgs > img:first-child {
-    position: absolute;
-    top: -7rem;
-    left: .5rem;
-    z-index: -1;
-    width: 30%;
-    object-fit: contain;
+   position: absolute;
+   top: -7rem;
+   left: 0.5rem;
+   z-index: -1;
+   width: 30%;
+   object-fit: contain;
 }
 .faqs-imgs > img:last-child {
-    position: absolute;
-    top: -5rem;
-    right: .5rem;
-    z-index: -1;
-    width: 43%;
-    object-fit: contain;
+   position: absolute;
+   top: -5rem;
+   right: 0.5rem;
+   z-index: -1;
+   width: 43%;
+   object-fit: contain;
 }
-.hero-faqs-h1{
-    max-width: 17rem;
-    margin: 0 auto;
-    font-size: 2.575rem;
-    line-height: 3.5rem;
-    padding-top: .3rem;
-    color: #3C3C3B;
-    text-wrap: pretty;
+.hero-faqs-h1 {
+   max-width: 17rem;
+   margin: 0 auto;
+   font-size: 2.575rem;
+   line-height: 3.5rem;
+   padding-top: 0.3rem;
+   color: #3c3c3b;
+   text-wrap: pretty;
 }
 .hero-faqs-h1 > span {
-    color: #7874F4;
+   color: #7874f4;
 }
-.faqs-accordion-h2{
-    font-size: 2.5rem;
-    margin: 2rem auto;
-}
-
-.faqs-container{
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid #3C3C3B;
-    padding-bottom: 1rem;
-    margin: 1rem ;
-}
-.faqs-container > .accordion-btn{
-    margin: 1rem 0 0;
-    padding: 0;
-}
-.faqs-container > .accordion-content{
-    padding: 0;
-}
-.svg-faqs{
-    transition: transform 300ms ease-out;
-}
-.svg-faqs-close{
-    transform: rotate(180deg);
-    transition: transform 300ms ease-out;
+.faqs-accordion-h2 {
+   font-size: 1.7rem;
+   margin: 2rem auto;
 }
 
+.faqs-container {
+   border: none;
+   border-radius: 0;
+   border-bottom: 1px solid #3c3c3b;
+   padding-bottom: 1rem;
+   margin: 1rem;
+}
+.faqs-container > .accordion-btn {
+   margin: 1rem 0 0;
+   padding: 0;
+}
+.faqs-container > .accordion-content {
+   padding: 0;
+}
+.svg-faqs {
+   transition: transform 300ms ease-out;
+}
+.svg-faqs-close {
+   transform: rotate(180deg);
+   transition: transform 300ms ease-out;
+}
 
+@media (min-width: 32.25rem) {
+   .hero-faqs {
+      padding-top: 7rem;
+      padding-bottom: 5rem;
+   }
+   .faqs-imgs {
+      max-width: 27rem;
+   }
+}
 
-
+@media (min-width: 60rem) {
+   .faqs-section {
+      padding-inline: 2rem;
+   }
+}
 
 @media (min-width: 70rem) {
+   .hero-faqs {
+      text-align: center;
+      margin: 10rem 1rem 5rem;
+      padding: 6rem 0;
+      overflow: hidden;
+   }
 
-    .hero-faqs{
-        text-align: center;
-        margin: 10rem 1rem 5rem;
-        padding: 6rem 0;
-        overflow: hidden;
-    }
-
-    .hero-faqs-h1{
-        max-width: 22rem;
-        margin: 0 auto;
-        font-size: 3.375rem;
-        line-height: 3.5rem;
-        padding-top: .3rem;
-        color: #3C3C3B;
-        text-wrap: pretty;
-    }
-    .faqs-accordion{
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-    }
-    .faqs-accordion-h2{
-        position: relative;
-        top: 5.9rem; left: 0;
-        font-size: 2.1875rem;
-        margin: 1rem 0 1rem 4rem;
-    }
-    .faqs-section{
-        max-width: 120rem;
-        margin: 0 auto;
-    }
+   .hero-faqs-h1 {
+      max-width: 22rem;
+      margin: 0 auto;
+      font-size: 3.375rem;
+      line-height: 3.5rem;
+      padding-top: 0.3rem;
+      color: #3c3c3b;
+      text-wrap: pretty;
+   }
+   .faqs-accordion {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+   }
+   .faqs-accordion-h2 {
+      position: relative;
+      top: 5.9rem;
+      left: 0;
+      font-size: 2.1875rem;
+      margin: 1rem 1rem 1rem 4rem;
+   }
+   .faqs-section {
+      max-width: 120rem;
+      margin: 0 auto;
+   }
+}
+@media (min-width: 75rem) {
+   .faqs-section {
+      padding-inline: 4rem;
+   }
+}
+@media (min-width: 90rem) {
+   .faqs-section {
+      padding-inline: 7rem;
+   }
 }
 
+@media (min-width: 100rem) {
+   .faqs-section {
+      padding-inline: 10rem;
+   }
+
+   .faqs-accordion-h2 {
+      font-size: 2.8rem;
+   }
+}

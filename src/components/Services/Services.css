@@ -216,8 +216,8 @@
       font-size: 2rem;
    }
    .why-gigson p {
-    font-size: 1.7em;
- }
+      font-size: 1.7em;
+   }
 }
 @media (min-width: 90rem) {
    .services-cards-top h2 {
