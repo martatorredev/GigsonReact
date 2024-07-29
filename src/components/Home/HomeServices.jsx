@@ -23,7 +23,7 @@ function HomeServices() {
             <div className="home-services-text">
                <p className="home-services-p">{servicesP.p1}</p>
                <p className="home-services-p">{servicesP.p2}</p>
-               <Link to="/about" className="home-services-btn button-main">
+               <Link to="/services" className="home-services-btn button-main">
                   {servicesBtn}
                </Link>
             </div>
