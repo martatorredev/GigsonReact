@@ -96,6 +96,9 @@
       font-size: 1.875em;
       margin-bottom: 2.5rem;
    }
+   .cases-reset-filters {
+      margin: 2rem 0;
+   }
 }
 @media (min-width: 90rem) {
    .hero-cases {

@@ -235,6 +235,9 @@
       font-size: 23px;
       margin-inline: initial;
    }
+   .cases-reset-filters {
+      margin: 2rem 0;
+   }
 }
 
 @media (min-width: 80.125rem) {
@@ -507,4 +510,3 @@
       margin-inline: 0;
    }
 }
-
