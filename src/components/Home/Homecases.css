@@ -105,7 +105,7 @@
 .cases-why-gigson > h2 {
    font-size: 2em;
    text-wrap: balance;
-   max-width: 15rem;
+   max-width: fit-content;
 }
 .cases-why-gigson p {
    font-size: 1.25em;

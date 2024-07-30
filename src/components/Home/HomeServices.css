@@ -212,9 +212,12 @@
    }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
    .home-services-img {
-      width: 70%;
+      width: 80%;
       margin-bottom: -2rem;
+   }
+   .home-services-info {
+      padding-inline: 1.3rem;
    }
 }
