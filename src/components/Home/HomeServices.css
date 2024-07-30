@@ -44,7 +44,6 @@
    color: #fff;
    text-wrap: nowrap;
    text-shadow: 0 0 2px black;
-
 }
 
 @keyframes scrollLeft {
@@ -67,6 +66,7 @@
 .home-services-img {
    align-self: flex-start;
    object-fit: cover;
+   opacity: 0.4;
 }
 
 .home-services-info {
