@@ -153,6 +153,12 @@
    }
 }
 
+@media screen and (max-width: 1700px) {
+   .home-services-info {
+      padding-inline: 3rem;
+   }
+}
+
 @media screen and (max-width: 1500px) {
    .home-services-img {
       width: 50%;
@@ -161,12 +167,12 @@
 
 @media screen and (max-width: 1440px) {
    .home-services-info {
-      padding-inline: 3rem;
+      padding-inline: 6rem;
       padding-bottom: 1rem;
    }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
    .home-text-container {
       padding-top: 7rem;
    }
@@ -210,6 +216,10 @@
    .home-text-container {
       padding-top: 3rem;
    }
+
+   #homeServices {
+      padding-top: 3rem;
+   }
 }
 
 @media screen and (max-width: 500px) {
@@ -220,4 +230,11 @@
    .home-services-info {
       padding-inline: 1.3rem;
    }
+}
+
+@media screen and (max-width: 450px) {
+   #homeServices {
+      padding-top: 1rem;
+   }
+  
 }

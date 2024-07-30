@@ -5,8 +5,6 @@ import Form from "../Form";
 import HomeCases from "./HomeCases";
 import { CtaServices } from "./CtaServices";
 
-//  TODO: Traduzir: CTO as a Service, Consultoria Tecnologica, Desarrollo Software, CTO as a service
-//  TODO: Corrigir número em liláz
 //  TODO: Aumentar o tamanho dos ícones, verificar em todos os lugares
 //  TODO: Corrigir o tamanho da fonte para que fique igual ao figma
 
