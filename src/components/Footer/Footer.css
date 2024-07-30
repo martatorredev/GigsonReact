@@ -23,7 +23,7 @@
    align-items: start;
    justify-content: space-between;
    margin: 2rem 0 8rem;
-   padding-inline: 2rem;
+   padding-inline: 0;
 }
 .footer-icon {
    width: 2.125rem;
@@ -49,10 +49,22 @@
 .spam-lng {
    color: #3c3c3b7c;
 }
+
+@media (min-width: 34.375rem) {
+   .footer-nav-links {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+@media (min-width: 44rem) {
+   .footer {
+      padding-inline: 3rem;
+   }
+}
 @media (min-width: 56.25rem) {
    .footer {
-      padding: 0.7rem 2rem;
+      padding: 0.7rem 4rem;
    }
+
    .footer-nav-links {
       position: relative;
 
@@ -91,7 +103,7 @@
 }
 @media (min-width: 90rem) {
    .footer {
-      padding: 0.7rem 4rem;
+      padding: 0.7rem 7rem;
    }
    .footer-nav-links {
       gap: 6.6rem;
