@@ -136,7 +136,7 @@ const HomeCases = () => {
                      ))}
                   </div>
 
-                  <button className="cases-reset-filters" onClick={handleResetFilters}>
+                  <button className="cases-reset-filters home" onClick={handleResetFilters}>
                      {resetFilters}
                   </button>
                </div>

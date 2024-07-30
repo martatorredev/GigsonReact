@@ -235,8 +235,8 @@
       font-size: 23px;
       margin-inline: initial;
    }
-   .cases-reset-filters {
-      margin: 2rem 0;
+   .cases-reset-filters.home {
+      margin: 2rem 0; 
    }
 }
 
