@@ -103,6 +103,7 @@
 .cases-why-gigson-btn {
    margin-top: 2rem;
    color: #7874f4;
+   text-transform: uppercase;
    height: fit-content;
 }
 
