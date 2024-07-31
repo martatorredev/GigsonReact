@@ -10,7 +10,7 @@
    padding-bottom: 4rem;
    overflow: hidden;
 }
-.faq-button-wrapper{
+.faq-button-wrapper {
    text-transform: uppercase;
 }
 .faqs-imgs {
@@ -101,9 +101,12 @@
 @media (min-width: 70rem) {
    .hero-faqs {
       text-align: center;
-      margin: 10rem 1rem 5rem;
-      padding: 6rem 0;
+      margin: 8rem 1rem 5rem;
+      padding: 8rem 0;
       overflow: hidden;
+   }
+   .faqs-imgs {
+      max-width: 36rem;
    }
 
    .hero-faqs-h1 {
@@ -148,6 +151,15 @@
 @media (min-width: 100rem) {
    .faqs-section {
       padding-inline: 10rem;
+   }
+
+   .hero-faqs {
+      margin: 6rem 1rem 3rem;
+      padding: 12rem 0;
+   }
+
+   .faqs-imgs {
+      max-width: 42rem;
    }
 
    .faqs-accordion-h2 {
