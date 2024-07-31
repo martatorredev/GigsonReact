@@ -26,10 +26,6 @@
     
 }
 
-.about-section-need{
-    margin: 1rem 1rem  0;
-    position: relative;
-}
 
 .about-hero-h1{
     font-size: 1.5rem;
@@ -125,7 +121,7 @@
 }
 
 .about-button-contact{
-    font-size: .875rem;
+    font-size: 1rem;
     color: #7874F4;
     margin: 4rem auto 0;
 }
