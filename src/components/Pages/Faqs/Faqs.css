@@ -79,8 +79,16 @@
    .faqs-imgs {
       max-width: 27rem;
    }
+   .faqs-accordion-h2 {
+      font-size: 2.2rem;
+   }
 }
 
+@media (min-width: 50rem) {
+   .accordion-title.faqs {
+      font-size: 1.5rem;
+   }
+}
 @media (min-width: 60rem) {
    .faqs-section {
       padding-inline: 2rem;
@@ -128,6 +136,9 @@
 @media (min-width: 90rem) {
    .faqs-section {
       padding-inline: 7rem;
+   }
+   .accordion-title.faqs {
+      font-size: 1.7rem;
    }
 }
 
