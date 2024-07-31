@@ -10,6 +10,9 @@
    padding-bottom: 4rem;
    overflow: hidden;
 }
+.faq-button-wrapper{
+   text-transform: uppercase;
+}
 .faqs-imgs {
    display: flex;
    max-width: 33rem;
