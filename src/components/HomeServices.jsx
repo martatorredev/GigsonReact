@@ -2,7 +2,6 @@ import homeServicesImg from '../assets/FormasServices.png'
 import './HomeServices.css'
 import Button from './Button'
 
-
 function HomeServices() {
   return (
     <section className='home-services'>
