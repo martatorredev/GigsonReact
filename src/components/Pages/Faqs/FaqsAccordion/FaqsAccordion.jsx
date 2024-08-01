@@ -10,7 +10,7 @@ export const FaqsAccordion = ({ question, answer, isOpen, onClick, cta, isLast }
             {question && (
                 <div className='accordion-container faqs-container'>
                     <button className='accordion-btn' onClick={onClick}>
-                        <span className='accordion-title'>{question}</span>
+                        <span className='accordion-title faqs'>{question}</span>
                         <AccordionAnimation accordionOpen={isOpen} faqs="faqs" />
                     </button>
                     <div className={`accordion-content ${isOpen && 'accordion-show-content'}`}>
