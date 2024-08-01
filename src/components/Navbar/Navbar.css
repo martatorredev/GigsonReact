@@ -115,7 +115,7 @@
         font-weight: 500;
     }
     .div-header{
-        margin: 0 4rem;
+        margin: 0 2.5rem;
         padding-bottom: 1rem;
     }
     .logo-header{
@@ -160,7 +160,7 @@
 }
 @media(min-width:90rem){
     .div-header{
-        margin: 0 6rem;
+        margin: 0 4rem;
     }
     .menu-box{
         gap: 4.5rem;
