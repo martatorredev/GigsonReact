@@ -35,8 +35,9 @@
 .hero-services-h1 > span {
    color: #7874f4;
 }
+/*  TODO: Testar entre sticky ou sem   */
 .services-cards {
-   position: sticky;
+   position: initial;
    top: -22rem;
    left: 0;
    min-height: 40rem;

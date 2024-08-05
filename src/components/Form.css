@@ -79,6 +79,8 @@ input[type="radio"]:checked + label {
 .form-section input[type="checkbox"]:checked {
    background-color: #7874f4;
 }
+
+
 .form-btn-send {
    margin-top: 2rem;
 }
@@ -122,6 +124,15 @@ input[type="radio"]:checked + label {
       display: flex;
       gap: 1rem;
    }
+
+   .input-container-text {
+      width: 100%;
+   }
+
+   #input-description {
+      width: 100%;
+   }
+
    .input-container-label,
    .label-budget {
       text-wrap: nowrap;

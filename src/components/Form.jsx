@@ -77,7 +77,7 @@ const Form = () => {
                 </div>
                 <div className='input-container input-container-text'>
                     <label htmlFor="text" className='input-container-label'>{details.label}</label>
-                    <input type="text" name='description' placeholder={details.placeholder}/>
+                    <input id='input-description' type="text" name='description' placeholder={details.placeholder}/>
                 </div>
                 <div className='input-container form-check'>
                     <input type="checkbox" required className='input-radio'/>

@@ -128,17 +128,20 @@
    .cases-why-gigson-btn {
       margin-top: 0;
       color: #7874f4;
+      text-wrap: nowrap;
    }
    .div-cta {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin: 0 5rem 0 2rem;
+      margin: 0 2rem 0 2rem;
    }
    .div-cta > p {
-      max-width: 50rem;
+      max-width: 100%;
+      margin-right: 2rem;
       font-weight: bold;
+      text-wrap: initial;
    }
    .accordion-container {
       margin: -1px 4rem;
@@ -189,7 +192,23 @@
       width: 2rem;
       height: 2rem;
    }
+
+   .div-cta > p {
+      text-wrap: balance;
+   }
+
+   .div-cta {
+      margin-inline: 5.5rem;
+   }
 }
+
+@media (min-width: 100rem) {
+   .div-cta > p {
+      text-wrap: initial;
+      margin-right: 15rem;
+   }
+}
+
 @media (min-width: 121rem) {
    .accordion-container {
       margin: -1px auto;
