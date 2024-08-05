@@ -7,43 +7,54 @@ import Faqs from "../components/Pages/Faqs/Faqs";
 import Contact from "../components/Pages/Contact";
 import NotFound from "../components/Pages/NotFound";
 import Policity from "../components/Pages/Policity";
+import CookiesPage from "../components/Pages/CookiesPage";
+
 import { createBrowserRouter } from "react-router-dom";
-import '../App.css';
+import "../App.css";
+import Notice from "../components/Pages/Notice";
 
 export const router = createBrowserRouter([
    {
-    path: '/',
-    element: <Layout />,  // Aquí ya se utiliza Layout
-    errorElement: 
-    <NotFound/>,
-    children: [
-        {
-            path: '/',
+      path: "/",
+      element: <Layout />, // Aquí ya se utiliza Layout
+      errorElement: <NotFound />,
+      children: [
+         {
+            path: "/",
             element: <Home />,
-        },
-        {
-            path: 'services',
+         },
+         {
+            path: "services",
             element: <Services />,
-        },
-        {
-            path: 'cases',
+         },
+         {
+            path: "cases",
             element: <Cases />,
-        },
-        {
-            path: 'about',
+         },
+         {
+            path: "about",
             element: <AboutHero />,
-        },
-        {
-            path: 'faqs',
+         },
+         {
+            path: "faqs",
             element: <Faqs />,
-        },
-        {
-            path: 'contact',
+         },
+         {
+            path: "contact",
             element: <Contact />,
-        },
-        {
-            path: 'policity',
+         },
+         {
+            path: "policity",
             element: <Policity />,
-        },
-    ]}
-])
+         },
+         {
+            path: "notice",
+            element: <Notice />,
+         },
+         {
+            path: "cookies",
+            element: <CookiesPage />,
+         },
+      ],
+   },
+]);

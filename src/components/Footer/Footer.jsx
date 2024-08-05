@@ -47,10 +47,10 @@ const Footer = () => {
                      <Link to="/policity">{legal}</Link>
                   </li>
                   <li>
-                     <Link to="/policity">{cookies}</Link>
+                     <Link to="/cookies">{cookies}</Link>
                   </li>
                   <li>
-                     <Link to="/policity">{notice}</Link>
+                     <Link to="/notice">{notice}</Link>
                   </li>
                </ul>
             </div>

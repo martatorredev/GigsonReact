@@ -227,7 +227,7 @@ i18n
                         "AWS: for cloud computing infrastructure, ensuring scalability, security, and high availability.",
                         "Business Intelligence modules for data visualization and decision-making based on advanced analytics.",
                         "APIs for integrating data from external suppliers and real-time price updates.",
-                        "Compliance with international security standards and data privacy policies.",
+                        "Compliance with international security standards and data notice policies.",
                      ],
                      tags: ["Design agency", "Creative agency", "Building", "Logistics"],
                      need: ["Improve service profitability", "Data centralization"],
@@ -440,6 +440,140 @@ i18n
                   pc_4_5: "In no case do we process specially protected data:",
                   pc_4_6:
                      "All the data mentioned above has been obtained either directly from you through the submission of a commercial offer, contractual proposal, etc., or from your company by providing us with the identification data and other information necessary to carry out the object of the contractual relationship between the parties. It will be your or your company’s obligation to provide us with updated data in case of modification.",
+               },
+               notice: {
+                  h2_1: "Data Protection Policy",
+                  h3_1: "1. PURPOSE AND ACCEPTANCE",
+                  pc_1_1:
+                     "This legal notice regulates the use of the website www.somosgigson.com (hereinafter, THE WEBSITE), which is owned by Gigson (hereinafter, THE WEBSITE OWNER).",
+                  pc_1_2:
+                     "Browsing the website of THE WEBSITE OWNER attributes the condition of a user of the same and implies full and unreserved acceptance of each and every one of the provisions included in this Legal Notice, which may be subject to modifications.",
+                  pc_1_3:
+                     "The user agrees to make proper use of the website in accordance with the laws, good faith, public order, traffic uses, and this Legal Notice. The user will be liable to THE WEBSITE OWNER or to third parties for any damages that may be caused as a result of the breach of this obligation.",
+                  h3_2: "2. IDENTIFICATION AND COMMUNICATIONS",
+                  pc_2_1:
+                     "THE WEBSITE OWNER, in compliance with Law 34/2002, of July 11, on information society services and electronic commerce, informs you that:",
+                  pc_2_2: "Its company name is: Awesomely OÜ",
+                  pc_2_3: "VAT Number: EE102613528",
+                  pc_2_4: "Its registered office is at: Lootsa Tn 2a Harju, 11415, Tallinn, Estonia",
+                  pc_2_5: "To communicate with us, we provide various means of contact as detailed below:",
+                  pc_2_6: "Phone: +34630840225",
+                  pc_2_7: "Email: hello@awesomelygroup.com",
+                  pc_2_8:
+                     "All notifications and communications between users and THE WEBSITE OWNER will be considered effective, for all purposes, when made via postal mail or any other means detailed above.",
+                  h3_3: "3. CONDITIONS OF ACCESS AND USE",
+                  pc_3_1:
+                     "The website and its services are freely accessible, however, THE WEBSITE OWNER conditions the use of some of the services offered on its website to the prior completion of the corresponding form.",
+                  pc_3_2:
+                     "The user guarantees the authenticity and currency of all data communicated to THE WEBSITE OWNER and will be solely responsible for any false or inaccurate statements made.",
+                  pc_3_3:
+                     "The user expressly agrees to make appropriate use of the contents and services of THE WEBSITE OWNER and not to use them for, among others:",
+                  ps_3_1:
+                     "1. Disseminating criminal, violent, pornographic, racist, xenophobic, offensive content, content advocating terrorism or, in general, content contrary to the law or public order.",
+                  ps_3_2:
+                     "2. Introducing computer viruses or performing actions capable of altering, damaging, interrupting, or generating errors or damage to the electronic documents, data, or physical and logical systems of THE WEBSITE OWNER or third parties; as well as hindering the access of other users to the website and its services through the massive consumption of the computer resources through which THE WEBSITE OWNER provides its services.",
+                  ps_3_3:
+                     "3. Attempting to access the email accounts of other users or restricted areas of the computer systems of THE WEBSITE OWNER or third parties and, where appropriate, extracting information.",
+                  ps_3_4:
+                     "4. Violating intellectual or industrial property rights, as well as violating the confidentiality of the information of THE WEBSITE OWNER or third parties.",
+                  ps_3_5: "5. Impersonating another user, public administrations, or a third party.",
+                  ps_3_6:
+                     "6. Reproducing, copying, distributing, making available, or any other form of public communication, transforming, or modifying the contents, unless authorized by the holder of the corresponding rights or it is legally permitted.",
+                  ps_3_7:
+                     "7. Collecting data for advertising purposes and sending any kind of advertising and communications for sales or other commercial purposes without prior request or consent.",
+                  pc_3_4:
+                     "All the content of the website, such as texts, photographs, graphics, images, icons, technology, software, as well as its graphic design and source codes, constitute a work whose ownership belongs to THE WEBSITE OWNER, without any of the exploitation rights over them being understood to be transferred to the user beyond what is strictly necessary for the correct use of the web.",
+                  pc_3_5:
+                     "Ultimately, users who access this website can view the content and make, where appropriate, private authorized copies provided that the reproduced elements are not subsequently transferred to third parties, installed on servers connected to networks, or subjected to any kind of exploitation.",
+                  pc_3_6:
+                     "Likewise, all trademarks, trade names, or distinctive signs of any kind that appear on the website are the property of THE WEBSITE OWNER, without it being understood that the use or access to the same attributes any right to the user over them.",
+                  pc_3_7:
+                     "The distribution, modification, assignment, or public communication of the content and any other act that has not been expressly authorized by the holder of the exploitation rights is prohibited.",
+                  pc_3_8:
+                     "The establishment of a hyperlink does not imply in any case the existence of relations between THE WEBSITE OWNER and the owner of the website where it is established, nor the acceptance and approval by THE WEBSITE OWNER of its content or services. Those who intend to establish a hyperlink must previously request written authorization from THE WEBSITE OWNER.",
+                  pc_3_9:
+                     "In any case, the hyperlink will only allow access to the homepage or the start page of our website, and must refrain from making false, inaccurate, or incorrect statements or indications about THE WEBSITE OWNER, or include illegal content, contrary to good customs, and public order.",
+                  pc_3_10:
+                     "THE WEBSITE OWNER is not responsible for the use that each user gives to the materials made available on this website or for the actions taken based on them.",
+                  h3_4: "4. PRIVACY POLICY",
+                  pc_4_1: "Who is responsible for processing your data:",
+                  pc_4_2: "The data controller is identified in point 1 of this Legal Notice.",
+                  pc_4_3: "What type of data we have about you and how we have obtained it",
+                  pc_4_4: "The categories of personal data we process for clients and suppliers are:",
+                  ps_4_1: "1. Identification data",
+                  ps_4_2: "2. Postal or electronic addresses",
+                  ps_4_3: "3. Commercial information",
+                  ps_4_4: "4. Economic and transaction data",
+                  pc_4_5: "In no case do we process specially protected data:",
+                  pc_4_6:
+                     "All the data mentioned above has been obtained either directly from you through the submission of a commercial offer, contractual proposal, etc., or from your company by providing us with the identification data and other information necessary to carry out the object of the contractual relationship between the parties. It will be your or your company’s obligation to provide us with updated data in case of modification.",
+               },
+               cookies: {
+                  h2_1: "Política de protección de datos",
+                  h3_1: "1. OBJETO Y ACEPTACIÓN",
+                  pc_1_1:
+                     "El presente aviso legal regula el uso del sitio web www.somosgigson.com (en adelante, LA WEB), del que es titular Gigson (en adelante, EL PROPIETARIO DE LA WEB).",
+                  pc_1_2:
+                     "La navegación por el sitio web de EL PROPIETARIO DE LA WEB atribuye la condición de usuario del mismo e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal, que pueden sufrir modificaciones.",
+                  pc_1_3:
+                     "El usuario se obliga a hacer un uso correcto del sitio web de conformidad con las leyes, la buena fe, el orden público, los usos del tráfico y el presente Aviso Legal. El usuario responderá frente a EL PROPIETARIO DE LA WEB o frente a terceros, de cualesquiera daños y perjuicios que pudieran causarse como consecuencia del incumplimiento de dicha obligación.",
+                  h3_2: "2. IDENTIFICACIÓN Y COMUNICACIONES",
+                  pc_2_1:
+                     "EL PROPIETARIO DE LA WEB, en cumplimiento de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, le informa que:",
+                  pc_2_2: "Su denominación social es: Awesomely OÜ",
+                  pc_2_3: "Número de VAT: EE102613528",
+                  pc_2_4: "Su domicilio social está en: Lootsa Tn 2a Harju, 11415, Tallinn, Estonia",
+                  pc_2_5: "Para comunicarse con nosotros, ponemos a su disposición diferentes medios de contacto que detallamos a continuación:",
+                  pc_2_6: "Teléfono: +34630840225",
+                  pc_2_7: "Email: hello@awesomelygroup.com",
+                  pc_2_8:
+                     "Todas las notificaciones y comunicaciones entre los usuarios y EL PROPIETARIO DE LA WEB se considerarán eficaces, a todos los efectos, cuando se realicen a través de correo postal o cualquier otro medio de los detallados anteriormente.",
+                  h3_3: "3. CONDICIONES DE ACCESO Y UTILIZACIÓN",
+                  pc_3_1:
+                     "El sitio web y sus servicios son de acceso libre y gratuito, no obstante, EL PROPIETARIO DE LA WEB condiciona la utilización de algunos de los servicios ofrecidos en su web a la previa cumplimentación del correspondiente formulario.",
+                  pc_3_2:
+                     "El usuario garantiza la autenticidad y actualidad de todos aquellos datos que comunique a EL PROPIETARIO DE LA WEB y será el único responsable de las manifestaciones falsas o inexactas que realice.",
+                  pc_3_3:
+                     "El usuario se compromete expresamente a hacer un uso adecuado de los contenidos y servicios de EL PROPIETARIO DE LA WEB y a no emplearlos para, entre otros:",
+                  ps_3_1:
+                     "1. Difundir contenidos delictivos, violentos, pornográficos, racistas, xenófobo, ofensivos, de apología del terrorismo o, en general, contrarios a la ley o al orden público.",
+                  ps_3_2:
+                     "2. Introducir en la red virus informáticos o realizar actuaciones susceptibles de alterar, estropear, interrumpir o generar errores o daños en los documentos electrónicos, datos o sistemas físicos y lógicos de EL PROPIETARIO DE LA WEB o de terceras personas; así como obstaculizar el acceso de otros usuarios al sitio web y a sus servicios mediante el consumo masivo de los recursos informáticos a través de los cuales EL PROPIETARIO DE LA WEB presta sus servicios.",
+                  ps_3_3:
+                     "3. Intentar acceder a las cuentas de correo electrónico de otros usuarios o a áreas restringidas de los sistemas informáticos de EL PROPIETARIO DE LA WEB o de terceros y, en su caso, extraer información.",
+                  ps_3_4:
+                     "4. Vulnerar los derechos de propiedad intelectual o industrial, así como violar la confidencialidad de la información de EL PROPIETARIO DE LA WEB o de terceros.",
+                  ps_3_5: "5. Suplantar la identidad de otro usuario, de las administraciones públicas o de un tercero.",
+                  ps_3_6:
+                     "6. Reproducir, copiar, distribuir, poner a disposición de, o cualquier otra forma de comunicación pública, transformar o modificar los contenidos, a menos que se cuente con la autorización del titular de los correspondientes derechos o ello resulte legalmente permitido.",
+                  ps_3_7:
+                     "7. Recabar datos con finalidad publicitaria y de remitir publicidad de cualquier clase y comunicaciones con fines de venta u otras de naturaleza comercial sin que medie su previa solicitud o consentimiento.",
+                  pc_3_4:
+                     "Todos los contenidos del sitio web, como textos, fotografías, gráficos, imágenes, iconos, tecnología, software, así como su diseño gráfico y códigos fuente, constituyen una obra cuya propiedad pertenece a EL PROPIETARIO DE LA WEB, sin que puedan entenderse cedidos al usuario ninguno de los derechos de explotación sobre los mismos más allá de lo estrictamente necesario para el correcto uso de la web.",
+                  pc_3_5:
+                     "En definitiva, los usuarios que accedan a este sitio web pueden visualizar los contenidos y efectuar, en su caso, copias privadas autorizadas siempre que los elementos reproducidos no sean cedidos posteriormente a terceros, ni se instalen a servidores conectados a redes, ni sean objeto de ningún tipo de explotación.",
+                  pc_3_6:
+                     "Asimismo, todas las marcas, nombres comerciales o signos distintivos de cualquier clase que aparecen en el sitio web son propiedad de EL PROPIETARIO DE LA WEB, sin que pueda entenderse que el uso o acceso al mismo atribuya al usuario derecho alguno sobre los mismos.",
+                  pc_3_7:
+                     "La distribución, modificación, cesión o comunicación pública de los contenidos y cualquier otro acto que no haya sido expresamente autorizado por el titular de los derechos de explotación quedan prohibidos.",
+                  pc_3_8:
+                     "El establecimiento de un hiperenlace no implica en ningún caso la existencia de relaciones entre EL PROPIETARIO DE LA WEB y el propietario del sitio web en la que se establezca, ni la aceptación y aprobación por parte de EL PROPIETARIO DE LA WEB de sus contenidos o servicios. Aquellas personas que se propongan establecer un hiperenlace previamente deberán solicitar autorización por escrito a EL PROPIETARIO DE LA WEB.",
+                  pc_3_9:
+                     "En todo caso, el hiperenlace únicamente permitirá el acceso a la home-page o página de inicio de nuestro sitio web, asimismo deberá abstenerse de realizar manifestaciones o indicaciones falsas, inexactas o incorrectas sobre EL PROPIETARIO DE LA WEB, o incluir contenidos ilícitos, contrarios a las buenas costumbres y al orden público.",
+                  pc_3_10:
+                     "EL PROPIETARIO DE LA WEB no se responsabiliza del uso que cada usuario le dé a los materiales puestos a disposición en este sitio web ni de las actuaciones que realice en base a los mismos.",
+                  h3_4: "4. POLÍTICA DE PRIVACIDAD",
+                  pc_4_1: "Quién es el Responsable de tratamiento de sus datos:",
+                  pc_4_2: "El responsable de tratamiento se encuentra identificado en el expositivo 1 de este Aviso Legal.",
+                  pc_4_3: "Qué tipo de datos tenemos sobre su persona y cómo los hemos obtenido",
+                  pc_4_4: "Las categorías de datos personales que tratamos de clientes y proveedores son:",
+                  ps_4_1: "1. Datos de identificación",
+                  ps_4_2: "2. Direcciones postales o electrónicas",
+                  ps_4_3: "3. Información comercial",
+                  ps_4_4: "4. Datos económicos y de transacciones",
+                  pc_4_5: "En ningún caso tratamos datos especialmente protegidos:",
+                  pc_4_6:
+                     "Todos los datos arriba mencionados los hemos obtenido o directamente de Usted mediante la presentación de una oferta comercial, propuesta contractual, etc. o mediante su empresa al facilitarnos los datos de identificación y demás información necesaria para llevar al cabo el objeto de la relación contractual entre las partes. Será una obligación suya o de su empresa facilitarnos los datos actualizados en caso de modificación.",
                },
             },
          },
@@ -808,6 +942,140 @@ i18n
                   banner404: ".error404.",
                },
                policity: {
+                  h2_1: "Política de protección de datos",
+                  h3_1: "1. OBJETO Y ACEPTACIÓN",
+                  pc_1_1:
+                     "El presente aviso legal regula el uso del sitio web www.somosgigson.com (en adelante, LA WEB), del que es titular Gigson (en adelante, EL PROPIETARIO DE LA WEB).",
+                  pc_1_2:
+                     "La navegación por el sitio web de EL PROPIETARIO DE LA WEB atribuye la condición de usuario del mismo e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal, que pueden sufrir modificaciones.",
+                  pc_1_3:
+                     "El usuario se obliga a hacer un uso correcto del sitio web de conformidad con las leyes, la buena fe, el orden público, los usos del tráfico y el presente Aviso Legal. El usuario responderá frente a EL PROPIETARIO DE LA WEB o frente a terceros, de cualesquiera daños y perjuicios que pudieran causarse como consecuencia del incumplimiento de dicha obligación.",
+                  h3_2: "2. IDENTIFICACIÓN Y COMUNICACIONES",
+                  pc_2_1:
+                     "EL PROPIETARIO DE LA WEB, en cumplimiento de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, le informa que:",
+                  pc_2_2: "Su denominación social es: Awesomely OÜ",
+                  pc_2_3: "Número de VAT: EE102613528",
+                  pc_2_4: "Su domicilio social está en: Lootsa Tn 2a Harju, 11415, Tallinn, Estonia",
+                  pc_2_5: "Para comunicarse con nosotros, ponemos a su disposición diferentes medios de contacto que detallamos a continuación:",
+                  pc_2_6: "Teléfono: +34630840225",
+                  pc_2_7: "Email: hello@awesomelygroup.com",
+                  pc_2_8:
+                     "Todas las notificaciones y comunicaciones entre los usuarios y EL PROPIETARIO DE LA WEB se considerarán eficaces, a todos los efectos, cuando se realicen a través de correo postal o cualquier otro medio de los detallados anteriormente.",
+                  h3_3: "3. CONDICIONES DE ACCESO Y UTILIZACIÓN",
+                  pc_3_1:
+                     "El sitio web y sus servicios son de acceso libre y gratuito, no obstante, EL PROPIETARIO DE LA WEB condiciona la utilización de algunos de los servicios ofrecidos en su web a la previa cumplimentación del correspondiente formulario.",
+                  pc_3_2:
+                     "El usuario garantiza la autenticidad y actualidad de todos aquellos datos que comunique a EL PROPIETARIO DE LA WEB y será el único responsable de las manifestaciones falsas o inexactas que realice.",
+                  pc_3_3:
+                     "El usuario se compromete expresamente a hacer un uso adecuado de los contenidos y servicios de EL PROPIETARIO DE LA WEB y a no emplearlos para, entre otros:",
+                  ps_3_1:
+                     "1. Difundir contenidos delictivos, violentos, pornográficos, racistas, xenófobo, ofensivos, de apología del terrorismo o, en general, contrarios a la ley o al orden público.",
+                  ps_3_2:
+                     "2. Introducir en la red virus informáticos o realizar actuaciones susceptibles de alterar, estropear, interrumpir o generar errores o daños en los documentos electrónicos, datos o sistemas físicos y lógicos de EL PROPIETARIO DE LA WEB o de terceras personas; así como obstaculizar el acceso de otros usuarios al sitio web y a sus servicios mediante el consumo masivo de los recursos informáticos a través de los cuales EL PROPIETARIO DE LA WEB presta sus servicios.",
+                  ps_3_3:
+                     "3. Intentar acceder a las cuentas de correo electrónico de otros usuarios o a áreas restringidas de los sistemas informáticos de EL PROPIETARIO DE LA WEB o de terceros y, en su caso, extraer información.",
+                  ps_3_4:
+                     "4. Vulnerar los derechos de propiedad intelectual o industrial, así como violar la confidencialidad de la información de EL PROPIETARIO DE LA WEB o de terceros.",
+                  ps_3_5: "5. Suplantar la identidad de otro usuario, de las administraciones públicas o de un tercero.",
+                  ps_3_6:
+                     "6. Reproducir, copiar, distribuir, poner a disposición de, o cualquier otra forma de comunicación pública, transformar o modificar los contenidos, a menos que se cuente con la autorización del titular de los correspondientes derechos o ello resulte legalmente permitido.",
+                  ps_3_7:
+                     "7. Recabar datos con finalidad publicitaria y de remitir publicidad de cualquier clase y comunicaciones con fines de venta u otras de naturaleza comercial sin que medie su previa solicitud o consentimiento.",
+                  pc_3_4:
+                     "Todos los contenidos del sitio web, como textos, fotografías, gráficos, imágenes, iconos, tecnología, software, así como su diseño gráfico y códigos fuente, constituyen una obra cuya propiedad pertenece a EL PROPIETARIO DE LA WEB, sin que puedan entenderse cedidos al usuario ninguno de los derechos de explotación sobre los mismos más allá de lo estrictamente necesario para el correcto uso de la web.",
+                  pc_3_5:
+                     "En definitiva, los usuarios que accedan a este sitio web pueden visualizar los contenidos y efectuar, en su caso, copias privadas autorizadas siempre que los elementos reproducidos no sean cedidos posteriormente a terceros, ni se instalen a servidores conectados a redes, ni sean objeto de ningún tipo de explotación.",
+                  pc_3_6:
+                     "Asimismo, todas las marcas, nombres comerciales o signos distintivos de cualquier clase que aparecen en el sitio web son propiedad de EL PROPIETARIO DE LA WEB, sin que pueda entenderse que el uso o acceso al mismo atribuya al usuario derecho alguno sobre los mismos.",
+                  pc_3_7:
+                     "La distribución, modificación, cesión o comunicación pública de los contenidos y cualquier otro acto que no haya sido expresamente autorizado por el titular de los derechos de explotación quedan prohibidos.",
+                  pc_3_8:
+                     "El establecimiento de un hiperenlace no implica en ningún caso la existencia de relaciones entre EL PROPIETARIO DE LA WEB y el propietario del sitio web en la que se establezca, ni la aceptación y aprobación por parte de EL PROPIETARIO DE LA WEB de sus contenidos o servicios. Aquellas personas que se propongan establecer un hiperenlace previamente deberán solicitar autorización por escrito a EL PROPIETARIO DE LA WEB.",
+                  pc_3_9:
+                     "En todo caso, el hiperenlace únicamente permitirá el acceso a la home-page o página de inicio de nuestro sitio web, asimismo deberá abstenerse de realizar manifestaciones o indicaciones falsas, inexactas o incorrectas sobre EL PROPIETARIO DE LA WEB, o incluir contenidos ilícitos, contrarios a las buenas costumbres y al orden público.",
+                  pc_3_10:
+                     "EL PROPIETARIO DE LA WEB no se responsabiliza del uso que cada usuario le dé a los materiales puestos a disposición en este sitio web ni de las actuaciones que realice en base a los mismos.",
+                  h3_4: "4. POLÍTICA DE PRIVACIDAD",
+                  pc_4_1: "Quién es el Responsable de tratamiento de sus datos:",
+                  pc_4_2: "El responsable de tratamiento se encuentra identificado en el expositivo 1 de este Aviso Legal.",
+                  pc_4_3: "Qué tipo de datos tenemos sobre su persona y cómo los hemos obtenido",
+                  pc_4_4: "Las categorías de datos personales que tratamos de clientes y proveedores son:",
+                  ps_4_1: "1. Datos de identificación",
+                  ps_4_2: "2. Direcciones postales o electrónicas",
+                  ps_4_3: "3. Información comercial",
+                  ps_4_4: "4. Datos económicos y de transacciones",
+                  pc_4_5: "En ningún caso tratamos datos especialmente protegidos:",
+                  pc_4_6:
+                     "Todos los datos arriba mencionados los hemos obtenido o directamente de Usted mediante la presentación de una oferta comercial, propuesta contractual, etc. o mediante su empresa al facilitarnos los datos de identificación y demás información necesaria para llevar al cabo el objeto de la relación contractual entre las partes. Será una obligación suya o de su empresa facilitarnos los datos actualizados en caso de modificación.",
+               },
+               notice: {
+                  h2_1: "Política de protección de datos",
+                  h3_1: "1. OBJETO Y ACEPTACIÓN",
+                  pc_1_1:
+                     "El presente aviso legal regula el uso del sitio web www.somosgigson.com (en adelante, LA WEB), del que es titular Gigson (en adelante, EL PROPIETARIO DE LA WEB).",
+                  pc_1_2:
+                     "La navegación por el sitio web de EL PROPIETARIO DE LA WEB atribuye la condición de usuario del mismo e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal, que pueden sufrir modificaciones.",
+                  pc_1_3:
+                     "El usuario se obliga a hacer un uso correcto del sitio web de conformidad con las leyes, la buena fe, el orden público, los usos del tráfico y el presente Aviso Legal. El usuario responderá frente a EL PROPIETARIO DE LA WEB o frente a terceros, de cualesquiera daños y perjuicios que pudieran causarse como consecuencia del incumplimiento de dicha obligación.",
+                  h3_2: "2. IDENTIFICACIÓN Y COMUNICACIONES",
+                  pc_2_1:
+                     "EL PROPIETARIO DE LA WEB, en cumplimiento de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, le informa que:",
+                  pc_2_2: "Su denominación social es: Awesomely OÜ",
+                  pc_2_3: "Número de VAT: EE102613528",
+                  pc_2_4: "Su domicilio social está en: Lootsa Tn 2a Harju, 11415, Tallinn, Estonia",
+                  pc_2_5: "Para comunicarse con nosotros, ponemos a su disposición diferentes medios de contacto que detallamos a continuación:",
+                  pc_2_6: "Teléfono: +34630840225",
+                  pc_2_7: "Email: hello@awesomelygroup.com",
+                  pc_2_8:
+                     "Todas las notificaciones y comunicaciones entre los usuarios y EL PROPIETARIO DE LA WEB se considerarán eficaces, a todos los efectos, cuando se realicen a través de correo postal o cualquier otro medio de los detallados anteriormente.",
+                  h3_3: "3. CONDICIONES DE ACCESO Y UTILIZACIÓN",
+                  pc_3_1:
+                     "El sitio web y sus servicios son de acceso libre y gratuito, no obstante, EL PROPIETARIO DE LA WEB condiciona la utilización de algunos de los servicios ofrecidos en su web a la previa cumplimentación del correspondiente formulario.",
+                  pc_3_2:
+                     "El usuario garantiza la autenticidad y actualidad de todos aquellos datos que comunique a EL PROPIETARIO DE LA WEB y será el único responsable de las manifestaciones falsas o inexactas que realice.",
+                  pc_3_3:
+                     "El usuario se compromete expresamente a hacer un uso adecuado de los contenidos y servicios de EL PROPIETARIO DE LA WEB y a no emplearlos para, entre otros:",
+                  ps_3_1:
+                     "1. Difundir contenidos delictivos, violentos, pornográficos, racistas, xenófobo, ofensivos, de apología del terrorismo o, en general, contrarios a la ley o al orden público.",
+                  ps_3_2:
+                     "2. Introducir en la red virus informáticos o realizar actuaciones susceptibles de alterar, estropear, interrumpir o generar errores o daños en los documentos electrónicos, datos o sistemas físicos y lógicos de EL PROPIETARIO DE LA WEB o de terceras personas; así como obstaculizar el acceso de otros usuarios al sitio web y a sus servicios mediante el consumo masivo de los recursos informáticos a través de los cuales EL PROPIETARIO DE LA WEB presta sus servicios.",
+                  ps_3_3:
+                     "3. Intentar acceder a las cuentas de correo electrónico de otros usuarios o a áreas restringidas de los sistemas informáticos de EL PROPIETARIO DE LA WEB o de terceros y, en su caso, extraer información.",
+                  ps_3_4:
+                     "4. Vulnerar los derechos de propiedad intelectual o industrial, así como violar la confidencialidad de la información de EL PROPIETARIO DE LA WEB o de terceros.",
+                  ps_3_5: "5. Suplantar la identidad de otro usuario, de las administraciones públicas o de un tercero.",
+                  ps_3_6:
+                     "6. Reproducir, copiar, distribuir, poner a disposición de, o cualquier otra forma de comunicación pública, transformar o modificar los contenidos, a menos que se cuente con la autorización del titular de los correspondientes derechos o ello resulte legalmente permitido.",
+                  ps_3_7:
+                     "7. Recabar datos con finalidad publicitaria y de remitir publicidad de cualquier clase y comunicaciones con fines de venta u otras de naturaleza comercial sin que medie su previa solicitud o consentimiento.",
+                  pc_3_4:
+                     "Todos los contenidos del sitio web, como textos, fotografías, gráficos, imágenes, iconos, tecnología, software, así como su diseño gráfico y códigos fuente, constituyen una obra cuya propiedad pertenece a EL PROPIETARIO DE LA WEB, sin que puedan entenderse cedidos al usuario ninguno de los derechos de explotación sobre los mismos más allá de lo estrictamente necesario para el correcto uso de la web.",
+                  pc_3_5:
+                     "En definitiva, los usuarios que accedan a este sitio web pueden visualizar los contenidos y efectuar, en su caso, copias privadas autorizadas siempre que los elementos reproducidos no sean cedidos posteriormente a terceros, ni se instalen a servidores conectados a redes, ni sean objeto de ningún tipo de explotación.",
+                  pc_3_6:
+                     "Asimismo, todas las marcas, nombres comerciales o signos distintivos de cualquier clase que aparecen en el sitio web son propiedad de EL PROPIETARIO DE LA WEB, sin que pueda entenderse que el uso o acceso al mismo atribuya al usuario derecho alguno sobre los mismos.",
+                  pc_3_7:
+                     "La distribución, modificación, cesión o comunicación pública de los contenidos y cualquier otro acto que no haya sido expresamente autorizado por el titular de los derechos de explotación quedan prohibidos.",
+                  pc_3_8:
+                     "El establecimiento de un hiperenlace no implica en ningún caso la existencia de relaciones entre EL PROPIETARIO DE LA WEB y el propietario del sitio web en la que se establezca, ni la aceptación y aprobación por parte de EL PROPIETARIO DE LA WEB de sus contenidos o servicios. Aquellas personas que se propongan establecer un hiperenlace previamente deberán solicitar autorización por escrito a EL PROPIETARIO DE LA WEB.",
+                  pc_3_9:
+                     "En todo caso, el hiperenlace únicamente permitirá el acceso a la home-page o página de inicio de nuestro sitio web, asimismo deberá abstenerse de realizar manifestaciones o indicaciones falsas, inexactas o incorrectas sobre EL PROPIETARIO DE LA WEB, o incluir contenidos ilícitos, contrarios a las buenas costumbres y al orden público.",
+                  pc_3_10:
+                     "EL PROPIETARIO DE LA WEB no se responsabiliza del uso que cada usuario le dé a los materiales puestos a disposición en este sitio web ni de las actuaciones que realice en base a los mismos.",
+                  h3_4: "4. POLÍTICA DE PRIVACIDAD",
+                  pc_4_1: "Quién es el Responsable de tratamiento de sus datos:",
+                  pc_4_2: "El responsable de tratamiento se encuentra identificado en el expositivo 1 de este Aviso Legal.",
+                  pc_4_3: "Qué tipo de datos tenemos sobre su persona y cómo los hemos obtenido",
+                  pc_4_4: "Las categorías de datos personales que tratamos de clientes y proveedores son:",
+                  ps_4_1: "1. Datos de identificación",
+                  ps_4_2: "2. Direcciones postales o electrónicas",
+                  ps_4_3: "3. Información comercial",
+                  ps_4_4: "4. Datos económicos y de transacciones",
+                  pc_4_5: "En ningún caso tratamos datos especialmente protegidos:",
+                  pc_4_6:
+                     "Todos los datos arriba mencionados los hemos obtenido o directamente de Usted mediante la presentación de una oferta comercial, propuesta contractual, etc. o mediante su empresa al facilitarnos los datos de identificación y demás información necesaria para llevar al cabo el objeto de la relación contractual entre las partes. Será una obligación suya o de su empresa facilitarnos los datos actualizados en caso de modificación.",
+               },
+               cookies: {
                   h2_1: "Política de protección de datos",
                   h3_1: "1. OBJETO Y ACEPTACIÓN",
                   pc_1_1:

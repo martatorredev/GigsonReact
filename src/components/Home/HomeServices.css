@@ -59,7 +59,7 @@
    padding-top: 1rem;
    line-height: 1.625rem;
    color: #3c3c3b;
-   text-wrap: balance;
+   text-wrap: initial;
    max-width: 30rem;
 }
 
@@ -205,6 +205,10 @@
 
    .home-services-btn {
       font-size: 1.1rem;
+   }
+
+   .home-services-info {
+      padding-inline: 3rem;
    }
 }
 
