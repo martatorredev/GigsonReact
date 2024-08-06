@@ -98,7 +98,7 @@ input[type="radio"]:checked + label {
    }
    .form-section input[placeholder],
    .form-section select {
-      font-size: 1.1rem;
+      font-size: 18px;
       padding: 0.5rem 0 0.1rem;
    }
    .form-check label {
